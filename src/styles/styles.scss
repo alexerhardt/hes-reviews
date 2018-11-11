@@ -1,0 +1,16 @@
+@import '../../node_modules/spectre.css/src/spectre';
+
+// Extend spectre margin / padding utils - not enough
+
+$util-size-extensions: (
+    3: 0.6rem,
+    4: 0.8rem,
+    5: 1rem
+);
+
+@each $index, $size in $util-size-extensions {
+    .ml-#{$index} { margin-left: $size; }
+    .mr-#{$index} { margin-right: $size; }
+    .m-#{$index} { margin: $size; }
+    .p-#{$index} { padding: $size; }
+}
