@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Menu from 'react-burger-menu/lib/menus/slide';
 
+/**
+ * Header
+ * 
+ * Responsible for managing the header (aka navbar)
+ * Includes mobile navigation with react-burger-menu
+ * https://github.com/negomi/react-burger-menu
+ */
+
 class Header extends React.Component
 {
   state = {

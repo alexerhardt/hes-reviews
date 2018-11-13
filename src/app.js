@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import CourseListPage from './components/CourseListPage'
+import CoursesPage from './components/CoursesPage'
 import './styles/styles.scss';
 
 const NotFoundPage = () => (
@@ -15,7 +15,7 @@ const routes = (
   <BrowserRouter>
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
-        <Route path="/courses" component={CourseListPage}></Route>
+        <Route path="/courses" component={CoursesPage}></Route>
         <Route component={NotFoundPage} />
       </Switch>
   </BrowserRouter>
