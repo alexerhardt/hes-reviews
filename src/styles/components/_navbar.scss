@@ -1,0 +1,16 @@
+// _navbar.scss
+// customisations for the top navbar
+
+// ...
+
+.navbar {
+    height: 3rem;
+    width: 100%;
+}
+
+// Hide the desktop-only portion of the navbar
+@media (max-width: 640px) {
+    .nav-desktop {
+        display: none !important;
+    }
+}

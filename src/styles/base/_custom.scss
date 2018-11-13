@@ -1,0 +1,24 @@
+// customizations for spectre.css
+// includes extensions and variable overrides
+
+// ...
+
+// extend margin/padding utilities; not enough!
+
+$util-size-extensions: (
+    3: 0.8rem,
+    4: 1.2rem,
+    5: 1.6rem
+);
+
+@each $index, $size in $util-size-extensions {
+    .ml-#{$index} { margin-left: $size; }
+    .mr-#{$index} { margin-right: $size; }
+    .mb-#{$index} { margin-bottom: $size; }
+    .m-#{$index} { margin: $size; }
+    .p-#{$index} { padding: $size; }
+    .px-#{$index} {
+        padding-left: $size;
+        padding-right: $size;
+    }
+}

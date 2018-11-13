@@ -1,131 +1,21 @@
+// Follow these guidelines (more or less)
+// https://sass-guidelin.es/#architecture
+
+@import './base/custom';
+@import './base/base';
+
 @import '../../node_modules/spectre.css/src/spectre';
 @import '../../node_modules/spectre.css/src/spectre-exp.scss';
 @import '../../node_modules/spectre.css/src/spectre-icons.scss';
 
-html,
-body,
-#app,
-.container-outer {
-  height: 100%;
-}
+@import './layout/utils';
+
+@import './components/navbar';
+@import './components/offcanvas';
+
+@import './pages/home';
 
 
-// Extend spectre margin / padding utils - not enough
-$util-size-extensions: (
-  3: 0.8rem,
-  4: 1.2rem,
-  5: 1.6rem
-);
-
-@each $index, $size in $util-size-extensions {
-  .ml-#{$index} { margin-left: $size; }
-  .mr-#{$index} { margin-right: $size; }
-  .mb-#{$index} { margin-bottom: $size; }
-  .m-#{$index} { margin: $size; }
-  .p-#{$index} { padding: $size; }
-  .px-#{$index} {
-    padding-left: $size;
-    padding-right: $size;
-  }
-}
-
-.navbar {
-  height: 3rem;
-  // position: fixed;
-  width: 100%;
-}
-
-section[class^="section-"] {
-  padding: 2rem 0;
-}
-
-.section-hero {
-  height: calc(100vh - 12rem);
-}
-
-.v-center {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-  display: none;
-  position: fixed;
-  width: 1.7rem;
-  height: 1.5rem;
-  left: 36px;
-  top: 36px;
-}
-
-.burger {
-  position: absolute;
-  font-size: 1rem;
-  right: 1.2rem;
-  top: 1rem;
-  cursor: pointer;
-  display: none !important;
-}
 
 
-@media (max-width: 640px) {
-  .bm-burger-button {
-    display: unset;
-  }
 
-  .burger {
-    display: unset !important;
-  }
-
-  .nav-desktop {
-    display: none !important;
-  }
-}
-  
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
-}
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-  height: 24px;
-  width: 24px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-  background: #bdc3c7;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
-  }
-  
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-  fill: #373a47;
-  }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
-  }
-  
-  /* Individual item */
-  .bm-item {
-  display: inline-block;
-  }
-  
-  /* Styling of overlay */
-  .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-  }
-
-  

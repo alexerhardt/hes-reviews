@@ -1,0 +1,11 @@
+// homepage styling
+
+// ...
+
+section[class^="section-"] {
+    padding: 2rem 0;
+}
+
+.section-hero {
+    height: calc(100vh - 12rem);
+}
