@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import CoursesPage from './components/CoursesPage'
-import './styles/styles.scss';
 import 'react-table/react-table.css';
+import './styles/styles.scss';
 
 const NotFoundPage = () => (
   <div>

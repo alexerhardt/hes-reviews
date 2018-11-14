@@ -1,0 +1,21 @@
+// custom styles four courses page
+
+// ...
+
+$table-width-adj: (
+    code: 10,
+    name: 100,
+    reviews: 1,
+    rating: 1,
+    staff: 1,
+    difficulty: 1,
+    workload: 1 
+);
+
+@each $key, $width-adj in $table-width-adj {
+    .table-width-adj-#{$key} { 
+        flex: #{$width-adj} 2 auto!important; 
+        width: 80 !important;
+        min-width: 25px !important;
+    }
+}
