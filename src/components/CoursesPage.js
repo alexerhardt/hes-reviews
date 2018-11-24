@@ -28,8 +28,12 @@ class CoursesPage extends React.Component
       accessor: 'name',
       headerClassName: 'table-width-adj-name',
       className: 'table-width-adj-name',
-      minWidth: 200
-
+      minWidth: 200,
+      Cell: props => {
+        // const path = props.original.code.replace(" ", "_");
+        // return (<a href={"/reviews/" + path}>{props.value}</a>)
+        return (<a href={"/reviews/"}>{props.value}</a>)
+      }
     }, {
       Header: 'Reviews',
       accessor: 'reviews',

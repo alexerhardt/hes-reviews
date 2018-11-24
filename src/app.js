@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import CoursesPage from './components/CoursesPage'
+import ReviewsPage from './components/ReviewsPage';
 import 'react-table/react-table.css';
 import './styles/styles.scss';
 
@@ -17,6 +18,7 @@ const routes = (
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/courses" component={CoursesPage}></Route>
+        <Route path="/reviews" component={ReviewsPage}></Route>
         <Route component={NotFoundPage} />
       </Switch>
   </BrowserRouter>

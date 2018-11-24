@@ -58,7 +58,7 @@ class Header extends React.Component
 
         </header>
 
-        <i class="icon icon-menu burger" onClick={() => this.toggleMenu()}></i>
+        <i className="icon icon-menu burger" onClick={() => this.toggleMenu()}></i>
 
       </div>
     )

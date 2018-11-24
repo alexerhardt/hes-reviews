@@ -1,0 +1,8 @@
+.col-stats {
+    background-color: lightblue;
+    min-height: calc(100vh - #{$navbar-height});
+}
+
+.col-reviews {
+    background-color: lightcoral;
+}
