@@ -2,9 +2,15 @@ import React from 'react';
 import Header from './Header';
 import ReviewStats from './ReviewStats';
 import ReviewFilters from './ReviewFilters';
+import ReviewBox from './ReviewBox';
+import ReviewData from '../data/review-data.json';
 
 class ReviewsPage extends React.Component
 {
+  state = {
+    reviewData: ReviewData
+  }
+
   render()
   {
     return (
@@ -20,13 +26,10 @@ class ReviewsPage extends React.Component
             </div>
 
             <div className="column col-9 col-md-12 col-reviews">
-
+              {this.state.reviewData.map((review) => (<ReviewBox review={review} />))}
             </div>
 
-
           </div>
-
-
 
         </div>
 
