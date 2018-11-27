@@ -6,3 +6,14 @@
 .col-reviews {
     background-color: lightcoral;
 }
+
+
+@media (max-width: $brkpoint-md) {
+    .col-stats {
+        min-height: 400px;
+    }
+
+    .col-reviews {
+        min-height: 800px;
+    }
+}
