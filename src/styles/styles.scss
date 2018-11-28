@@ -2,12 +2,13 @@
 // https://sass-guidelin.es/#architecture
 
 @import './base/variables';
-@import './base/custom';
 @import './base/base';
 
 @import '../../node_modules/spectre.css/src/spectre';
 @import '../../node_modules/spectre.css/src/spectre-exp.scss';
 @import '../../node_modules/spectre.css/src/spectre-icons.scss';
+
+@import './base/custom';
 
 @import './layout/utils';
 

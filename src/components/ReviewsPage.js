@@ -25,7 +25,7 @@ class ReviewsPage extends React.Component
               <ReviewFilters />
             </div>
 
-            <div className="column col-9 col-md-12 col-reviews">
+            <div className="column col-9 col-md-12 col-reviews p-5">
               {this.state.reviewData.map((review) => (<ReviewBox review={review} />))}
             </div>
 
