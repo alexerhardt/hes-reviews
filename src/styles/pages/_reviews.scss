@@ -1,18 +1,27 @@
 .col-stats {
     background-color: lightblue;
     min-height: calc(100vh - #{$navbar-height});
+    padding: 1.6rem;
 }
 
 .col-reviews {
     background-color: lightcoral;
+    padding: 1.6rem;
 }
+
+div[class*="react-select"] {
+    color:#3b4351 !important;
+}
+
 
 @media (max-width: $brkpoint-md) {
     .col-stats {
-        min-height: 400px;
+        padding: 0.8rem;
+        min-height: unset;
     }
 
     .col-reviews {
-        min-height: 800px;
+        padding: 0.8rem;
     }
+
 }

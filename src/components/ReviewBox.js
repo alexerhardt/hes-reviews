@@ -10,10 +10,10 @@ class ReviewBox extends React.Component
         <div className="container">
 
           <div className="columns mb-3">
-            <div className="column col-3 mb-2">
+            <div className="column col-3 col-md-12 mb-2">
               {this.props.review.author}
             </div>
-            <div className="column col-3 col-ml-auto">
+            <div className="column col-3 col-md-12 col-ml-auto mb-2">
               {this.props.review.reviewDate}
             </div>
             <div className="column col-12">

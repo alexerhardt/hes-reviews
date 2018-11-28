@@ -34,30 +34,34 @@ class ReviewFilters extends React.Component
           <div className="col-12">
             <h3>Filters</h3>
           </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 mb-2">
             <Select 
               placeholder="Semesters"
               isMulti
               name="semesters"
               options={semesterData}
               className="multi-select"
-              classNamePrefix="select"
+              classNamePrefix="react-select"
             />
+          </div>
+          <div className="col-12 col-md-6 mb-2">
             <Select 
               placeholder="Rating"
               isMulti
               name="rating"
               options={ratingData}
               className="multi-select"
-              classNamePrefix="select"
+              classNamePrefix="react-select"
             />
+          </div>
+          <div className="col-12 col-md-6 mb-2"> 
             <Select 
               placeholder="Difficulty"
               isMulti
               name="difficulty"
               options={difficultyData}
               className="multi-select"
-              classNamePrefix="select"
+              classNamePrefix="react-select"
             />
           </div>
         </div>

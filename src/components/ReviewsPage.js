@@ -20,12 +20,12 @@ class ReviewsPage extends React.Component
         <div className="container container-inner container-inner--reviewspage">
           <div className="columns">
 
-            <div className="column col-3 col-md-12 col-stats">
+            <div className="column col-3 col-md-12 col-stats bg-primary">
               <ReviewStats />
               <ReviewFilters />
             </div>
 
-            <div className="column col-9 col-md-12 col-reviews p-5">
+            <div className="column col-9 col-md-12 col-reviews bg-gray">
               {this.state.reviewData.map((review) => (<ReviewBox review={review} />))}
             </div>
 
