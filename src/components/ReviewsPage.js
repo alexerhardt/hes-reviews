@@ -5,6 +5,10 @@ import ReviewFilters from './ReviewFilters';
 import ReviewBox from './ReviewBox';
 import ReviewData from '../data/review-data.json';
 
+
+const ratingLabels = ["Very Poor", "Poor", "Normal", "Good", "Very Good"];
+const difficultyLabels = ["Very Easy", "Easy", "Medium", "Hard", "Very Hard"];
+
 class ReviewsPage extends React.Component
 {
   state = {
@@ -16,6 +20,12 @@ class ReviewsPage extends React.Component
     }
   }
 
+  // constructor()
+  // {
+  //   super();
+  //   this.onChangeDifficultyFilter = this.onChangeDifficultyFilter.bind(this);
+  // }
+
   getFilteredReviews()
   {
     return ReviewData.filter((review) => {
@@ -26,7 +36,8 @@ class ReviewsPage extends React.Component
     });
   }
 
-  getFilterKeys()
+  // create filter options for filter component
+  getFilterOptions()
   {
     let sets = [new Set(), new Set(), new Set()];
 
@@ -36,18 +47,33 @@ class ReviewsPage extends React.Component
       sets[2].add(review.semester);
     });
 
-    // spread operator "spreads" set values in array
+    // TODO: term names are not sorted, do something about it
     return {
-      rating: [...sets[0]],
-      difficulty: [...sets[1]],
-      semester: [...sets[2]]
+      rating: [...sets[0]].sort().map(rating => 
+        ({value: rating, label: ratingLabels[rating - 1]})),
+      difficulty: [...sets[1]].sort().map(diff => 
+        ({value: diff, label: difficultyLabels[diff - 1]})),
+      semester: [...sets[2]].map(term => 
+        ({value: term, label: term}))
     }
+  }
+
+  onChangeDifficultyFilter = (e, o) => {
+    console.log("e: " + JSON.stringify(e, null, 2));
+    console.log("o: " + JSON.stringify(o, null, 2));
+    this.setState((prevState) => ({
+      activeFilters: {
+        rating: prevState.activeFilters.rating,
+        difficulty: e.map(opt => opt.value),
+        semester: prevState.activeFilters.semester
+      }
+    }));
   }
 
   render()
   {
-    // console.log("filterKeys: " + JSON.stringify(this.getFilterKeys(), null, 2));
     const filteredReviews = this.getFilteredReviews();
+    // console.log("opts: " + JSON.stringify(this.getFilterOptions(), null, 2));
     return (
       <div id="container-reviewspage" className="container-outer">
         <Header />
@@ -57,12 +83,14 @@ class ReviewsPage extends React.Component
 
             <div className="column col-3 col-md-12 col-stats bg-primary">
               <ReviewStats />
-              <ReviewFilters />
+              <ReviewFilters 
+                filterOptions={this.getFilterOptions()} 
+                onChangeDifficultyFilter={this.onChangeDifficultyFilter}
+              />
             </div>
 
             <div className="column col-9 col-md-12 col-reviews bg-gray">
-              {/* {filteredReviews.map((review) => (<ReviewBox review={review} />))} */}
-              {ReviewData.map((review) => (<ReviewBox review={review} />))}
+              {filteredReviews.map((review) => (<ReviewBox review={review} />))}
             </div>
 
           </div>
