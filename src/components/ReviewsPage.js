@@ -1,4 +1,6 @@
 import React from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+
 import Header from './Header';
 import ReviewStats from './ReviewStats';
 import ReviewFilters from './ReviewFilters';
@@ -73,6 +75,8 @@ class ReviewsPage extends React.Component
   render()
   {
     const filteredReviews = this.getFilteredReviews();
+    console.log("filteredReviews len: " + filteredReviews.length);
+
     // console.log("opts: " + JSON.stringify(this.getFilterOptions(), null, 2));
     return (
       <div id="container-reviewspage" className="container-outer">
@@ -90,7 +94,18 @@ class ReviewsPage extends React.Component
             </div>
 
             <div className="column col-9 col-md-12 col-reviews bg-gray">
-              {filteredReviews.map((review) => (<ReviewBox review={review} />))}
+              <TransitionGroup exit={false}> 
+                {filteredReviews.map((review) => (
+                  <CSSTransition
+                    key={review.reviewDate}
+                    timeout={300}
+                    classNames="fade"
+                  > 
+                    <ReviewBox review={review} />
+                  </CSSTransition> 
+                  ))}
+              </TransitionGroup>
+              
             </div>
 
           </div>

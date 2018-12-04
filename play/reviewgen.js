@@ -48,7 +48,7 @@ for(let i = 0; i < numberOfReviews; i++) {
     courseRating: getRandomInt(1, 5),
     staffRating: getRandomInt(1, 5),
     workload: getRandomInt(5, 20),
-    reviewText: reviewText
+    reviewText: reviewText.substring(0, getRandomInt(40, reviewText.length))
   });
 }
 
