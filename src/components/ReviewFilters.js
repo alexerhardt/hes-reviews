@@ -19,6 +19,7 @@ class ReviewFilters extends React.Component
               isMulti
               name="semesters"
               options={filterOpts.semester}
+              onChange={this.props.onChangeSemesterFilter}
               className="multi-select"
               classNamePrefix="react-select"
             />
@@ -29,6 +30,7 @@ class ReviewFilters extends React.Component
               isMulti
               name="rating"
               options={filterOpts.rating}
+              onChange={this.props.onChangeRatingFilter}
               className="multi-select"
               classNamePrefix="react-select"
             />

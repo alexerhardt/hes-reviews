@@ -22,12 +22,6 @@ class ReviewsPage extends React.Component
     }
   }
 
-  // constructor()
-  // {
-  //   super();
-  //   this.onChangeDifficultyFilter = this.onChangeDifficultyFilter.bind(this);
-  // }
-
   getFilteredReviews()
   {
     return ReviewData.filter((review) => {
@@ -60,24 +54,35 @@ class ReviewsPage extends React.Component
     }
   }
 
-  onChangeDifficultyFilter = (e, o) => {
-    console.log("e: " + JSON.stringify(e, null, 2));
-    console.log("o: " + JSON.stringify(o, null, 2));
-    this.setState((prevState) => ({
-      activeFilters: {
-        rating: prevState.activeFilters.rating,
-        difficulty: e.map(opt => opt.value),
-        semester: prevState.activeFilters.semester
-      }
-    }));
+  /**
+   * Mutating state directly is bad, but as long as shouldComponentUpdate()
+   * is not needed, this should do. See discussion:
+   * https://stackoverflow.com/a/29537485/6854595
+   */
+
+  onChangeDifficultyFilter = (e) => 
+  {
+    this.state.activeFilters.difficulty = e.map(opt => opt.value);
+    this.forceUpdate();
+  }
+
+  onChangeSemesterFilter = (e) =>
+  {
+    console.log("onChangeSemesterFilter fired");
+    this.state.activeFilters.semester = e.map(opt => opt.value);
+    this.forceUpdate();
+  }
+
+  onChangeRatingFilter = (e) =>
+  {
+    this.state.activeFilters.rating = e.map(opt => opt.value);
+    this.forceUpdate();
   }
 
   render()
   {
     const filteredReviews = this.getFilteredReviews();
-    console.log("filteredReviews len: " + filteredReviews.length);
 
-    // console.log("opts: " + JSON.stringify(this.getFilterOptions(), null, 2));
     return (
       <div id="container-reviewspage" className="container-outer">
         <Header />
@@ -90,6 +95,8 @@ class ReviewsPage extends React.Component
               <ReviewFilters 
                 filterOptions={this.getFilterOptions()} 
                 onChangeDifficultyFilter={this.onChangeDifficultyFilter}
+                onChangeRatingFilter={this.onChangeRatingFilter}
+                onChangeSemesterFilter={this.onChangeSemesterFilter}
               />
             </div>
 
@@ -105,7 +112,7 @@ class ReviewsPage extends React.Component
                   </CSSTransition> 
                   ))}
               </TransitionGroup>
-              
+
             </div>
 
           </div>
