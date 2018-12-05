@@ -1,10 +1,14 @@
 import React from 'react';
 import Header from './Header';
+import BasicSelect from './BasicSelect';
+import Maps from '../utils/Maps';
+
 
 class WriteReviewPage extends React.Component
 {
   render()
   {
+    console.log("Maps: " + Maps.difficulty);
     return (
       <div id="container-writepage" className="outer-container">
         <Header />
@@ -15,12 +19,10 @@ class WriteReviewPage extends React.Component
               {/* TODO: Abstract this into components */}
               <div className="column col-3">
                 <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
+                  <BasicSelect 
+                    placeholder={"Difficulty..."}
+                    options={Maps.difficulty}
+                  />
                 </div>
               </div>
 
