@@ -14,46 +14,36 @@ class WriteReviewPage extends React.Component
         <Header />
 
         <div className="container-inner container-inner--writepage p-5">
-          <div className="container review-form-items">
+          <div className="container review-form-items p-3">
             <div className="columns">
               {/* TODO: Abstract this into components */}
               <div className="column col-3">
-                <div class="form-group">
-                  <BasicSelect 
-                    placeholder={"Difficulty..."}
-                    options={Maps.difficulty}
-                  />
-                </div>
+                <h5>Difficulty</h5>
+                <BasicSelect 
+                  placeholder={"Difficulty..."}
+                  options={Maps.difficulty}
+                />
               </div>
 
               <div className="column col-3">
-                <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
-                </div>
+                <h5>Rating</h5>
+                <BasicSelect 
+                  placeholder={"Rating..."}
+                  options={Maps.rating}
+                />
               </div>
               <div className="column col-3">
-                <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
-                </div>
+                <h5>Semester</h5>
+                <BasicSelect 
+                  placeholder={"Semester..."}
+                  options={Maps.semester}
+                />
               </div>
               <div className="column col-3">
-                <div class="form-group">
-                  <select class="form-select">
-                    <option>Choose an option</option>
-                    <option>Slack</option>
-                    <option>Skype</option>
-                    <option>Hipchat</option>
-                  </select>
+                <h5>Weekly Workload</h5>
+                <div className="form-group has-icon-left">
+                  <input class="form-input" type="text" id="workload-input" placeholder="Hours / Week, eg: 10" />
+                  <i class="form-icon icon icon-arrow-right"></i>
                 </div>
               </div>
 
@@ -69,9 +59,12 @@ class WriteReviewPage extends React.Component
           </div>
 
           <div className="container review-submit-box">
-
+            <div className="columns">
+              <div className="column col-3 col-ml-auto">
+                <button className="btn btn-lg btn-primary float-right px-4">Send Review</button>
+              </div>
+            </div>
           </div>
-
         </div>
 
       </div>

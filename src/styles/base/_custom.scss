@@ -18,7 +18,7 @@ $util-size-extensions: (
     .m-#{$index} { margin: $size; }
     .p-#{$index} { padding: $size; }
     .px-#{$index} {
-        padding-left: $size;
-        padding-right: $size;
+        padding-left: $size !important;
+        padding-right: $size !important;
     }
 }

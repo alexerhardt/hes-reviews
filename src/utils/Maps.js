@@ -13,7 +13,18 @@ const Maps = {
     [3, "Okay"],
     [4, "Good"],
     [5, "Great"]
-  ])    
+  ]),
+
+  semester: new Map([
+    ["2016-a", "Spring 2016"],
+    ["2016-b", "Summer 2016"],
+    ["2016-c", "Fall 2016"],
+    ["2017-a", "Spring 2017"],
+    ["2017-b", "Summer 2017"],
+    ["2017-c", "Fall 2017"],
+    ["2018-a", "Spring 2018"],
+    ["2018-b", "Summer 2018"],
+  ]),
 };
 
 export default Maps;
