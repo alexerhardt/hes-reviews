@@ -10,6 +10,7 @@
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
+    "marked": "^0.5.2",
     "match-sorter": "^2.3.0",
     "react": "16.0.0",
     "react-burger-menu": "^2.5.4",

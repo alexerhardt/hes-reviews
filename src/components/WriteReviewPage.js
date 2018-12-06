@@ -1,11 +1,32 @@
 import React from 'react';
 import Header from './Header';
 import BasicSelect from './BasicSelect';
+import MarkdownEditor from './MarkdownEditor';
+
 import Maps from '../utils/Maps';
 
 
 class WriteReviewPage extends React.Component
 {
+  FIRST_TIME = 1;
+
+  state = {
+      editorValue: "Hello world!",
+  }
+
+  handleEditorFocus = () => {
+      if (this.FIRST_TIME) {
+          this.FIRST_TIME = 0;
+          this.setState(() => ({
+              editorValue: ""
+          }));
+      }
+  }
+
+  handleEditorChange = (event) => {
+      this.setState({editorValue: event.target.value});
+  }
+      
   render()
   {
     console.log("Maps: " + Maps.difficulty);
@@ -48,13 +69,15 @@ class WriteReviewPage extends React.Component
               </div>
 
             </div>
-
-
-
-
           </div>
 
-          <div className="container review-editor-box">
+          <div className="container markdown-editor-wrapper">
+            <MarkdownEditor
+              windowPosition={this.editorWindowStates}
+              editorValue={this.state.editorValue}
+              onFocus={this.handleEditorChange}
+              onChange={this.handleEditorChange}
+            />
 
           </div>
 
@@ -71,5 +94,11 @@ class WriteReviewPage extends React.Component
     )
   }
 }
+const editorWindowStates = {
+  INIT: "",
+  LEFT: "slide-left",
+  RIGHT: "slide-right"
+};
+WriteReviewPage.editorWindowState = editorWindowStates;
 
 export default WriteReviewPage;

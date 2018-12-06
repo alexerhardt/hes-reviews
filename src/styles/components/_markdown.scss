@@ -1,0 +1,126 @@
+$toggle-button-height: 2.5rem;
+
+$text-pane-margin-top: 20%;
+$text-pane-margin-side: 20%;
+$text-pane-width: calc(100% - #{$text-pane-margin-top});
+$text-pane-height: calc(100% - #{$text-pane-margin-side});
+
+$editor-max-width: 800px;
+
+$markdown-editor-height: 50vh;
+
+$sub-pane-preview-bg-color: lightcoral;
+$sub-pane-editor-bg-color: lightblue;
+
+$pane-slide-anim-duration: 1s;
+
+.markdown-editor-wrapper {
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ #sliding-window {
+     height: $markdown-editor-height;
+     width: 200%;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .sub-pane-text {
+     height: 100%;
+     font-family: 'Lato';
+     font-size: 1.15rem;
+     display: flex;
+     align-items: center;
+     width: 50%;
+ }
+ 
+ .sub-pane-text > * {
+     margin: 0 auto;
+     width: $text-pane-width;
+     height: $text-pane-height; 
+     padding: 3rem;
+     border: 1px solid grey;
+     background-color: white;
+ }
+ 
+ .sub-pane-text > textarea {
+     resize: none;
+     display: block;
+ }
+ 
+ #editor {
+     max-width: $editor-max-width;
+ } 
+ 
+ #preview {
+     overflow-y: scroll;
+ }
+ 
+ .sub-pane-editor {
+     background-color: $sub-pane-editor-bg-color;
+ }
+ 
+ .sub-pane-preview {
+     background-color: $sub-pane-preview-bg-color;
+ }
+ 
+ .sub-pane-button {
+     height: $toggle-button-height;
+ }
+ 
+ div[class*="slide-"] {
+     animation-duration: $pane-slide-anim-duration;
+     animation-fill-mode: forwards;
+ }
+ 
+ .slide-left {
+     animation-name: slide-left;
+ }
+ 
+ .slide-right {
+     animation-name: slide-right;
+ }
+ 
+ @keyframes slide-left {
+     from {  
+         transform: translateX(0%); 
+     }
+     to { 
+         transform: translateX(-50%); 
+     }
+ }
+ 
+ @keyframes slide-right {
+     from { 
+         transform: translateX(-50%); 
+     }
+     to { 
+         transform: translateX(0%); 
+     }
+ }
+ 
+ @media (min-width: 1200px) {
+     #sliding-window {
+         width: 100%;
+     }
+ 
+     @keyframes slide-left {
+         from {  
+             width: 100%;
+         }
+         to { 
+             width: 200%;
+         }
+     }
+ 
+     @keyframes slide-right {
+         from { 
+             width: 200%;
+         }
+         to { 
+             width: 100%;
+         }
+     }
+ }
