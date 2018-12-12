@@ -1,18 +1,12 @@
-$toggle-button-height: 2.5rem;
-
-$text-pane-margin-top: 20%;
-$text-pane-margin-side: 20%;
-$text-pane-width: calc(100% - #{$text-pane-margin-top});
-$text-pane-height: calc(100% - #{$text-pane-margin-side});
-
+$text-pane-frame-margin-top: 20%;
+$text-pane-frame-margin-side: 20%;
+$text-pane-frame-width: 100%;
+$text-pane-frame-height: 50vh;
 $editor-max-width: 800px;
-
+$user-textbox-padding: 2rem;
+$user-textbox-border: 1px solid #f2f2f2;
 $markdown-editor-height: 50vh;
-
-$sub-pane-preview-bg-color: lightcoral;
-$sub-pane-editor-bg-color: lightblue;
-
-$pane-slide-anim-duration: 1s;
+$pane-frame-slide-anim-duration: 1s;
 
 .markdown-editor-wrapper {
     width: 100%;
@@ -20,58 +14,36 @@ $pane-slide-anim-duration: 1s;
  }
  
  #sliding-window {
-     height: $markdown-editor-height;
      width: 200%;
      overflow: hidden;
      display: flex;
      align-items: center;
  }
  
- .sub-pane-text {
-     height: 100%;
-     font-family: 'Lato';
-     font-size: 1.15rem;
-     display: flex;
-     align-items: center;
+ .pane-frame {
      width: 50%;
  }
  
- .sub-pane-text > * {
+ .user-textbox {
      margin: 0 auto;
-     width: $text-pane-width;
-     height: $text-pane-height; 
-     padding: 3rem;
-     border: 1px solid grey;
-     background-color: white;
+     width: $text-pane-frame-width;
+     height: $text-pane-frame-height; 
+     padding: $user-textbox-padding;
  }
  
- .sub-pane-text > textarea {
+ .user-textbox--editor {
      resize: none;
      display: block;
- }
- 
- #editor {
      max-width: $editor-max-width;
- } 
- 
- #preview {
+ }
+
+ .user-textbox--preview {
      overflow-y: scroll;
  }
  
- .sub-pane-editor {
-     background-color: $sub-pane-editor-bg-color;
- }
- 
- .sub-pane-preview {
-     background-color: $sub-pane-preview-bg-color;
- }
- 
- .sub-pane-button {
-     height: $toggle-button-height;
- }
  
  div[class*="slide-"] {
-     animation-duration: $pane-slide-anim-duration;
+     animation-duration: $pane-frame-slide-anim-duration;
      animation-fill-mode: forwards;
  }
  

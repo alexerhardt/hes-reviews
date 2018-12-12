@@ -1,0 +1,14 @@
+Next:
+
+- Make write-review container more compact:
+  85% - 95% of current width
+
+- Adapt write-review to mobile
+
+- Refactor Sass code (it's pretty disgusting)
+
+- Create user page
+
+- Do front-page search engine
+
+- Improve style (a little bit)

@@ -21,4 +21,8 @@ $util-size-extensions: (
         padding-left: $size !important;
         padding-right: $size !important;
     }
+    .py-#{$index} {
+        padding-top: $size !important;
+        padding-bottom: $size !important;
+    }
 }

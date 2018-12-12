@@ -34,7 +34,7 @@ class Header extends React.Component
   render()
   {
     return (
-      <div id="container-nav">
+      <div id="container-nav" className="bg-white">
 
         <Menu 
           isOpen={this.state.menuOpen}

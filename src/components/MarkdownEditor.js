@@ -11,19 +11,27 @@ class MarkdownEditor extends React.Component
   {
     return (
       <div id="sliding-window" className={this.props.windowPosition}>
-          <div className="sub-pane-text sub-pane-editor">
-              <textarea 
-                  id="editor"
-                  value={this.props.editorValue}
-                  onFocus={this.props.onFocus}
-                  onChange={this.props.onChange}
-              >
-              </textarea>
+          <div className="pane-frame pane-frame--editor py-5">
+            <div className="pane pane--editor">
+                <h3 className="text-center">Write Here</h3>
+                <textarea 
+                    className="user-textbox user-textbox--editor card"
+                    value={this.props.editorValue}
+                    onFocus={this.props.onFocus}
+                    onChange={this.props.onChange}
+                >
+                </textarea>
+            </div>
           </div>
-          <div className="sub-pane-text sub-pane-preview">
-              <div id="preview" 
+
+          <div className="pane-frame pane-frame--preview py-5">
+            <div className="pane pane--preview">
+              <h3 className="text-center">Preview</h3>
+              <div  
+                className="user-textbox user-textbox-preview"
                 dangerouslySetInnerHTML={this.createMarkup(this.props.editorValue)}>
               </div>
+            </div>
           </div>
       </div>
     )

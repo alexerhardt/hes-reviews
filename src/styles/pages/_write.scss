@@ -1,15 +1,17 @@
 .container-inner--writepage {
     height: calc(100vh - #{$navbar-height});
+    width: 85%;
+    margin: 0 auto;
 }
 .review-form-items {
-    background-color: palevioletred;
+    // background-color: palevioletred;
 }
 
 .review-editor-box {
     height: 80%;
-    background-color: aquamarine;
+    // background-color: aquamarine;
 }
 
 .review-submit-box {
-    background-color: orange;
+    // background-color: orange;
 }
