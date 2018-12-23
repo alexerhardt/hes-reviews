@@ -73,7 +73,7 @@ $pane-frame-slide-anim-duration: 1s;
      }
  }
  
- @media (min-width: 1200px) {
+ @media (min-width: $brkpoint-xl) {
      #sliding-window {
          width: 100%;
      }

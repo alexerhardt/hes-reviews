@@ -2,6 +2,7 @@
     height: calc(100vh - #{$navbar-height});
     width: 85%;
     margin: 0 auto;
+    padding: 1.6rem;
 }
 .review-form-items {
     // background-color: palevioletred;
@@ -15,3 +16,28 @@
 .review-submit-box {
     // background-color: orange;
 }
+ 
+.btn--editor {
+    float: right;
+}
+
+.btn--send-review {
+    margin-left: 0.8rem;
+}
+
+@media (max-width: $brkpoint-sm) {
+    .container-inner--writepage {
+        height: unset;
+        width: 98%;
+        padding: 0.8rem;
+    }
+
+    .btn--editor {
+        width: 48%;
+        font-size: 0.7rem !important;
+    }
+
+    .btn--send-review {
+        margin-left: 4%;
+    }
+} 

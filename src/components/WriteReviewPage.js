@@ -63,10 +63,10 @@ class WriteReviewPage extends React.Component
       <div id="container-writepage" className="outer-container bg-gray">
         <Header />
 
-        <div className="container-inner container-inner--writepage p-5">
+        <div className="container-inner container-inner--writepage">
           <div className="container review-form-items card p-3">
             <div className="columns">
-              <div className="column col-3">
+              <div className="column col-3 col-sm-12 py-2">
                 <h5>Difficulty</h5>
                 <BasicSelect 
                   placeholder={"Difficulty..."}
@@ -74,21 +74,21 @@ class WriteReviewPage extends React.Component
                 />
               </div>
 
-              <div className="column col-3">
+              <div className="column col-3 col-sm-12 py-2">
                 <h5>Rating</h5>
                 <BasicSelect 
                   placeholder={"Rating..."}
                   options={Maps.rating}
                 />
               </div>
-              <div className="column col-3">
+              <div className="column col-3 col-sm-12 py-2">
                 <h5>Semester</h5>
                 <BasicSelect 
                   placeholder={"Semester..."}
                   options={Maps.semester}
                 />
               </div>
-              <div className="column col-3">
+              <div className="column col-3 col-sm-12 py-2">
                 <h5>Weekly Workload</h5>
                 <div className="form-group has-icon-left">
                   <input class="form-input" type="text" id="workload-input" placeholder="Hours / Week, eg: 10" />
@@ -113,14 +113,14 @@ class WriteReviewPage extends React.Component
               <div className="column col-12">
                 {/* Inverted due to flex + float */}
                 <button 
-                  className="btn btn-lg btn-primary float-right px-4 ml-4"
+                  className="btn btn-lg btn-primary btn--editor btn--send-review"
                 >
                   <i className="icon icon-share"></i>
                   &nbsp;&nbsp;
                   Submit Review
                 </button>
 
-                <button className="btn btn-lg float-right px-4"
+                <button className="btn btn-lg btn--editor btn--preview"
                   onClick={this.handleToggleClick}
                 >
                   <i className="icon icon-resize-horiz"></i>
@@ -136,11 +136,5 @@ class WriteReviewPage extends React.Component
     )
   }
 }
-// const editorWindowStates = {
-//   INIT: "",
-//   LEFT: "slide-left",
-//   RIGHT: "slide-right"
-// };
-// WriteReviewPage.editorWindowState = editorWindowStates;
 
 export default WriteReviewPage;
