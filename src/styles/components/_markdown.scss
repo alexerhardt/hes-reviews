@@ -1,18 +1,31 @@
-$text-pane-frame-margin-top: 20%;
-$text-pane-frame-margin-side: 20%;
-$text-pane-frame-width: 100%;
-$text-pane-frame-height: 50vh;
-$editor-max-width: 800px;
-$user-textbox-padding: 2rem;
-$user-textbox-border: 1px solid #f2f2f2;
-$markdown-editor-height: 50vh;
-$pane-frame-slide-anim-duration: 1s;
+/**
+ * _markdown.scss
+ *  Markdown editor component styling
+ */
 
-.markdown-editor-wrapper {
+
+/******************************************************************************
+ *                                                                               
+ *     BASIC LAYOUT & STYLING
+ * 
+ *****************************************************************************/
+
+/**
+ * Outer wrapper for the markdown editor
+ * Important - sliding window design relies on this
+ */
+#markdown-editor-wrapper {
     width: 100%;
     overflow: hidden;
- }
+}
  
+
+ /**
+  * The main mechanism for the sliding window which comprises
+  * the editor and the preview
+  * Forces a width of 200% by default, so that on mobile devices
+  * the preview pane starts hidden (it will take 50% of 200% = 100%)
+  */
  #sliding-window {
      width: 200%;
      overflow: hidden;
@@ -20,21 +33,33 @@ $pane-frame-slide-anim-duration: 1s;
      align-items: center;
  }
  
+
+/**
+ * A pane frame is the outer container of one of the two panes of
+ * the window (1. editor, 2. preview).
+ */
  .pane-frame {
      width: 50%;
  }
  
+
+ /**
+  * The user textbox is the innermost container for user text
+  * In the case of the editor, it's a textarea
+  * For the preview it's a simple div
+  * Height and padding are mere styling concerns
+  */
  .user-textbox {
      margin: 0 auto;
-     width: $text-pane-frame-width;
-     height: $text-pane-frame-height; 
-     padding: $user-textbox-padding;
+     width: 100%;
+     height: 50vh;
+     padding: 2rem;
  }
  
  .user-textbox--editor {
      resize: none;
      display: block;
-     max-width: $editor-max-width;
+     max-width: 800px;
  }
 
  .user-textbox--preview {
@@ -42,8 +67,20 @@ $pane-frame-slide-anim-duration: 1s;
  }
  
  
+
+/******************************************************************************
+ *                                                                               
+ *    SLIDING WINDOW ANIMATION 
+ * 
+ *****************************************************************************/
+
+ /**
+  * The sliding window animation moves the editor / preview around
+  * without altering their basic shape
+  */
+
  div[class*="slide-"] {
-     animation-duration: $pane-frame-slide-anim-duration;
+     animation-duration: 1s;
      animation-fill-mode: forwards;
  }
  
@@ -73,6 +110,20 @@ $pane-frame-slide-anim-duration: 1s;
      }
  }
  
+
+
+/******************************************************************************
+ *                                                                               
+ *   RESPONSIVE 
+ * 
+ *****************************************************************************/
+
+ /**
+  * In desktop, the editor and the preview are both visible at once by default.
+  * Counter-intuitively, when the sliding window is 200% it means that
+  * both preview and editor are visible.
+  */
+
  @media (min-width: $brkpoint-xl) {
      #sliding-window {
          width: 100%;

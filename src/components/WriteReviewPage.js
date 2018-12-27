@@ -64,7 +64,8 @@ class WriteReviewPage extends React.Component
         <Header />
 
         <div className="container-inner container-inner--writepage">
-          <div className="container review-form-items card p-3">
+
+          <div className="container review-form-items card p-3 mb-5">
             <div className="columns">
               <div className="column col-3 col-sm-12 py-2">
                 <h5>Difficulty</h5>
@@ -99,7 +100,7 @@ class WriteReviewPage extends React.Component
             </div>
           </div>
 
-          <div className="markdown-editor-wrapper">
+          <div id="markdown-editor-wrapper" className="mb-5">
             <MarkdownEditor
               windowPosition={this.state.windowPosition}
               editorValue={this.state.editorValue}

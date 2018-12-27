@@ -1,9 +1,4 @@
-Next:
-
-- Make write-review container more compact:
-  85% - 95% of current width
-
-- Adapt write-review to mobile
+To do:
 
 - Refactor Sass code (it's pretty disgusting)
 
@@ -12,3 +7,14 @@ Next:
 - Do front-page search engine
 
 - Improve style (a little bit)
+
+
+
+Did:
+
+- Adapt write-review to mobile. Form takes full width. Buttons now side
+  by side in mobile resolution. Had to do quite a bit of Sass customization;
+  spectre.css not holding up.
+
+- Make write-review container more compact:
+  85% - 95% of current width

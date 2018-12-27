@@ -11,7 +11,7 @@ class MarkdownEditor extends React.Component
   {
     return (
       <div id="sliding-window" className={this.props.windowPosition}>
-          <div className="pane-frame pane-frame--editor py-5">
+          <div className="pane-frame pane-frame--editor">
             <div className="pane pane--editor">
                 <h3 className="text-center">Write Here</h3>
                 <textarea 
@@ -24,7 +24,7 @@ class MarkdownEditor extends React.Component
             </div>
           </div>
 
-          <div className="pane-frame pane-frame--preview py-5">
+          <div className="pane-frame pane-frame--preview">
             <div className="pane pane--preview">
               <h3 className="text-center">Preview</h3>
               <div  

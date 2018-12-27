@@ -1,20 +1,17 @@
+/**
+ * _write.scss
+ *  Styling for the review write page
+ */
+
+ 
+/**
+ * The container takes the whole page minus the navbar height
+ */
 .container-inner--writepage {
     height: calc(100vh - #{$navbar-height});
     width: 85%;
     margin: 0 auto;
     padding: 1.6rem;
-}
-.review-form-items {
-    // background-color: palevioletred;
-}
-
-.review-editor-box {
-    height: 80%;
-    // background-color: aquamarine;
-}
-
-.review-submit-box {
-    // background-color: orange;
 }
  
 .btn--editor {
@@ -25,6 +22,9 @@
     margin-left: 0.8rem;
 }
 
+/**
+ * In movile, the container is wider and the buttons have a set width
+ */
 @media (max-width: $brkpoint-sm) {
     .container-inner--writepage {
         height: unset;
@@ -32,6 +32,10 @@
         padding: 0.8rem;
     }
 
+    /**
+     * 48% width * 2 buttons = 96%
+     * + 4% margin = 100%
+     */
     .btn--editor {
         width: 48%;
         font-size: 0.7rem !important;
