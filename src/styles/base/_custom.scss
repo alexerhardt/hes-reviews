@@ -25,4 +25,12 @@ $util-size-extensions: (
         padding-top: $size !important;
         padding-bottom: $size !important;
     }
+    .mx-#{$index} {
+        margin-left: $size !important;
+        margin-right: $size !important;
+    }
+    .my-#{$index} {
+        margin-top: $size !important;
+        margin-bottom: $size !important;
+    }
 }

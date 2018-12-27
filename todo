@@ -1,8 +1,17 @@
 To do:
 
-- Refactor Sass code (it's pretty disgusting)
+USER PAGE
 
-- Create user page
+- Fix ReviewBox bug with overflowing date text
+
+- Add user options to ReviewBox (add / delete)
+
+- Add user inputs and button to Password Options
+
+- Add Delete Account option
+
+
+GENERAL
 
 - Do front-page search engine
 
@@ -12,9 +21,17 @@ To do:
 
 Did:
 
-- Adapt write-review to mobile. Form takes full width. Buttons now side
-  by side in mobile resolution. Had to do quite a bit of Sass customization;
-  spectre.css not holding up.
+27/12/2018
+Refactor write-review and markdown editor Sass
+Add user page skeleton
 
-- Make write-review container more compact:
-  85% - 95% of current width
+
+UNKOWN DATE
+Adapt write-review to mobile. Form takes full width. Buttons now side
+by side in mobile resolution. Had to do quite a bit of Sass customization;
+spectre.css not holding up.
+
+
+UNKNOWN DATE
+Make write-review container more compact:
+85% - 95% of current width
