@@ -8,5 +8,18 @@
     width: 66%;
 }
 
-// TODO:
-// Mobile will need to be set to nearly 100%
+.btn__account-opt {
+    float: right;
+}
+
+@media (max-width: $brkpoint-lg) {
+    .container-inner__accountpage {
+        width: 80%;
+    }
+}
+
+@media (max-width: $brkpoint-md) {
+    .container-inner__accountpage {
+        width: 98%;
+    }
+}

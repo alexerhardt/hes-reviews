@@ -7,10 +7,10 @@ const ReviewBox = props => (
         <div className="container">
 
           <div className="columns mb-3">
-            <div className="column col-3 col-md-12 mb-2">
+            <div className="column col-6 col-md-12 mb-2">
               {props.review.author}
             </div>
-            <div className="column col-3 col-md-12 col-ml-auto mb-2">
+            <div className="column col-6 col-md-12 col-ml-auto mb-2 text-right">
               {props.review.reviewDate}
             </div>
             <div className="column col-12">
