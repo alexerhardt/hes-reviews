@@ -83,7 +83,7 @@ class AccountPage extends React.Component
               <div className="column col-12">
                 {
                   userReviews.map((review) => (
-                    <ReviewBox review={review}></ReviewBox>
+                    <ReviewBox review={review} showEditOptions></ReviewBox>
                   ))
                 }
               </div>
