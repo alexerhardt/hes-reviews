@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import CourseSearchBox from './CourseSearchBox';
 
 class HomePage extends React.Component
 {
@@ -18,7 +19,7 @@ class HomePage extends React.Component
                 <div className="col-md-12 col-7 col-mx-auto">
                   <h1>Course Reviews for <br /> Harvard Extension School</h1>
                   <h5 className="mb-5">Find info on course workloads, difficulty and more!</h5>
-                  <input type="text"/>
+                  <CourseSearchBox />
                 </div>
               </div>
             </div>

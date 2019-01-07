@@ -1,25 +1,24 @@
 To do:
 
-USER PAGE
-
-- Fix ReviewBox bug with overflowing date text
-
-- Add user options to ReviewBox (add / delete)
-
-- Add user inputs and button to Password Options
-
-- Add Delete Account option
-
 
 GENERAL
 
 - Do front-page search engine
+
+- Wire dynamic routes
 
 - Improve style (a little bit)
 
 
 
 Did:
+
+UNKNOWN DATE
+Fix ReviewBox bug with overflowing date text
+Add user options to ReviewBox (add / delete)
+Add user inputs and button to Password Options
+Add Delete Account option
+
 
 27/12/2018
 Refactor write-review and markdown editor Sass
