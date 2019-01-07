@@ -1,6 +1,38 @@
 import React from 'react';
 import Header from './Header';
 import CourseSearchBox from './CourseSearchBox';
+import jss from 'jss';
+
+// This CSS-in-JS for the course search component
+// The course search uses React Themable:
+// https://github.com/markdalgleish/react-themeable#jss
+// Styles are attached to the JSS file (not sure how...)
+// then style classes are passed down to the search component
+const searchBoxStyle = jss.createStyleSheet({
+  container: {
+    "position": "absolute",
+    "width": "100%"
+  },
+  suggestionsContainer: {
+    "background-color": "white",
+    "border": "0",
+    "box-shadow": "0 .25rem 1rem rgba(48,55,66,.15)"
+  },
+  suggestionsList: {
+    "list-style-type": 'none',
+    "padding": "0.35rem",
+    "margin": "0.8rem 0",
+    "text-align": "left"
+  },
+  suggestion: {
+    "overflow": "hidden",
+    "text-overflow": "ellipsis",
+    "white-space": "nowrap",
+    "color": "black",
+    "border-bottom": "1px solid #dadee4",
+    "margin": "0 0 0.5rem"
+  }
+}).attach();
 
 class HomePage extends React.Component
 {
@@ -19,7 +51,9 @@ class HomePage extends React.Component
                 <div className="col-md-12 col-7 col-mx-auto">
                   <h1>Course Reviews for <br /> Harvard Extension School</h1>
                   <h5 className="mb-5">Find info on course workloads, difficulty and more!</h5>
-                  <CourseSearchBox />
+                  <div className="course-search-wrapper__home">
+                    <CourseSearchBox theme={searchBoxStyle.classes} />
+                  </div>
                 </div>
               </div>
             </div>

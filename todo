@@ -1,17 +1,22 @@
 To do:
 
+HOMEPAGE SEARCHBOX
+Add more styling: highlight color, text color, better spacing, only separate last
+Wire list items as dynamic routes
+
 
 GENERAL
-
 - Do front-page search engine
-
 - Wire dynamic routes
-
 - Improve style (a little bit)
 
 
 
 Did:
+
+07/01/2018
+Wire front-page search engine
+Add some styling to searchbox with JSS
 
 UNKNOWN DATE
 Fix ReviewBox bug with overflowing date text

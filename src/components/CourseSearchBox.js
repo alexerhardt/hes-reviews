@@ -4,12 +4,16 @@ import matchSorter from 'match-sorter';
 
 import courseData from '../data/random-data.json';
 
+
 class CourseSearchBox extends React.Component
 {
   state = {
     searchValue: '',
     matchedCourses: []
   }
+
+
+  
 
   onSuggestionsFetchRequested = ({ value }) => 
   {
@@ -30,9 +34,9 @@ class CourseSearchBox extends React.Component
 
   renderSuggestion = (suggestion) => 
   (
-      <div>
-          {`${suggestion.code} - ${suggestion.name}`}
-      </div>
+      // <div>
+          `${suggestion.code} - ${suggestion.name}`
+      // </div>
   );
 
   onChange = (event, { newValue }) =>
@@ -49,6 +53,7 @@ class CourseSearchBox extends React.Component
   render()
   {
     console.log("render() called");
+    console.log("theme: " + JSON.stringify(this.props.theme));
 
     const { searchValue, matchedCourses } = this.state;
 
@@ -58,17 +63,22 @@ class CourseSearchBox extends React.Component
       onChange: this.onChange
     }
 
+    const theme = {
+      container: 'alex-am-a-container',
+      input: 'alex-am-a-input'
+    }
+
     return (
-      <div>
-        <Autosuggest 
-          suggestions={matchedCourses}
-          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-          onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-          getSuggestionValue={this.getSuggestionValue}
-          renderSuggestion={this.renderSuggestion}
-          inputProps={inputProps}
-        />
-      </div>
+      <Autosuggest 
+        suggestions={matchedCourses}
+        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+        getSuggestionValue={this.getSuggestionValue}
+        renderSuggestion={this.renderSuggestion}
+        inputProps={inputProps}
+        theme={this.props.theme}
+        // theme={theme}
+      />
     )
   }
 
