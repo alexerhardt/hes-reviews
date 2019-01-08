@@ -24,6 +24,11 @@ const searchBoxStyle = jss.createStyleSheet({
     "margin": "0.8rem 0",
     "text-align": "left"
   },
+  suggestionHighlighted: {
+    "background-color": "#f1f1fc",
+    "color": "#5755d9 !important",
+    "cursor": "pointer"
+  },
   suggestion: {
     "overflow": "hidden",
     "text-overflow": "ellipsis",
