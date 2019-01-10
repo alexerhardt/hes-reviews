@@ -1,18 +1,19 @@
 To do:
 
-HOMEPAGE SEARCHBOX
-Add more styling: highlight color, text color, better spacing, only separate last
-Wire list items as dynamic routes
-
 
 GENERAL
 - Do front-page search engine
 - Wire dynamic routes
+- Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
 
 
 Did:
+
+08/01/2018
+Improve CourseSearchBox styling
+Wire dynamic course routes in CourseSearchBox and AppRouter
 
 07/01/2018
 Wire front-page search engine

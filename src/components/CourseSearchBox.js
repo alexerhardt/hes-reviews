@@ -52,7 +52,7 @@ class CourseSearchBox extends React.Component
     const url = suggestion.code.trim().replace(/\s/g, '-').toLowerCase();
 
     return (
-      <Link to={'course/' + url}>{`${suggestion.code} - ${suggestion.name}`}</Link>
+      <Link to={'reviews/' + url}>{`${suggestion.code} - ${suggestion.name}`}</Link>
     );
   };
 

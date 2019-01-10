@@ -21,7 +21,7 @@ const routes = (
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
         <Route path="/courses" component={CoursesPage}></Route>
-        <Route path="/reviews" component={ReviewsPage}></Route>
+        <Route path="/reviews/:id" component={ReviewsPage}></Route>
         <Route path="/write-review" component={WriteReviewPage}></Route>
         <Route path="/my-account" component={AccountPage}></Route>
         <Route component={NotFoundPage} />

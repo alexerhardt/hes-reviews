@@ -33,6 +33,8 @@ const searchBoxStyle = jss.createStyleSheet({
     "overflow": "hidden",
     "text-overflow": "ellipsis",
     "white-space": "nowrap",
+    // TODO: can't remove link underlining this way - fix
+    "text-decoration": "none !important",
     "color": "black",
     "border-bottom": "1px solid #dadee4",
     "margin": "0 0 0.5rem"
