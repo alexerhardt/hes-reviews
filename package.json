@@ -1,11 +1,13 @@
 {
-  "name": "react-template",
+  "name": "hes-reviews",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server/server.js",
   "repository": "https://github.com/alexerhardt/react-template.git",
   "author": "alexerhardt <alex.erhardt.es@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node server/server.js",
+    "watch": "nodemon server/server.js",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
@@ -15,6 +17,7 @@
     "jss": "^9.8.7",
     "marked": "^0.5.2",
     "match-sorter": "^2.3.0",
+    "mongoose": "^5.4.3",
     "react": "16.0.0",
     "react-autosuggest": "^9.4.3",
     "react-burger-menu": "^2.5.4",
