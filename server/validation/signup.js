@@ -1,3 +1,7 @@
+/**
+ * signup.js
+ * Server side validation for user signup data
+ */
 const Validator = require('validator');
 
 module.exports = (data) => {
@@ -37,6 +41,7 @@ module.exports = (data) => {
 
   return {
     errors,
-    isValid: Object.keys(error).length === 0 && obj.constructor === Object
+    // Test if object is empty
+    isValid: Object.keys(errors).length === 0 && errors.constructor === Object
   };
 } 

@@ -13,7 +13,8 @@ const User = require('../models/User');
  * @desc   Signs up a user to the service
  * @access Public
  */
-router.post('signup', (req, res) => {
+router.post('/signup', (req, res) => {
+  console.log('signup req received, body: ', req.body);
   // Validate signup request, return error if not valid
   const { errors, isValid } = validateSignupInput(req.body);
 
