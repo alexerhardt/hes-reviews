@@ -14,7 +14,7 @@ const User = require('../models/User');
  * @desc   Signs up a user to the service
  * @access Public
  */
-router.post('/signup', (req, res) => {
+router.post('/signup', (req, res, next) => {
   // Validate signup request, return error if not valid
   const { errors, isValid } = validateSignupInput(req.body);
 
@@ -59,7 +59,7 @@ router.post('/signup', (req, res) => {
  * @desc   Login user and return JWT token
  * @access Public
  */
-router.post('/login', (req, res) => {
+router.post('/login', (req, res, next) => {
   const { errors, isValid } = validateLoginInput(req.body);
 
   if (!isValid) {

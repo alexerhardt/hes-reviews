@@ -4,6 +4,7 @@ require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 const mongoose = require('mongoose');
 const passport = require('passport');
 
@@ -11,6 +12,9 @@ const users = require('./routes/users');
 const courses = require('./routes/courses');
 
 const app = express();
+
+// Compress all responses
+app.use(compression());
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));

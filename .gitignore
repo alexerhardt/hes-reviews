@@ -2,3 +2,8 @@ node_modules/
 .vscode/
 yarn-error.log
 .DS_Store
+.env
+bundle.js
+bundle.js.map
+styles.css
+styles.css.map

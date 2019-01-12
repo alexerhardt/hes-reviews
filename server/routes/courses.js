@@ -8,7 +8,7 @@ const Course = require('../models/Course');
  * @desc   Returns the information for all courses
  * @access Public
  */
-router.get('/all', (req, res) => {
+router.get('/all', (req, res, next) => {
   // Retrieve all courses from the DB
   // Format them into format consumable by client (maybe?)
   Course
