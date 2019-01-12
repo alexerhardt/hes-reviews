@@ -1,8 +1,6 @@
 require('./config/index.js');
 require('dotenv').config();
 
-console.log('env: ', process.env.JWT_SECRET);
-
 const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -10,6 +8,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 
 const users = require('./routes/users');
+const courses = require('./routes/courses');
 
 const app = express();
 
@@ -21,6 +20,7 @@ app.use(bodyParser.json());
 const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
 
+// Connect to database
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true
@@ -28,10 +28,12 @@ mongoose
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.log(err))
 
+// Use Passport middleware and configure it
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
 app.use('/users', users);
+app.use('/courses', courses);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));

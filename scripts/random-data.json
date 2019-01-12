@@ -1,0 +1,6113 @@
+[
+  {
+    "code": "AAAS E-119",
+    "name": "Chocolate, Culture, and the Politics of Food",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ANTH E-1000",
+    "name": "Pyramid Schemes: The Archaeological History of Ancient Egypt",
+    "reviews": 61,
+    "rating": 1.7,
+    "staff": 1.62,
+    "difficulty": 4.01,
+    "workload": 2
+  },
+  {
+    "code": "ANTH E-1050",
+    "name": "Moctezuma's Mexico Then and Now: The Deep History, Triumphs, and Transformations of the Aztecs and their Descendants",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ANTH E-1168",
+    "name": "Ancient Maya Art and Writing",
+    "reviews": 196,
+    "rating": 1.63,
+    "staff": 0.5,
+    "difficulty": 4.37,
+    "workload": 12
+  },
+  {
+    "code": "ANTH E-1660",
+    "name": "Anthropology and Human Rights",
+    "reviews": 0,
+    "rating": 4.32,
+    "staff": 0.41,
+    "difficulty": 4.89,
+    "workload": 32
+  },
+  {
+    "code": "ANTH E-1700",
+    "name": "Race in the Americas",
+    "reviews": 172,
+    "rating": 0.63,
+    "staff": 2.12,
+    "difficulty": 0.31,
+    "workload": 32
+  },
+  {
+    "code": "APMA E-115",
+    "name": "Mathematical Modeling",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "APMA E-207",
+    "name": "Advanced Scientific Computing: Stochastic Methods for Data Analysis, Inference, and Optimization",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ARAB E-1",
+    "name": "Intensive Elementary Modern Standard Arabic I",
+    "reviews": 105,
+    "rating": 0.91,
+    "staff": 2.69,
+    "difficulty": 1.87,
+    "workload": 18
+  },
+  {
+    "code": "ARAB E-2",
+    "name": "Intensive Elementary Modern Standard Arabic II",
+    "reviews": 28,
+    "rating": 3.82,
+    "staff": 3.25,
+    "difficulty": 4.88,
+    "workload": 25
+  },
+  {
+    "code": "ASTR E-80",
+    "name": "Planets, Moons, and the Search for Alien Life",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-10",
+    "name": "Introduction to Biochemistry",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-102",
+    "name": "Newsworthy Topics in the Life Sciences",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-107",
+    "name": "Introduction to Medical Neuroscience",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-116",
+    "name": "Principles of Marine Biology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-118",
+    "name": "Deep Sea Biology",
+    "reviews": 40,
+    "rating": 3.62,
+    "staff": 3.5,
+    "difficulty": 4.32,
+    "workload": 13
+  },
+  {
+    "code": "BIOS E-12",
+    "name": "Principles and Techniques of Molecular Biology",
+    "reviews": 85,
+    "rating": 1.82,
+    "staff": 2.05,
+    "difficulty": 0.94,
+    "workload": 15
+  },
+  {
+    "code": "BIOS E-120",
+    "name": "Trees and Forests in New England",
+    "reviews": 142,
+    "rating": 1.15,
+    "staff": 2.09,
+    "difficulty": 3.2,
+    "workload": 16
+  },
+  {
+    "code": "BIOS E-123",
+    "name": "Reproductive Biology: Physiological, Evolutionary, and Behavioral Aspects",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-129",
+    "name": "Stem Cell and Regenerative Biology",
+    "reviews": 140,
+    "rating": 2.05,
+    "staff": 0.08,
+    "difficulty": 1.33,
+    "workload": 19
+  },
+  {
+    "code": "BIOS E-14",
+    "name": "Principles of Genetics",
+    "reviews": 8,
+    "rating": 0.27,
+    "staff": 3.59,
+    "difficulty": 3.17,
+    "workload": 8
+  },
+  {
+    "code": "BIOS E-152",
+    "name": "Plant Genetic Engineering for Medicine, Agriculture, and the Environment",
+    "reviews": 2,
+    "rating": 3.66,
+    "staff": 3.43,
+    "difficulty": 3.65,
+    "workload": 22
+  },
+  {
+    "code": "BIOS E-155",
+    "name": "Medical Microbiology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-157",
+    "name": "Viruses and Immunity: A Molecular Arms Race",
+    "reviews": 48,
+    "rating": 3.84,
+    "staff": 1.01,
+    "difficulty": 3.76,
+    "workload": 7
+  },
+  {
+    "code": "BIOS E-16",
+    "name": "Cell Biology",
+    "reviews": 106,
+    "rating": 2.46,
+    "staff": 4.8,
+    "difficulty": 0.4,
+    "workload": 36
+  },
+  {
+    "code": "BIOS E-162A",
+    "name": "Human Pathophysiology I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-163",
+    "name": "Human Endocrine Physiology",
+    "reviews": 51,
+    "rating": 3.43,
+    "staff": 2.29,
+    "difficulty": 0.47,
+    "workload": 26
+  },
+  {
+    "code": "BIOS E-179",
+    "name": "Gene Expression: A Hands-on Approach",
+    "reviews": 165,
+    "rating": 1.51,
+    "staff": 3.79,
+    "difficulty": 1.29,
+    "workload": 19
+  },
+  {
+    "code": "BIOS E-18",
+    "name": "Evolution",
+    "reviews": 100,
+    "rating": 3.94,
+    "staff": 3.29,
+    "difficulty": 1.37,
+    "workload": 28
+  },
+  {
+    "code": "BIOS E-185",
+    "name": "Gene Therapy and Gene Editing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-1A",
+    "name": "Introduction to Molecular and Cellular Biology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-1B",
+    "name": "Introduction to Organismic and Evolutionary Biology",
+    "reviews": 15,
+    "rating": 2.38,
+    "staff": 4.44,
+    "difficulty": 4.98,
+    "workload": 30
+  },
+  {
+    "code": "BIOS E-200",
+    "name": "Proseminar: Graduate Research Methods and Scholarly Writing in the Biological Sciences",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-204",
+    "name": "Developmental and Regenerative Biology",
+    "reviews": 80,
+    "rating": 2.55,
+    "staff": 2.64,
+    "difficulty": 0.81,
+    "workload": 11
+  },
+  {
+    "code": "BIOS E-206",
+    "name": "Principles of Forensic Science",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-210",
+    "name": "Neurobiology of Circadian Rhythms: Regulation of Physiological Systems and Involvement in Disease States",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-232",
+    "name": "Neurobiology of Emotion and Psychiatric Illnesses",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-240",
+    "name": "Biochemical and Physiological Adaptation of Microbes",
+    "reviews": 36,
+    "rating": 4.05,
+    "staff": 0.32,
+    "difficulty": 0.35,
+    "workload": 22
+  },
+  {
+    "code": "BIOS E-27",
+    "name": "Invertebrate Zoology",
+    "reviews": 49,
+    "rating": 1.62,
+    "staff": 2.22,
+    "difficulty": 2.37,
+    "workload": 2
+  },
+  {
+    "code": "BIOS E-30",
+    "name": "Epigenetics and Gene Regulation",
+    "reviews": 126,
+    "rating": 4.22,
+    "staff": 4.7,
+    "difficulty": 2.17,
+    "workload": 12
+  },
+  {
+    "code": "BIOS E-40",
+    "name": "Introduction to Proteomics",
+    "reviews": 188,
+    "rating": 1,
+    "staff": 0.59,
+    "difficulty": 1.93,
+    "workload": 13
+  },
+  {
+    "code": "BIOS E-45",
+    "name": "Introduction to Genomics",
+    "reviews": 82,
+    "rating": 1.63,
+    "staff": 4.89,
+    "difficulty": 3.79,
+    "workload": 32
+  },
+  {
+    "code": "BIOS E-47",
+    "name": "Genetics, Genomics, and Evolution",
+    "reviews": 94,
+    "rating": 4.26,
+    "staff": 3.43,
+    "difficulty": 3.64,
+    "workload": 24
+  },
+  {
+    "code": "BIOS E-497",
+    "name": "Crafting the Thesis Proposal in Biology Tutorial",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-50",
+    "name": "Neurobiology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-55",
+    "name": "Developmental Biology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-60",
+    "name": "Immunology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-65C",
+    "name": "Human Anatomy and Physiology I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-65D",
+    "name": "Human Anatomy and Physiology II",
+    "reviews": 93,
+    "rating": 4.45,
+    "staff": 2.2,
+    "difficulty": 4.51,
+    "workload": 30
+  },
+  {
+    "code": "BIOS E-66",
+    "name": "Sports Physiology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOS E-70",
+    "name": "Introduction to Epidemiology",
+    "reviews": 94,
+    "rating": 3.69,
+    "staff": 4.02,
+    "difficulty": 3.39,
+    "workload": 5
+  },
+  {
+    "code": "BIOT E-100",
+    "name": "Introduction to Bioinformatics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOT E-105",
+    "name": "Bioinformatics: Fundamentals of Sequence Analysis",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "BIOT E-120",
+    "name": "Ethics and Trends in Biotechnology",
+    "reviews": 12,
+    "rating": 2.14,
+    "staff": 2.1,
+    "difficulty": 4.05,
+    "workload": 31
+  },
+  {
+    "code": "BIOT E-200",
+    "name": "Proseminar: Graduate Research Methods and Scholarly Writing in Biotechnology",
+    "reviews": 55,
+    "rating": 4.02,
+    "staff": 4.28,
+    "difficulty": 1.77,
+    "workload": 1
+  },
+  {
+    "code": "BIOT E-205",
+    "name": "Drug Discovery, Project Design, and Management",
+    "reviews": 40,
+    "rating": 2.39,
+    "staff": 1.3,
+    "difficulty": 4.47,
+    "workload": 34
+  },
+  {
+    "code": "BIOT E-215",
+    "name": "Clinical Trial Research",
+    "reviews": 153,
+    "rating": 0.09,
+    "staff": 0.65,
+    "difficulty": 1.68,
+    "workload": 33
+  },
+  {
+    "code": "BIOT E-225",
+    "name": "Biomedical Product Development",
+    "reviews": 32,
+    "rating": 3.14,
+    "staff": 0.62,
+    "difficulty": 2.34,
+    "workload": 0
+  },
+  {
+    "code": "BIOT E-230",
+    "name": "Structure and Function of Human Monoclonal Antibodies",
+    "reviews": 70,
+    "rating": 1.46,
+    "staff": 3.41,
+    "difficulty": 0.8,
+    "workload": 29
+  },
+  {
+    "code": "BIOT E-497",
+    "name": "Crafting the Thesis Proposal in Biotechnology or Bioengineering and Nanotechnology Tutorial",
+    "reviews": 57,
+    "rating": 4.57,
+    "staff": 0.32,
+    "difficulty": 1.72,
+    "workload": 18
+  },
+  {
+    "code": "BIOT E-599",
+    "name": "Biotechnology Capstone",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CELT E-115",
+    "name": "The Irish Supernatural",
+    "reviews": 146,
+    "rating": 2.83,
+    "staff": 1.41,
+    "difficulty": 4.53,
+    "workload": 36
+  },
+  {
+    "code": "CGRK E-1A",
+    "name": "Elementary Classical Greek",
+    "reviews": 74,
+    "rating": 4.54,
+    "staff": 0.35,
+    "difficulty": 1.46,
+    "workload": 1
+  },
+  {
+    "code": "CGRK E-1B",
+    "name": "Elementary Classical Greek",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CGRK E-31",
+    "name": "Homer's Odyssey",
+    "reviews": 62,
+    "rating": 1.37,
+    "staff": 1.41,
+    "difficulty": 0.48,
+    "workload": 5
+  },
+  {
+    "code": "CGRK E-35",
+    "name": "Euripides",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-100",
+    "name": "Organic Chemistry of Drug Synthesis and Action",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-17",
+    "name": "Principles of Organic Chemistry",
+    "reviews": 46,
+    "rating": 1.5,
+    "staff": 4.74,
+    "difficulty": 3.83,
+    "workload": 32
+  },
+  {
+    "code": "CHEM E-17L",
+    "name": "Principles of Organic Chemistry: Laboratory",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-1A",
+    "name": "General Chemistry I (Lecture and Lab)",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-1AX",
+    "name": "General Chemistry I (Lecture)",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-1AXL",
+    "name": "General Chemistry I (Lab)",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-1B",
+    "name": "General Chemistry II (Lecture and Lab)",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-1BX",
+    "name": "General Chemistry II (Lecture)",
+    "reviews": 68,
+    "rating": 2.1,
+    "staff": 1.24,
+    "difficulty": 3.12,
+    "workload": 5
+  },
+  {
+    "code": "CHEM E-1BXL",
+    "name": "General Chemistry II (Lab)",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CHEM E-27",
+    "name": "Organic Chemistry of Life",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CLAS E-116",
+    "name": "The Ancient Greek Hero",
+    "reviews": 189,
+    "rating": 4.85,
+    "staff": 0.21,
+    "difficulty": 4.34,
+    "workload": 13
+  },
+  {
+    "code": "CLAS E-207",
+    "name": "Healing Sanctuaries and Medicine in Ancient Greece",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-100R",
+    "name": "Advanced Fiction: Writing the Short Story",
+    "reviews": 15,
+    "rating": 3,
+    "staff": 4.7,
+    "difficulty": 2.44,
+    "workload": 23
+  },
+  {
+    "code": "CREA E-101R",
+    "name": "Writing a Nonfiction Book",
+    "reviews": 158,
+    "rating": 1.02,
+    "staff": 3.18,
+    "difficulty": 2.38,
+    "workload": 8
+  },
+  {
+    "code": "CREA E-103R",
+    "name": "Advanced Fiction: Writing Crime Fiction",
+    "reviews": 57,
+    "rating": 3.36,
+    "staff": 0.74,
+    "difficulty": 3.97,
+    "workload": 17
+  },
+  {
+    "code": "CREA E-105R",
+    "name": "Advanced Fiction: Writing the Novel",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-110R",
+    "name": "Advanced Poetry Writing",
+    "reviews": 130,
+    "rating": 4.59,
+    "staff": 0.51,
+    "difficulty": 0.06,
+    "workload": 11
+  },
+  {
+    "code": "CREA E-114",
+    "name": "Advanced Fiction: Writing Suspense Fiction",
+    "reviews": 11,
+    "rating": 1.42,
+    "staff": 3.24,
+    "difficulty": 3.79,
+    "workload": 32
+  },
+  {
+    "code": "CREA E-118R",
+    "name": "Advanced Creative Nonfiction",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-120R",
+    "name": "Advanced Screenwriting",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-124",
+    "name": "Writing for TV",
+    "reviews": 79,
+    "rating": 4.94,
+    "staff": 3.97,
+    "difficulty": 2.49,
+    "workload": 10
+  },
+  {
+    "code": "CREA E-125R",
+    "name": "Advanced Playwriting",
+    "reviews": 58,
+    "rating": 3.55,
+    "staff": 0.84,
+    "difficulty": 3.53,
+    "workload": 32
+  },
+  {
+    "code": "CREA E-134",
+    "name": "Writing War",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-20",
+    "name": "Introduction to Memoir",
+    "reviews": 158,
+    "rating": 4.1,
+    "staff": 4.49,
+    "difficulty": 2.3,
+    "workload": 3
+  },
+  {
+    "code": "CREA E-23",
+    "name": "Fiction Workshop: Story Origins",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-24",
+    "name": "Story Development",
+    "reviews": 161,
+    "rating": 3.91,
+    "staff": 3.05,
+    "difficulty": 1.29,
+    "workload": 23
+  },
+  {
+    "code": "CREA E-25",
+    "name": "Introduction to Fiction Writing",
+    "reviews": 153,
+    "rating": 2.81,
+    "staff": 3.39,
+    "difficulty": 1.23,
+    "workload": 22
+  },
+  {
+    "code": "CREA E-30",
+    "name": "Introduction to Writing Poetry",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CREA E-45",
+    "name": "Beginning Screenwriting",
+    "reviews": 193,
+    "rating": 2.35,
+    "staff": 2.46,
+    "difficulty": 3.81,
+    "workload": 13
+  },
+  {
+    "code": "CSCI E-109A",
+    "name": "Introduction to Data Science",
+    "reviews": 15,
+    "rating": 4.96,
+    "staff": 2.9,
+    "difficulty": 1.3,
+    "workload": 21
+  },
+  {
+    "code": "CSCI E-109B",
+    "name": "Advanced Topics in Data Science",
+    "reviews": 159,
+    "rating": 3.89,
+    "staff": 1.19,
+    "difficulty": 2.74,
+    "workload": 5
+  },
+  {
+    "code": "CSCI E-10A",
+    "name": "Introduction to Computer Science Using Java I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-10B",
+    "name": "Introduction to Computer Science Using Java II",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-11",
+    "name": "Introduction to the Challenges and Opportunities of Big Data, the Internet of Things, and Cybersecurity",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-12",
+    "name": "Fundamentals of Website Development",
+    "reviews": 51,
+    "rating": 2.73,
+    "staff": 1.19,
+    "difficulty": 0.97,
+    "workload": 10
+  },
+  {
+    "code": "CSCI E-121",
+    "name": "Introduction to Theoretical Computer Science",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-124",
+    "name": "Data Structures and Algorithms",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-127",
+    "name": "Cryptography",
+    "reviews": 103,
+    "rating": 1.11,
+    "staff": 4.67,
+    "difficulty": 1.57,
+    "workload": 15
+  },
+  {
+    "code": "CSCI E-134",
+    "name": "Networks",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-15",
+    "name": "Dynamic Web Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-152",
+    "name": "Programming Languages",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-15C",
+    "name": "Developing for Drupal 8",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-165",
+    "name": "Data Systems",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-19",
+    "name": "Software Testing and Test-Driven Development",
+    "reviews": 131,
+    "rating": 1.11,
+    "staff": 1.09,
+    "difficulty": 4.56,
+    "workload": 12
+  },
+  {
+    "code": "CSCI E-191",
+    "name": "Classics of Computer Science",
+    "reviews": 106,
+    "rating": 2.99,
+    "staff": 0.53,
+    "difficulty": 2,
+    "workload": 2
+  },
+  {
+    "code": "CSCI E-1A",
+    "name": "Understanding Technology",
+    "reviews": 23,
+    "rating": 4.02,
+    "staff": 1.79,
+    "difficulty": 3.84,
+    "workload": 0
+  },
+  {
+    "code": "CSCI E-1B",
+    "name": "Computer Science for Business Professionals",
+    "reviews": 96,
+    "rating": 1.97,
+    "staff": 2.71,
+    "difficulty": 3.29,
+    "workload": 29
+  },
+  {
+    "code": "CSCI E-20",
+    "name": "Discrete Mathematics for Computer Science",
+    "reviews": 66,
+    "rating": 4.7,
+    "staff": 3.86,
+    "difficulty": 3.52,
+    "workload": 5
+  },
+  {
+    "code": "CSCI E-22",
+    "name": "Data Structures",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-23A",
+    "name": "Introduction to Game Development",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-24",
+    "name": "Numerical Analysis",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-26",
+    "name": "Introduction to C, Unix/Linux Programming, and Web Interfaces",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-265",
+    "name": "Big Data Systems",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-28",
+    "name": "Unix/Linux Systems Programming",
+    "reviews": 31,
+    "rating": 4.94,
+    "staff": 2.99,
+    "difficulty": 4.49,
+    "workload": 34
+  },
+  {
+    "code": "CSCI E-29",
+    "name": "Python for Data Science",
+    "reviews": 14,
+    "rating": 1.84,
+    "staff": 1.13,
+    "difficulty": 1.3,
+    "workload": 11
+  },
+  {
+    "code": "CSCI E-3",
+    "name": "Introduction to Web Programming Using JavaScript",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-31",
+    "name": "Introduction to Web Application Development using Node.JS",
+    "reviews": 2,
+    "rating": 2.04,
+    "staff": 2.36,
+    "difficulty": 2.78,
+    "workload": 7
+  },
+  {
+    "code": "CSCI E-33A",
+    "name": "Web Programming with Python and JavaScript",
+    "reviews": 22,
+    "rating": 2.82,
+    "staff": 2.99,
+    "difficulty": 1.62,
+    "workload": 33
+  },
+  {
+    "code": "CSCI E-34",
+    "name": "User Experience Engineering",
+    "reviews": 1,
+    "rating": 3.1,
+    "staff": 1.84,
+    "difficulty": 2.6,
+    "workload": 9
+  },
+  {
+    "code": "CSCI E-36",
+    "name": "Advanced User Experience Engineering",
+    "reviews": 186,
+    "rating": 2.99,
+    "staff": 4.92,
+    "difficulty": 2.31,
+    "workload": 12
+  },
+  {
+    "code": "CSCI E-37",
+    "name": "Developing International Software",
+    "reviews": 12,
+    "rating": 1.75,
+    "staff": 2.6,
+    "difficulty": 4.15,
+    "workload": 28
+  },
+  {
+    "code": "CSCI E-38",
+    "name": "Introduction to C++ for Programmers",
+    "reviews": 7,
+    "rating": 3.63,
+    "staff": 3.63,
+    "difficulty": 4.11,
+    "workload": 30
+  },
+  {
+    "code": "CSCI E-39",
+    "name": "Modular Design Patterns with React",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-39B",
+    "name": "Mobile Application Development with React Native",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-40",
+    "name": "Communication Protocols and Internet Architectures",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-41",
+    "name": "Secure Software Development",
+    "reviews": 60,
+    "rating": 0.3,
+    "staff": 4.29,
+    "difficulty": 1.87,
+    "workload": 31
+  },
+  {
+    "code": "CSCI E-43",
+    "name": "How to Assess and Communicate Risk in Information Security",
+    "reviews": 38,
+    "rating": 2.13,
+    "staff": 1.96,
+    "difficulty": 3.27,
+    "workload": 15
+  },
+  {
+    "code": "CSCI E-45A",
+    "name": "The Cyber World: Hardware, Software, Networks, Security, and Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-45B",
+    "name": "The Cyber World: Governance, Threats, Conflict, Privacy, Identity, and Commerce",
+    "reviews": 66,
+    "rating": 1.97,
+    "staff": 0.89,
+    "difficulty": 1.25,
+    "workload": 28
+  },
+  {
+    "code": "CSCI E-46",
+    "name": "Applied Network Security",
+    "reviews": 36,
+    "rating": 2.77,
+    "staff": 1.06,
+    "difficulty": 0.24,
+    "workload": 31
+  },
+  {
+    "code": "CSCI E-48",
+    "name": "Secure Mobile Computing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-49",
+    "name": "Cloud Security",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-497",
+    "name": "Crafting the Thesis Proposal in Software Engineering and Digital Media Design Tutorial",
+    "reviews": 195,
+    "rating": 0.99,
+    "staff": 2.71,
+    "difficulty": 0.14,
+    "workload": 26
+  },
+  {
+    "code": "CSCI E-50",
+    "name": "Intensive Introduction to Computer Science",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-51",
+    "name": "Abstraction and Design in Computation",
+    "reviews": 43,
+    "rating": 3.27,
+    "staff": 1.29,
+    "difficulty": 0.91,
+    "workload": 22
+  },
+  {
+    "code": "CSCI E-53",
+    "name": "Effective C++ for Programmers",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-55",
+    "name": "Java, Hadoop, Lambda Expressions, and Streams",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-57",
+    "name": "Java Enterprise Development with the Spring Framework",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-59",
+    "name": "Designing and Developing a Relational Database",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-599",
+    "name": "Software Engineering Capstone",
+    "reviews": 33,
+    "rating": 2.9,
+    "staff": 1.62,
+    "difficulty": 0.05,
+    "workload": 24
+  },
+  {
+    "code": "CSCI E-61",
+    "name": "Systems Programming and Machine Organization",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-63",
+    "name": "Big Data Analytics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-63C",
+    "name": "Elements of Data Science and Statistical Learning with R",
+    "reviews": 91,
+    "rating": 3.51,
+    "staff": 1.86,
+    "difficulty": 0,
+    "workload": 24
+  },
+  {
+    "code": "CSCI E-65",
+    "name": "Advanced Mobile Application Development Using Swift and iOS",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-65G",
+    "name": "Introduction to Mobile Application Development Using Swift and iOS",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-66",
+    "name": "Database Systems",
+    "reviews": 156,
+    "rating": 3.66,
+    "staff": 0.2,
+    "difficulty": 1.77,
+    "workload": 23
+  },
+  {
+    "code": "CSCI E-67",
+    "name": "Oracle Database Administration",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-7",
+    "name": "Introduction to Programming with Python",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-71",
+    "name": "Agile Software Development",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-73",
+    "name": "Developing Cross-Platform Mobile Applications with Xamarin",
+    "reviews": 30,
+    "rating": 3.85,
+    "staff": 3.15,
+    "difficulty": 0.53,
+    "workload": 8
+  },
+  {
+    "code": "CSCI E-74",
+    "name": "Virtual and Augmented Reality for Simulation and Gaming",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-78",
+    "name": "Wearable Technologies and the Internet of Things",
+    "reviews": 112,
+    "rating": 0.5,
+    "staff": 0.99,
+    "difficulty": 4.6,
+    "workload": 7
+  },
+  {
+    "code": "CSCI E-79",
+    "name": "Interactive Data Visualization",
+    "reviews": 4,
+    "rating": 3.56,
+    "staff": 1.24,
+    "difficulty": 2.24,
+    "workload": 26
+  },
+  {
+    "code": "CSCI E-8",
+    "name": "Web GIS: Technologies and Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-82",
+    "name": "Advanced Machine Learning, Data Mining, and Artificial Intelligence",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-83",
+    "name": "Fundamentals of Data Science",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-86",
+    "name": "Building the Brain: A Survey of Artificial Intelligence",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-87",
+    "name": "Big Data in Healthcare Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-88",
+    "name": "Principles of Big Data Processing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-89",
+    "name": "Deep Learning",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "CSCI E-93",
+    "name": "Computer Architecture",
+    "reviews": 110,
+    "rating": 3.21,
+    "staff": 0.22,
+    "difficulty": 0.88,
+    "workload": 0
+  },
+  {
+    "code": "CSCI E-94",
+    "name": "Fundamentals of Cloud Computing with Microsoft Azure",
+    "reviews": 157,
+    "rating": 3.81,
+    "staff": 3.82,
+    "difficulty": 1.1,
+    "workload": 35
+  },
+  {
+    "code": "CSCI E-95",
+    "name": "Compiler Design and Implementation",
+    "reviews": 168,
+    "rating": 1.45,
+    "staff": 1.92,
+    "difficulty": 2.06,
+    "workload": 23
+  },
+  {
+    "code": "CSCI E-97",
+    "name": "Software Design: Principles, Models, and Patterns",
+    "reviews": 194,
+    "rating": 3.79,
+    "staff": 1.6,
+    "difficulty": 1.49,
+    "workload": 8
+  },
+  {
+    "code": "DGMD E-10",
+    "name": "Exposing Digital Photography",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DGMD E-12",
+    "name": "Introduction to Creative Exploration on the Web",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DGMD E-20",
+    "name": "Modern and Mobile Front-End Web Design I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DGMD E-23",
+    "name": "Planning Successful Websites and Applications",
+    "reviews": 120,
+    "rating": 4.45,
+    "staff": 4.46,
+    "difficulty": 4.98,
+    "workload": 37
+  },
+  {
+    "code": "DGMD E-25",
+    "name": "Introduction to Web Content Management Systems Site Development",
+    "reviews": 52,
+    "rating": 3.91,
+    "staff": 1.25,
+    "difficulty": 4.2,
+    "workload": 38
+  },
+  {
+    "code": "DGMD E-27",
+    "name": "Modern and Mobile Front-End Web Design II",
+    "reviews": 16,
+    "rating": 4.54,
+    "staff": 0.38,
+    "difficulty": 3.8,
+    "workload": 7
+  },
+  {
+    "code": "DGMD E-30",
+    "name": "Video Field Production",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DGMD E-35",
+    "name": "Video Editing and Digital Design",
+    "reviews": 79,
+    "rating": 2.39,
+    "staff": 1.28,
+    "difficulty": 4.14,
+    "workload": 37
+  },
+  {
+    "code": "DGMD E-38",
+    "name": "Lighting Design for Video and Post-Production",
+    "reviews": 2,
+    "rating": 2.02,
+    "staff": 0.09,
+    "difficulty": 1.45,
+    "workload": 2
+  },
+  {
+    "code": "DGMD E-40",
+    "name": "Producing Educational Video",
+    "reviews": 163,
+    "rating": 4.58,
+    "staff": 1.87,
+    "difficulty": 0.32,
+    "workload": 1
+  },
+  {
+    "code": "DGMD E-42",
+    "name": "Making the Short Film: Innovations and Practices for the Digital Age",
+    "reviews": 96,
+    "rating": 1.94,
+    "staff": 4.47,
+    "difficulty": 3.87,
+    "workload": 21
+  },
+  {
+    "code": "DGMD E-45",
+    "name": "Introduction to 3D Art and Animation",
+    "reviews": 115,
+    "rating": 2.84,
+    "staff": 4.57,
+    "difficulty": 0.09,
+    "workload": 36
+  },
+  {
+    "code": "DGMD E-5",
+    "name": "Exploring Digital Media",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DGMD E-50",
+    "name": "Introduction to Visual Communication Design",
+    "reviews": 107,
+    "rating": 3.46,
+    "staff": 3.53,
+    "difficulty": 4.05,
+    "workload": 19
+  },
+  {
+    "code": "DGMD E-599",
+    "name": "Capstone Design Studio",
+    "reviews": 96,
+    "rating": 3.65,
+    "staff": 0.76,
+    "difficulty": 2.81,
+    "workload": 6
+  },
+  {
+    "code": "DGMD E-60",
+    "name": "Applied Online Course Design",
+    "reviews": 112,
+    "rating": 4.84,
+    "staff": 0.47,
+    "difficulty": 2.12,
+    "workload": 35
+  },
+  {
+    "code": "DGMD E-70",
+    "name": "Principles of Game Design",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DRAM E-10",
+    "name": "Introduction to Acting",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DRAM E-12",
+    "name": "Acting Shakespeare",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DRAM E-20",
+    "name": "Advanced Acting",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "DRAM E-21",
+    "name": "Improvisational Acting",
+    "reviews": 194,
+    "rating": 1.55,
+    "staff": 3.78,
+    "difficulty": 0.74,
+    "workload": 5
+  },
+  {
+    "code": "DRAM E-27",
+    "name": "The Songs of Stephen Sondheim",
+    "reviews": 37,
+    "rating": 2.25,
+    "staff": 1.92,
+    "difficulty": 4.06,
+    "workload": 15
+  },
+  {
+    "code": "DRAM E-35",
+    "name": "The Forgotten Scene Partner: Creating a More Powerful Performance Through the Marriage of Text and Music",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1005",
+    "name": "Foundations of Real-World Economics",
+    "reviews": 3,
+    "rating": 3.27,
+    "staff": 3.35,
+    "difficulty": 2.29,
+    "workload": 14
+  },
+  {
+    "code": "ECON E-1010",
+    "name": "Microeconomic Theory",
+    "reviews": 141,
+    "rating": 0.14,
+    "staff": 1.84,
+    "difficulty": 1.71,
+    "workload": 38
+  },
+  {
+    "code": "ECON E-1012",
+    "name": "Intermediate Macroeconomics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1018",
+    "name": "Microfinance: Financial Services for the Poor",
+    "reviews": 142,
+    "rating": 0.96,
+    "staff": 3.25,
+    "difficulty": 4.42,
+    "workload": 33
+  },
+  {
+    "code": "ECON E-1040",
+    "name": "Strategy, Conflict, and Cooperation",
+    "reviews": 28,
+    "rating": 1.82,
+    "staff": 2.67,
+    "difficulty": 4.17,
+    "workload": 16
+  },
+  {
+    "code": "ECON E-10A",
+    "name": "Principles of Economics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1317",
+    "name": "The Economics of Emerging Markets: Asia and Eastern Europe",
+    "reviews": 46,
+    "rating": 2.16,
+    "staff": 2.27,
+    "difficulty": 1.65,
+    "workload": 38
+  },
+  {
+    "code": "ECON E-1342",
+    "name": "History of Economic Growth",
+    "reviews": 120,
+    "rating": 0.78,
+    "staff": 2.15,
+    "difficulty": 2.72,
+    "workload": 10
+  },
+  {
+    "code": "ECON E-1500",
+    "name": "The Economics of Financial Markets",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1533",
+    "name": "Monetary Policy After the Financial Crisis",
+    "reviews": 176,
+    "rating": 1.72,
+    "staff": 1.09,
+    "difficulty": 4.07,
+    "workload": 20
+  },
+  {
+    "code": "ECON E-1600",
+    "name": "Economics of Business",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1625",
+    "name": "Economic Strategy and Competitiveness",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1661",
+    "name": "Environmental Economics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1700",
+    "name": "Urban Policy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1815",
+    "name": "The Share Economy",
+    "reviews": 74,
+    "rating": 0.93,
+    "staff": 2.32,
+    "difficulty": 2.32,
+    "workload": 24
+  },
+  {
+    "code": "ECON E-1825A",
+    "name": "The Minimum Wage Debate",
+    "reviews": 149,
+    "rating": 3.83,
+    "staff": 3.45,
+    "difficulty": 1.47,
+    "workload": 28
+  },
+  {
+    "code": "ECON E-1920",
+    "name": "Capital Markets and Investments",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1941",
+    "name": "Derivatives and Risk Management: Analytics and Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ECON E-1944",
+    "name": "History of Financial Crises 1637-2017",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EDUC E-103",
+    "name": "Introduction to Instructional Design",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EDUC E-111",
+    "name": "Empowering Adult Online Learning: Exploring Theory and Best Practices",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EDUC E-113",
+    "name": "Instructional Design Studio",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EDUC E-150",
+    "name": "Educational Innovation and Social Entrepreneurship in Comparative Perspective",
+    "reviews": 25,
+    "rating": 2.84,
+    "staff": 4.18,
+    "difficulty": 0.5,
+    "workload": 2
+  },
+  {
+    "code": "ENGL E-100",
+    "name": "Literary Theory in Comparison: An Introduction",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-102",
+    "name": "Introduction to Old English Literature",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-106",
+    "name": "Beowulf and Seamus Heaney",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-124",
+    "name": "Shakespeare's Early Plays",
+    "reviews": 34,
+    "rating": 2.08,
+    "staff": 1.54,
+    "difficulty": 0.47,
+    "workload": 38
+  },
+  {
+    "code": "ENGL E-125",
+    "name": "Shakespeare's Later Plays",
+    "reviews": 73,
+    "rating": 3.05,
+    "staff": 3.25,
+    "difficulty": 2.8,
+    "workload": 39
+  },
+  {
+    "code": "ENGL E-140",
+    "name": "The Rise of the Novel",
+    "reviews": 169,
+    "rating": 0.67,
+    "staff": 1.4,
+    "difficulty": 1.39,
+    "workload": 37
+  },
+  {
+    "code": "ENGL E-141",
+    "name": "The Enlightenment Invention of the Modern Self",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-150C",
+    "name": "English Romantic Poetry",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-159",
+    "name": "Reading James Joyce",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-182A",
+    "name": "Poetry in America: From the Mayflower through Emerson",
+    "reviews": 155,
+    "rating": 1.63,
+    "staff": 4.15,
+    "difficulty": 3.97,
+    "workload": 30
+  },
+  {
+    "code": "ENGL E-182H",
+    "name": "Poetry in America: Whitman and Dickinson",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-182M",
+    "name": "Poetry in America: From the Civil War through Modernism",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-189",
+    "name": "The Civil War from Nat Turner to Birth of a Nation",
+    "reviews": 124,
+    "rating": 3.07,
+    "staff": 2.4,
+    "difficulty": 4.84,
+    "workload": 12
+  },
+  {
+    "code": "ENGL E-191",
+    "name": "\"I Am A Little World Made Cunningly\": The Modernist Short Story",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-207",
+    "name": "The Culture of Capitalism",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-208",
+    "name": "The Expatriate Moment in Paris",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-212",
+    "name": "The Vampire in Literature and Film",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-227",
+    "name": "Life Imitated, Life Revealed: Four Modern Novels of Transfiguring Artists",
+    "reviews": 50,
+    "rating": 0.42,
+    "staff": 3.53,
+    "difficulty": 4.79,
+    "workload": 28
+  },
+  {
+    "code": "ENGL E-230",
+    "name": "The Rhetoric of Belief",
+    "reviews": 52,
+    "rating": 4.95,
+    "staff": 4.16,
+    "difficulty": 3.46,
+    "workload": 1
+  },
+  {
+    "code": "ENGL E-250",
+    "name": "The Unreliable Narrator: Hero, Lunatic, Scoundrel",
+    "reviews": 197,
+    "rating": 1.16,
+    "staff": 3.46,
+    "difficulty": 4.32,
+    "workload": 28
+  },
+  {
+    "code": "ENGL E-255",
+    "name": "George Orwell: Novelist, Essayist, Journalist, and Critic",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENGL E-300",
+    "name": "Poetry in America for Teachers: The City from Whitman to Hip Hop",
+    "reviews": 73,
+    "rating": 1.75,
+    "staff": 0.39,
+    "difficulty": 2.59,
+    "workload": 27
+  },
+  {
+    "code": "ENSC E-123",
+    "name": "Laboratory Electronics: Digital Circuit Design",
+    "reviews": 173,
+    "rating": 0.6,
+    "staff": 3.89,
+    "difficulty": 2.19,
+    "workload": 20
+  },
+  {
+    "code": "ENSC E-130",
+    "name": "Introduction to BioMEMS",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENSC E-132",
+    "name": "Tissue Engineering for Clinical Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENSC E-150",
+    "name": "Introduction to Nanobiotechnology: Concepts and Applications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENSC E-155",
+    "name": "Fundamentals and Applications of Microfluidics",
+    "reviews": 84,
+    "rating": 0.72,
+    "staff": 2.95,
+    "difficulty": 2.85,
+    "workload": 24
+  },
+  {
+    "code": "ENSC E-165",
+    "name": "Engineering of Nanostructures for Targeted Drug Delivery",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-101",
+    "name": "Introduction to Sustainability and Environmental Management",
+    "reviews": 144,
+    "rating": 4.07,
+    "staff": 1.49,
+    "difficulty": 1.78,
+    "workload": 27
+  },
+  {
+    "code": "ENVR E-102",
+    "name": "Design of Renewable Energy Projects",
+    "reviews": 169,
+    "rating": 0.58,
+    "staff": 3.45,
+    "difficulty": 4.97,
+    "workload": 7
+  },
+  {
+    "code": "ENVR E-103",
+    "name": "Energy and Climate: Vision for the Future",
+    "reviews": 23,
+    "rating": 3.76,
+    "staff": 3.7,
+    "difficulty": 1.99,
+    "workload": 11
+  },
+  {
+    "code": "ENVR E-103A",
+    "name": "The Law and Policy of Climate Change: Influencing Decision Makers",
+    "reviews": 67,
+    "rating": 2.25,
+    "staff": 1.49,
+    "difficulty": 2.02,
+    "workload": 39
+  },
+  {
+    "code": "ENVR E-104",
+    "name": "The Climate-Energy Challenge",
+    "reviews": 64,
+    "rating": 3.45,
+    "staff": 1.37,
+    "difficulty": 2.76,
+    "workload": 32
+  },
+  {
+    "code": "ENVR E-105",
+    "name": "Fundamentals of Organizational Sustainability",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-110",
+    "name": "Sustainable Ocean Environments",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-116",
+    "name": "Greenhouse Gas Emissions Management",
+    "reviews": 163,
+    "rating": 3.35,
+    "staff": 0.28,
+    "difficulty": 0.66,
+    "workload": 25
+  },
+  {
+    "code": "ENVR E-116A",
+    "name": "Measuring and Mitigating Scope 3 Greenhouse Gas Emissions",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-117",
+    "name": "Sustainability Leadership for the Twenty-First Century",
+    "reviews": 79,
+    "rating": 0.15,
+    "staff": 0.96,
+    "difficulty": 4.11,
+    "workload": 33
+  },
+  {
+    "code": "ENVR E-118",
+    "name": "Environmental Management of International Tourism Development",
+    "reviews": 162,
+    "rating": 1.16,
+    "staff": 0.56,
+    "difficulty": 1.19,
+    "workload": 26
+  },
+  {
+    "code": "ENVR E-118A",
+    "name": "Ecotourism and Sustainable Development",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-118B",
+    "name": "Sustainable Tourism, Regional Planning, and Geodesign",
+    "reviews": 21,
+    "rating": 1.69,
+    "staff": 4.88,
+    "difficulty": 0.19,
+    "workload": 34
+  },
+  {
+    "code": "ENVR E-119",
+    "name": "Sustainability for Buildings and Communities",
+    "reviews": 76,
+    "rating": 4.11,
+    "staff": 3.61,
+    "difficulty": 1.4,
+    "workload": 23
+  },
+  {
+    "code": "ENVR E-119B",
+    "name": "Sustainable Buildings: Optimizing the Performance of Existing Buildings",
+    "reviews": 29,
+    "rating": 3.89,
+    "staff": 1.51,
+    "difficulty": 2.27,
+    "workload": 9
+  },
+  {
+    "code": "ENVR E-119C",
+    "name": "High Performance Buildings for Occupant Wellbeing",
+    "reviews": 167,
+    "rating": 2.68,
+    "staff": 1.84,
+    "difficulty": 0.91,
+    "workload": 26
+  },
+  {
+    "code": "ENVR E-119D",
+    "name": "Zero Energy and Passive Buildings",
+    "reviews": 112,
+    "rating": 3.23,
+    "staff": 4.65,
+    "difficulty": 0.13,
+    "workload": 6
+  },
+  {
+    "code": "ENVR E-119E",
+    "name": "Sustainable Infrastructure: The Envision Rating System Approach",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-129",
+    "name": "From Farm to Fork: Food, Sustainability, and the Global Environment",
+    "reviews": 177,
+    "rating": 4.88,
+    "staff": 3.73,
+    "difficulty": 3.07,
+    "workload": 23
+  },
+  {
+    "code": "ENVR E-135",
+    "name": "Corporate Sustainability Strategy",
+    "reviews": 81,
+    "rating": 4.12,
+    "staff": 3.23,
+    "difficulty": 2.81,
+    "workload": 3
+  },
+  {
+    "code": "ENVR E-137",
+    "name": "Sustainable Manufacturing and Supply Chain Management Operations",
+    "reviews": 61,
+    "rating": 0.26,
+    "staff": 2.05,
+    "difficulty": 2.33,
+    "workload": 34
+  },
+  {
+    "code": "ENVR E-138",
+    "name": "Sustainable Finance and Investments",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-139",
+    "name": "Natural Disasters in a Global Environment",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-140",
+    "name": "Fundamentals of Ecology",
+    "reviews": 148,
+    "rating": 4.99,
+    "staff": 4.78,
+    "difficulty": 0,
+    "workload": 12
+  },
+  {
+    "code": "ENVR E-151",
+    "name": "Life Cycle and Supply Chain Sustainability Assessment",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-153",
+    "name": "Social Responsibility in Product Supply Chains",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-154",
+    "name": "Sustainable Product Design and the Innovation Ecosystem",
+    "reviews": 141,
+    "rating": 3.53,
+    "staff": 0.91,
+    "difficulty": 2.47,
+    "workload": 0
+  },
+  {
+    "code": "ENVR E-157",
+    "name": "Sustainable Business and Technology",
+    "reviews": 60,
+    "rating": 2.95,
+    "staff": 2.25,
+    "difficulty": 3.71,
+    "workload": 19
+  },
+  {
+    "code": "ENVR E-158A",
+    "name": "Green Chemistry",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-158B",
+    "name": "Introduction to the Circular Economy",
+    "reviews": 199,
+    "rating": 0.56,
+    "staff": 0.94,
+    "difficulty": 2.57,
+    "workload": 35
+  },
+  {
+    "code": "ENVR E-158C",
+    "name": "Product Stewardship and Chemical Sustainability",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-161A",
+    "name": "Advancing Sustainability through Land Conservation Practice in the United States and Around the World",
+    "reviews": 17,
+    "rating": 4.33,
+    "staff": 4.1,
+    "difficulty": 4.66,
+    "workload": 33
+  },
+  {
+    "code": "ENVR E-165",
+    "name": "Human Health and Global Environmental Change",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-166",
+    "name": "Water Resources Policy and Watershed Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-166A",
+    "name": "Wetland Science and Policy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-170",
+    "name": "Environmental and Health Impact Assessment of International Programs",
+    "reviews": 13,
+    "rating": 2.8,
+    "staff": 0.49,
+    "difficulty": 2.46,
+    "workload": 6
+  },
+  {
+    "code": "ENVR E-210",
+    "name": "Proseminar: Critical Analysis of Environmental Systems",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-495",
+    "name": "Experimental Design and Research Methods",
+    "reviews": 132,
+    "rating": 1.68,
+    "staff": 3.78,
+    "difficulty": 3.67,
+    "workload": 34
+  },
+  {
+    "code": "ENVR E-496",
+    "name": "Crafting the Thesis Proposal in Sustainability",
+    "reviews": 189,
+    "rating": 2.02,
+    "staff": 2.34,
+    "difficulty": 2.85,
+    "workload": 23
+  },
+  {
+    "code": "ENVR E-598",
+    "name": "Sustainability Capstone Proposal Tutorial",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-599",
+    "name": "Independent Research Capstone",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ENVR E-599A",
+    "name": "Consulting with Clients for Sustainability Solutions Capstone",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-130",
+    "name": "The Data Paper",
+    "reviews": 0,
+    "rating": 3.47,
+    "staff": 3.56,
+    "difficulty": 3.82,
+    "workload": 24
+  },
+  {
+    "code": "EXPO E-15",
+    "name": "Fundamentals of Academic Writing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-160",
+    "name": "Writing Bootcamp",
+    "reviews": 104,
+    "rating": 0.37,
+    "staff": 3.87,
+    "difficulty": 1.09,
+    "workload": 24
+  },
+  {
+    "code": "EXPO E-170",
+    "name": "Principles of Editing",
+    "reviews": 22,
+    "rating": 0.01,
+    "staff": 2.93,
+    "difficulty": 1.97,
+    "workload": 2
+  },
+  {
+    "code": "EXPO E-25",
+    "name": "Academic Writing and Critical Reading",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-34",
+    "name": "Business Rhetoric",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-39",
+    "name": "Advanced Essay Writing",
+    "reviews": 187,
+    "rating": 2.61,
+    "staff": 1.33,
+    "difficulty": 4.24,
+    "workload": 31
+  },
+  {
+    "code": "EXPO E-42A",
+    "name": "Writing in the Humanities",
+    "reviews": 65,
+    "rating": 3.97,
+    "staff": 0.61,
+    "difficulty": 0.86,
+    "workload": 2
+  },
+  {
+    "code": "EXPO E-42B",
+    "name": "Writing in the Social Sciences",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-42C",
+    "name": "Writing in the Sciences",
+    "reviews": 78,
+    "rating": 1.09,
+    "staff": 0.57,
+    "difficulty": 0.58,
+    "workload": 13
+  },
+  {
+    "code": "EXPO E-5",
+    "name": "Fundamentals of Grammar",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "EXPO E-90",
+    "name": "Principles of Legal Writing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FORE E-114",
+    "name": "Greek World Literature: From the Odyssey to Zorba the Greek",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FORE E-200",
+    "name": "Bargaining with the Devil: German Literature and Thought",
+    "reviews": 107,
+    "rating": 4.47,
+    "staff": 3.36,
+    "difficulty": 0.87,
+    "workload": 1
+  },
+  {
+    "code": "FREN E-1",
+    "name": "Intensive Elementary French I",
+    "reviews": 147,
+    "rating": 0.4,
+    "staff": 0.38,
+    "difficulty": 2.58,
+    "workload": 22
+  },
+  {
+    "code": "FREN E-1A",
+    "name": "Elementary French I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FREN E-1B",
+    "name": "Elementary French I",
+    "reviews": 150,
+    "rating": 3.68,
+    "staff": 4.02,
+    "difficulty": 4.71,
+    "workload": 13
+  },
+  {
+    "code": "FREN E-1D",
+    "name": "Online Intensive Elementary French I",
+    "reviews": 170,
+    "rating": 4.86,
+    "staff": 0.77,
+    "difficulty": 1.12,
+    "workload": 0
+  },
+  {
+    "code": "FREN E-1X",
+    "name": "Reading for Information",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FREN E-1Y",
+    "name": "Reading and Translation",
+    "reviews": 41,
+    "rating": 3.56,
+    "staff": 3.81,
+    "difficulty": 2.85,
+    "workload": 21
+  },
+  {
+    "code": "FREN E-2",
+    "name": "Intensive Elementary French II",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FREN E-24",
+    "name": "Survey of French Literature from the Middle Ages to the Present",
+    "reviews": 195,
+    "rating": 3.05,
+    "staff": 2.93,
+    "difficulty": 3.31,
+    "workload": 24
+  },
+  {
+    "code": "FREN E-2D",
+    "name": "Online Intensive Elementary French II",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "FREN E-5",
+    "name": "Oral Expression: Le Français parlé",
+    "reviews": 37,
+    "rating": 1.17,
+    "staff": 1.44,
+    "difficulty": 4.54,
+    "workload": 3
+  },
+  {
+    "code": "GERM E-1",
+    "name": "Intensive Elementary German I",
+    "reviews": 95,
+    "rating": 3.82,
+    "staff": 3.5,
+    "difficulty": 2.09,
+    "workload": 27
+  },
+  {
+    "code": "GERM E-2",
+    "name": "Intensive Elementary German II",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1005",
+    "name": "Introduction to Political Science Research Methods",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1007",
+    "name": "Cyberpolitics",
+    "reviews": 109,
+    "rating": 2.22,
+    "staff": 4.88,
+    "difficulty": 2.67,
+    "workload": 9
+  },
+  {
+    "code": "GOVT E-1045",
+    "name": "Justice",
+    "reviews": 69,
+    "rating": 0.75,
+    "staff": 1.28,
+    "difficulty": 4.48,
+    "workload": 17
+  },
+  {
+    "code": "GOVT E-1048",
+    "name": "Human Rights and International Politics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1063C",
+    "name": "Democracy and Its Discontents",
+    "reviews": 49,
+    "rating": 4.3,
+    "staff": 1.89,
+    "difficulty": 2.45,
+    "workload": 13
+  },
+  {
+    "code": "GOVT E-1071",
+    "name": "Politics of Religion in Liberal Democracies",
+    "reviews": 68,
+    "rating": 1.43,
+    "staff": 0.84,
+    "difficulty": 1.39,
+    "workload": 27
+  },
+  {
+    "code": "GOVT E-1114",
+    "name": "Political Parties in Developed Democracies",
+    "reviews": 63,
+    "rating": 3.27,
+    "staff": 2.85,
+    "difficulty": 3.5,
+    "workload": 10
+  },
+  {
+    "code": "GOVT E-1207",
+    "name": "Capitalism as a System of Governance",
+    "reviews": 84,
+    "rating": 1.3,
+    "staff": 4.35,
+    "difficulty": 2.08,
+    "workload": 30
+  },
+  {
+    "code": "GOVT E-1212",
+    "name": "Saving Lives in War and Peace: Challenges to Contemporary Humanitarian Action",
+    "reviews": 185,
+    "rating": 1.56,
+    "staff": 4.41,
+    "difficulty": 4.61,
+    "workload": 25
+  },
+  {
+    "code": "GOVT E-1243",
+    "name": "Russian Politics in Transition",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1345",
+    "name": "An Introduction to American Law",
+    "reviews": 49,
+    "rating": 3.74,
+    "staff": 2.47,
+    "difficulty": 3.91,
+    "workload": 34
+  },
+  {
+    "code": "GOVT E-1353",
+    "name": "Leadership Lessons from Modern Presidential Politics",
+    "reviews": 84,
+    "rating": 1.9,
+    "staff": 4.45,
+    "difficulty": 2.61,
+    "workload": 33
+  },
+  {
+    "code": "GOVT E-1354",
+    "name": "Ideas About Leadership: Theoretical, Historical, and Personal Frameworks",
+    "reviews": 87,
+    "rating": 0.61,
+    "staff": 3.62,
+    "difficulty": 0.85,
+    "workload": 38
+  },
+  {
+    "code": "GOVT E-1368",
+    "name": "Saving Schools: History, Politics, and Policy in US Education",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1540",
+    "name": "Politics of the American Presidency",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1555",
+    "name": "Race, Ethnicity, and Immigration: From Obama to Trump",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1733",
+    "name": "Grand Strategy and National Security",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1743",
+    "name": "Cyberspace and International Security",
+    "reviews": 63,
+    "rating": 0.1,
+    "staff": 4.61,
+    "difficulty": 1.91,
+    "workload": 23
+  },
+  {
+    "code": "GOVT E-1744",
+    "name": "Women, Peace, and Security",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1750",
+    "name": "International Organization",
+    "reviews": 170,
+    "rating": 3.44,
+    "staff": 2.96,
+    "difficulty": 4.71,
+    "workload": 35
+  },
+  {
+    "code": "GOVT E-1755",
+    "name": "Criminal Groups: International Security Threats in a Global Environment",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1780",
+    "name": "International Political Economy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1796A",
+    "name": "Future Foreign Policy and Defense Strategy",
+    "reviews": 11,
+    "rating": 3.6,
+    "staff": 2.84,
+    "difficulty": 4.73,
+    "workload": 6
+  },
+  {
+    "code": "GOVT E-1830",
+    "name": "Introduction to Public International Law",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1880",
+    "name": "Popular Culture and US Foreign Policy During the Cold War",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1886",
+    "name": "Nuclear Weapons and International Security",
+    "reviews": 79,
+    "rating": 3.57,
+    "staff": 4.41,
+    "difficulty": 0.28,
+    "workload": 11
+  },
+  {
+    "code": "GOVT E-1889",
+    "name": "The Origins and Evolution of Deterrence Theory",
+    "reviews": 161,
+    "rating": 1.89,
+    "staff": 2.22,
+    "difficulty": 4.7,
+    "workload": 22
+  },
+  {
+    "code": "GOVT E-1897",
+    "name": "American Foreign Policy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1961",
+    "name": "From the Arab Spring to ISIS: National Security Challenges in the Mideast",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-1978",
+    "name": "The Politics and Ideology of Post-Revolutionary Iran",
+    "reviews": 36,
+    "rating": 0.42,
+    "staff": 0.93,
+    "difficulty": 2.53,
+    "workload": 18
+  },
+  {
+    "code": "GOVT E-1979",
+    "name": "Shi'a Islam and Politics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-20",
+    "name": "Introduction to Comparative Politics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-30",
+    "name": "American Government—A New Perspective",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-40",
+    "name": "International Conflict and Cooperation",
+    "reviews": 123,
+    "rating": 0.53,
+    "staff": 2.46,
+    "difficulty": 2.29,
+    "workload": 9
+  },
+  {
+    "code": "GOVT E-4004",
+    "name": "The Washington Center: Media, Politics, and Advocacy Redefined",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-595",
+    "name": "Foundations of Policy Writing and Analysis",
+    "reviews": 152,
+    "rating": 4.95,
+    "staff": 0.64,
+    "difficulty": 2.26,
+    "workload": 5
+  },
+  {
+    "code": "GOVT E-596",
+    "name": "Bridges to JustPeace",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "GOVT E-597",
+    "name": "Foundations of National Security Writing and Analysis",
+    "reviews": 44,
+    "rating": 2.61,
+    "staff": 2.22,
+    "difficulty": 3.15,
+    "workload": 25
+  },
+  {
+    "code": "GOVT E-599",
+    "name": "Policy Analysis Capstone",
+    "reviews": 55,
+    "rating": 1.62,
+    "staff": 2.79,
+    "difficulty": 3.03,
+    "workload": 16
+  },
+  {
+    "code": "GOVT E-599A",
+    "name": "Social Justice Capstone: Bridges to JustPeace",
+    "reviews": 0,
+    "rating": 4.75,
+    "staff": 0.9,
+    "difficulty": 0.58,
+    "workload": 16
+  },
+  {
+    "code": "GOVT E-599B",
+    "name": "National Security Analysis Capstone",
+    "reviews": 112,
+    "rating": 0.12,
+    "staff": 4.14,
+    "difficulty": 0.06,
+    "workload": 33
+  },
+  {
+    "code": "HARC E-167",
+    "name": "Velázquez and His Modern Legacy",
+    "reviews": 43,
+    "rating": 1.71,
+    "staff": 0.04,
+    "difficulty": 4.73,
+    "workload": 19
+  },
+  {
+    "code": "HARC E-178",
+    "name": "Designing the American City: Civic Aspirations and Urban Form",
+    "reviews": 117,
+    "rating": 3.5,
+    "staff": 1.8,
+    "difficulty": 1.5,
+    "workload": 34
+  },
+  {
+    "code": "HARC E-179",
+    "name": "Understanding Architecture",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HARC E-205",
+    "name": "Perspective on Picasso",
+    "reviews": 50,
+    "rating": 1.02,
+    "staff": 1.69,
+    "difficulty": 0.37,
+    "workload": 13
+  },
+  {
+    "code": "HARC E-215",
+    "name": "Art of Resistance: Social Justice and the Visual Arts",
+    "reviews": 64,
+    "rating": 1.3,
+    "staff": 0.8,
+    "difficulty": 4.28,
+    "workload": 19
+  },
+  {
+    "code": "HIST E-1015",
+    "name": "History of Western Christianity, 1100-1500",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-10C",
+    "name": "World History III: The Age of Empires, 1500-1800",
+    "reviews": 0,
+    "rating": 2.22,
+    "staff": 2.41,
+    "difficulty": 4.13,
+    "workload": 19
+  },
+  {
+    "code": "HIST E-10D",
+    "name": "World History IV: Globalization, 1800-Present",
+    "reviews": 174,
+    "rating": 4.96,
+    "staff": 0.4,
+    "difficulty": 0.45,
+    "workload": 5
+  },
+  {
+    "code": "HIST E-1147",
+    "name": "The Early Modern World, 1400-1800: Encounters and Explorations",
+    "reviews": 4,
+    "rating": 1.15,
+    "staff": 1.71,
+    "difficulty": 2.51,
+    "workload": 38
+  },
+  {
+    "code": "HIST E-1151",
+    "name": "History of the Book and of Reading",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1156",
+    "name": "Early Modern Europe, 1450-1789",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1572",
+    "name": "The Holocaust in History, Literature, and Film",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1606",
+    "name": "The Early American Republic",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1607B",
+    "name": "Boston in the American Revolution",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1607S",
+    "name": "Boston Under Siege",
+    "reviews": 191,
+    "rating": 3.64,
+    "staff": 2.85,
+    "difficulty": 2.46,
+    "workload": 15
+  },
+  {
+    "code": "HIST E-1632",
+    "name": "The History of Boston",
+    "reviews": 77,
+    "rating": 1.01,
+    "staff": 2.75,
+    "difficulty": 3.21,
+    "workload": 20
+  },
+  {
+    "code": "HIST E-1659",
+    "name": "Lincoln: Understanding Abraham Lincoln Through His Writings",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1825",
+    "name": "China: Past, Present, and Future",
+    "reviews": 192,
+    "rating": 3.64,
+    "staff": 4.57,
+    "difficulty": 0.56,
+    "workload": 31
+  },
+  {
+    "code": "HIST E-1827",
+    "name": "The United States and China: Opium War to the Present",
+    "reviews": 14,
+    "rating": 4.41,
+    "staff": 0.58,
+    "difficulty": 4.31,
+    "workload": 34
+  },
+  {
+    "code": "HIST E-1851",
+    "name": "Japan in Asia and the World",
+    "reviews": 168,
+    "rating": 0.24,
+    "staff": 1.88,
+    "difficulty": 1.55,
+    "workload": 23
+  },
+  {
+    "code": "HIST E-1893",
+    "name": "The World Wars and Global Transformation, 1900-1950",
+    "reviews": 187,
+    "rating": 0.04,
+    "staff": 4.53,
+    "difficulty": 3.44,
+    "workload": 4
+  },
+  {
+    "code": "HIST E-1915",
+    "name": "Africa and Africans: The Making of a Continent in the Modern World",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HIST E-1960",
+    "name": "The History of the Cold War",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HSCI E-128",
+    "name": "The Empire Strikes Back: Science Fiction, Religion, and Society",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HSCI E-146",
+    "name": "Medicine and the Body in East Asia and in Europe",
+    "reviews": 189,
+    "rating": 0.56,
+    "staff": 1.1,
+    "difficulty": 0.88,
+    "workload": 2
+  },
+  {
+    "code": "HSCI E-205",
+    "name": "Bodies and Sexualities in the Medieval Middle East: Medical, Cultural, and Religious Views",
+    "reviews": 38,
+    "rating": 0.81,
+    "staff": 1.62,
+    "difficulty": 2.1,
+    "workload": 0
+  },
+  {
+    "code": "HUMA E-100",
+    "name": "Proseminar: Graduate Research Methods and Scholarly Writing in the Humanities",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HUMA E-101",
+    "name": "Proseminar: Elements of the Writer's Craft",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HUMA E-108",
+    "name": "Dreams: From Antiquity to Modernity",
+    "reviews": 0,
+    "rating": 2.61,
+    "staff": 0.24,
+    "difficulty": 0.66,
+    "workload": 8
+  },
+  {
+    "code": "HUMA E-110",
+    "name": "Masterpieces of World Literature",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HUMA E-129",
+    "name": "Carmen and the Art of Seduction",
+    "reviews": 199,
+    "rating": 1.27,
+    "staff": 2.14,
+    "difficulty": 4.32,
+    "workload": 4
+  },
+  {
+    "code": "HUMA E-160",
+    "name": "Buddhism and Japanese Artistic Traditions",
+    "reviews": 169,
+    "rating": 1.79,
+    "staff": 1.1,
+    "difficulty": 2.39,
+    "workload": 27
+  },
+  {
+    "code": "HUMA E-220",
+    "name": "Frida Kahlo's Mexico: Women, Arts, and Revolution",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "HUMA E-497",
+    "name": "Crafting the Thesis Proposal in Creative Writing and Literature, Dramatic Arts, and English Tutorial",
+    "reviews": 11,
+    "rating": 2.12,
+    "staff": 4.22,
+    "difficulty": 0.56,
+    "workload": 34
+  },
+  {
+    "code": "ISMT E-100",
+    "name": "Information Systems Management",
+    "reviews": 145,
+    "rating": 4.64,
+    "staff": 3.39,
+    "difficulty": 4.1,
+    "workload": 32
+  },
+  {
+    "code": "ISMT E-101",
+    "name": "Agile Project Management",
+    "reviews": 116,
+    "rating": 0.99,
+    "staff": 3.46,
+    "difficulty": 4.82,
+    "workload": 20
+  },
+  {
+    "code": "ISMT E-150",
+    "name": "Introduction to GIS",
+    "reviews": 90,
+    "rating": 3.18,
+    "staff": 1.21,
+    "difficulty": 2.39,
+    "workload": 37
+  },
+  {
+    "code": "ISMT E-156",
+    "name": "Intermediate Geographic Analysis",
+    "reviews": 2,
+    "rating": 1.33,
+    "staff": 2.71,
+    "difficulty": 3.8,
+    "workload": 12
+  },
+  {
+    "code": "ISMT E-158",
+    "name": "Earth Observation Data Analysis",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ISMT E-182",
+    "name": "Strategic Information Systems",
+    "reviews": 1,
+    "rating": 0.26,
+    "staff": 3.05,
+    "difficulty": 4.88,
+    "workload": 10
+  },
+  {
+    "code": "ISMT E-185",
+    "name": "Technology Leadership",
+    "reviews": 148,
+    "rating": 2.67,
+    "staff": 1.5,
+    "difficulty": 2.08,
+    "workload": 26
+  },
+  {
+    "code": "ISMT E-189",
+    "name": "Information Technology Finance and Communications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ISMT E-599",
+    "name": "Capstone Seminar in Digital Enterprise",
+    "reviews": 17,
+    "rating": 1.75,
+    "staff": 0.4,
+    "difficulty": 3.12,
+    "workload": 8
+  },
+  {
+    "code": "ISMT E-599A",
+    "name": "Capstone Seminar in Information Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ITAL E-1",
+    "name": "Intensive Elementary Italian I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ITAL E-2",
+    "name": "Intensive Elementary Italian II",
+    "reviews": 181,
+    "rating": 3.05,
+    "staff": 1.8,
+    "difficulty": 1.27,
+    "workload": 17
+  },
+  {
+    "code": "ITAL E-3",
+    "name": "Intensive Intermediate Italian: Grammar and Culture",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "ITAL E-4",
+    "name": "Intensive Intermediate Italian II: Grammar Review and Culture",
+    "reviews": 167,
+    "rating": 1.42,
+    "staff": 0.51,
+    "difficulty": 2.24,
+    "workload": 39
+  },
+  {
+    "code": "JAPA E-1",
+    "name": "Elementary Japanese",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-100",
+    "name": "Proseminar: Fundamentals and Practices of Journalism",
+    "reviews": 26,
+    "rating": 2.17,
+    "staff": 4.1,
+    "difficulty": 3.15,
+    "workload": 8
+  },
+  {
+    "code": "JOUR E-101",
+    "name": "Developing a Career in Journalism: Essential Skills and Insider Knowledge",
+    "reviews": 127,
+    "rating": 3.02,
+    "staff": 4.86,
+    "difficulty": 4.55,
+    "workload": 12
+  },
+  {
+    "code": "JOUR E-110",
+    "name": "The Constitution and the Media",
+    "reviews": 161,
+    "rating": 2.02,
+    "staff": 2.88,
+    "difficulty": 4.8,
+    "workload": 29
+  },
+  {
+    "code": "JOUR E-136",
+    "name": "First-Person Journalism",
+    "reviews": 122,
+    "rating": 2.66,
+    "staff": 1.48,
+    "difficulty": 0.37,
+    "workload": 3
+  },
+  {
+    "code": "JOUR E-137",
+    "name": "Feature Writing",
+    "reviews": 31,
+    "rating": 0.66,
+    "staff": 0.17,
+    "difficulty": 4.07,
+    "workload": 1
+  },
+  {
+    "code": "JOUR E-140A",
+    "name": "News Reporting for the Web, Print, and Other Platforms",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-144A",
+    "name": "Investigative Reporting in the Digital Age",
+    "reviews": 56,
+    "rating": 2.95,
+    "staff": 3.39,
+    "difficulty": 4.03,
+    "workload": 19
+  },
+  {
+    "code": "JOUR E-146",
+    "name": "Foreign Correspondence",
+    "reviews": 3,
+    "rating": 1.04,
+    "staff": 3.64,
+    "difficulty": 1.41,
+    "workload": 15
+  },
+  {
+    "code": "JOUR E-153",
+    "name": "Profile Writing in the Digital Age",
+    "reviews": 78,
+    "rating": 1.46,
+    "staff": 2.67,
+    "difficulty": 2.49,
+    "workload": 6
+  },
+  {
+    "code": "JOUR E-156",
+    "name": "Storytelling for Journalists",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-157",
+    "name": "Reviewing the Arts",
+    "reviews": 132,
+    "rating": 1.78,
+    "staff": 1.61,
+    "difficulty": 3.08,
+    "workload": 7
+  },
+  {
+    "code": "JOUR E-167",
+    "name": "Video Production for Journalists",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-169",
+    "name": "Designing Stories for the Web",
+    "reviews": 39,
+    "rating": 4.44,
+    "staff": 0.17,
+    "difficulty": 4.67,
+    "workload": 30
+  },
+  {
+    "code": "JOUR E-170",
+    "name": "Writing About Food",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-172",
+    "name": "Navigating Media Disruption: Background and Tools for Digital Success for Journalists",
+    "reviews": 2,
+    "rating": 1.02,
+    "staff": 1.94,
+    "difficulty": 3.74,
+    "workload": 36
+  },
+  {
+    "code": "JOUR E-179",
+    "name": "How Washington Works",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "JOUR E-50",
+    "name": "Basic Journalism in the Digital Age",
+    "reviews": 90,
+    "rating": 3.35,
+    "staff": 3.37,
+    "difficulty": 0.53,
+    "workload": 25
+  },
+  {
+    "code": "JOUR E-599",
+    "name": "Journalism Capstone Project",
+    "reviews": 16,
+    "rating": 1.89,
+    "staff": 4.91,
+    "difficulty": 0.16,
+    "workload": 10
+  },
+  {
+    "code": "LATI E-122",
+    "name": "Horace, Odes",
+    "reviews": 167,
+    "rating": 3.95,
+    "staff": 2.86,
+    "difficulty": 3.89,
+    "workload": 19
+  },
+  {
+    "code": "LATI E-1A",
+    "name": "Latin for Beginners",
+    "reviews": 148,
+    "rating": 3.82,
+    "staff": 4.44,
+    "difficulty": 1.72,
+    "workload": 16
+  },
+  {
+    "code": "LATI E-1B",
+    "name": "Latin for Beginners",
+    "reviews": 96,
+    "rating": 2.94,
+    "staff": 2.15,
+    "difficulty": 3.39,
+    "workload": 33
+  },
+  {
+    "code": "LATI E-44",
+    "name": "Sallust, Bellum Catilinae, Bellum Iugurthinum",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "LSTU E-108",
+    "name": "Cases in the Supreme Court",
+    "reviews": 105,
+    "rating": 1.91,
+    "staff": 4.31,
+    "difficulty": 0.03,
+    "workload": 19
+  },
+  {
+    "code": "LSTU E-109A",
+    "name": "A Constitutional Convention",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "LSTU E-113",
+    "name": "International Human Rights Law",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "LSTU E-116A",
+    "name": "The Human Rights of Children and Youth as Citizens, Migrants, and Refugees",
+    "reviews": 115,
+    "rating": 2.96,
+    "staff": 2.32,
+    "difficulty": 0.7,
+    "workload": 33
+  },
+  {
+    "code": "LSTU E-117",
+    "name": "The Warren Court and Social Justice",
+    "reviews": 84,
+    "rating": 1.85,
+    "staff": 3.2,
+    "difficulty": 0.73,
+    "workload": 29
+  },
+  {
+    "code": "LSTU E-141",
+    "name": "Legal Reasoning",
+    "reviews": 96,
+    "rating": 4.14,
+    "staff": 1.24,
+    "difficulty": 2.6,
+    "workload": 3
+  },
+  {
+    "code": "LSTU E-145",
+    "name": "Censorship: Legal, Ethical, and Policy Issues",
+    "reviews": 150,
+    "rating": 4.54,
+    "staff": 4.31,
+    "difficulty": 2.1,
+    "workload": 22
+  },
+  {
+    "code": "LSTU E-155",
+    "name": "Law, Gender, and Equality",
+    "reviews": 39,
+    "rating": 1.46,
+    "staff": 1.6,
+    "difficulty": 3.53,
+    "workload": 3
+  },
+  {
+    "code": "LSTU E-168",
+    "name": "Nazi-Looted Art and the Law",
+    "reviews": 91,
+    "rating": 4.56,
+    "staff": 0.13,
+    "difficulty": 1.56,
+    "workload": 6
+  },
+  {
+    "code": "LSTU E-170",
+    "name": "Introduction to Sports Law for Non-Lawyers: Current Issues Facing Professional and Pre-Professional Athletes",
+    "reviews": 57,
+    "rating": 4.55,
+    "staff": 2.28,
+    "difficulty": 1.53,
+    "workload": 9
+  },
+  {
+    "code": "MATH E-10",
+    "name": "Precalculus",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-121",
+    "name": "Linear Algebra and Applications",
+    "reviews": 32,
+    "rating": 1.44,
+    "staff": 3.35,
+    "difficulty": 4.96,
+    "workload": 29
+  },
+  {
+    "code": "MATH E-122",
+    "name": "Abstract Algebra with Galois Theory",
+    "reviews": 101,
+    "rating": 4.92,
+    "staff": 4.74,
+    "difficulty": 0.25,
+    "workload": 34
+  },
+  {
+    "code": "MATH E-15",
+    "name": "Calculus 1",
+    "reviews": 0,
+    "rating": 3.62,
+    "staff": 2.44,
+    "difficulty": 1.29,
+    "workload": 15
+  },
+  {
+    "code": "MATH E-156",
+    "name": "Mathematical Foundations of Statistical Software",
+    "reviews": 176,
+    "rating": 0.05,
+    "staff": 1.61,
+    "difficulty": 3.43,
+    "workload": 32
+  },
+  {
+    "code": "MATH E-158",
+    "name": "Introduction to Bayesian Inference",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-16",
+    "name": "Calculus 2 with Series and Differential Equations",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-216",
+    "name": "Real Analysis, Convexity, and Optimization",
+    "reviews": 46,
+    "rating": 3.3,
+    "staff": 3.67,
+    "difficulty": 3.07,
+    "workload": 3
+  },
+  {
+    "code": "MATH E-21A",
+    "name": "Multivariable Calculus",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-21B",
+    "name": "Linear Algebra",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-23A",
+    "name": "Linear Algebra and Real Analysis I",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-23B",
+    "name": "Linear Algebra and Real Analysis II",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-23C",
+    "name": "Mathematics for Computation and Data Science",
+    "reviews": 117,
+    "rating": 0.63,
+    "staff": 3.98,
+    "difficulty": 3.13,
+    "workload": 35
+  },
+  {
+    "code": "MATH E-3",
+    "name": "Quantitative Reasoning: Practical Math",
+    "reviews": 0,
+    "rating": 0.25,
+    "staff": 0.99,
+    "difficulty": 3.56,
+    "workload": 29
+  },
+  {
+    "code": "MATH E-300",
+    "name": "Mathematical Foundations for Teaching Secondary School Math",
+    "reviews": 86,
+    "rating": 1.09,
+    "staff": 1.4,
+    "difficulty": 1.15,
+    "workload": 3
+  },
+  {
+    "code": "MATH E-302",
+    "name": "Math for Teaching Geometry",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-303",
+    "name": "Math for Teaching Algebra",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-304",
+    "name": "Inquiries into Probability and Statistics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-311",
+    "name": "Investigating the Mathematical Process: An Introduction to Proofs",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-320",
+    "name": "Teaching Mathematics with a Historical Perspective",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-335",
+    "name": "Perspectives on Problem Posing",
+    "reviews": 73,
+    "rating": 3.35,
+    "staff": 3.11,
+    "difficulty": 4.43,
+    "workload": 14
+  },
+  {
+    "code": "MATH E-497",
+    "name": "Crafting the Thesis Proposal in Mathematics for Teaching Tutorial",
+    "reviews": 147,
+    "rating": 4,
+    "staff": 4.63,
+    "difficulty": 0.98,
+    "workload": 23
+  },
+  {
+    "code": "MATH E-599",
+    "name": "Teaching Projects: Math for Teaching Capstone Course",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MATH E-6",
+    "name": "Mathematics and the Greeks",
+    "reviews": 178,
+    "rating": 4.17,
+    "staff": 3.73,
+    "difficulty": 1.36,
+    "workload": 15
+  },
+  {
+    "code": "MATH E-8",
+    "name": "College Algebra",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-10",
+    "name": "HBX CORe: Business Analytics, Economics for Managers, and Financial Accounting",
+    "reviews": 126,
+    "rating": 0.13,
+    "staff": 3.79,
+    "difficulty": 0.21,
+    "workload": 4
+  },
+  {
+    "code": "MGMT E-1000",
+    "name": "Financial Accounting Principles",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-1100",
+    "name": "Intermediate Accounting",
+    "reviews": 102,
+    "rating": 0.05,
+    "staff": 3.11,
+    "difficulty": 2.65,
+    "workload": 32
+  },
+  {
+    "code": "MGMT E-1300",
+    "name": "Nonprofit and Governmental Accounting",
+    "reviews": 124,
+    "rating": 3.02,
+    "staff": 2.27,
+    "difficulty": 2.06,
+    "workload": 15
+  },
+  {
+    "code": "MGMT E-1500",
+    "name": "Cost Accounting",
+    "reviews": 30,
+    "rating": 2.11,
+    "staff": 3.53,
+    "difficulty": 2.69,
+    "workload": 12
+  },
+  {
+    "code": "MGMT E-1600",
+    "name": "Managerial Accounting",
+    "reviews": 158,
+    "rating": 4.52,
+    "staff": 1.14,
+    "difficulty": 3.36,
+    "workload": 23
+  },
+  {
+    "code": "MGMT E-1650",
+    "name": "Concepts of Income Taxation",
+    "reviews": 12,
+    "rating": 1.03,
+    "staff": 4.24,
+    "difficulty": 2.41,
+    "workload": 14
+  },
+  {
+    "code": "MGMT E-1680",
+    "name": "Forensic Accounting and Fraud Examination",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-2000",
+    "name": "Principles of Finance",
+    "reviews": 23,
+    "rating": 4.75,
+    "staff": 1.76,
+    "difficulty": 2.22,
+    "workload": 37
+  },
+  {
+    "code": "MGMT E-2020",
+    "name": "Managerial Finance",
+    "reviews": 85,
+    "rating": 3.83,
+    "staff": 3.29,
+    "difficulty": 4.53,
+    "workload": 15
+  },
+  {
+    "code": "MGMT E-2035",
+    "name": "Principles of Real Estate",
+    "reviews": 46,
+    "rating": 2.58,
+    "staff": 4.53,
+    "difficulty": 1.88,
+    "workload": 32
+  },
+  {
+    "code": "MGMT E-2037",
+    "name": "Real Estate Finance and Investment Fundamentals",
+    "reviews": 64,
+    "rating": 0.87,
+    "staff": 3.96,
+    "difficulty": 3.88,
+    "workload": 28
+  },
+  {
+    "code": "MGMT E-2600",
+    "name": "Financial Statement Analysis",
+    "reviews": 74,
+    "rating": 4.69,
+    "staff": 2.48,
+    "difficulty": 0.66,
+    "workload": 32
+  },
+  {
+    "code": "MGMT E-2620",
+    "name": "Business Analysis and Valuation",
+    "reviews": 27,
+    "rating": 0.95,
+    "staff": 1.78,
+    "difficulty": 1.8,
+    "workload": 21
+  },
+  {
+    "code": "MGMT E-2700",
+    "name": "Corporate Finance",
+    "reviews": 50,
+    "rating": 4.67,
+    "staff": 2.76,
+    "difficulty": 0.88,
+    "workload": 27
+  },
+  {
+    "code": "MGMT E-2720",
+    "name": "Mergers, Acquisitions, and Restructurings",
+    "reviews": 69,
+    "rating": 3.14,
+    "staff": 2.13,
+    "difficulty": 1.97,
+    "workload": 7
+  },
+  {
+    "code": "MGMT E-2740",
+    "name": "Investment Theory and Applications",
+    "reviews": 47,
+    "rating": 2.45,
+    "staff": 1.16,
+    "difficulty": 4.48,
+    "workload": 31
+  },
+  {
+    "code": "MGMT E-2750",
+    "name": "Alternative Investment Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-2784",
+    "name": "Hedge Funds: History, Strategies, and Practice",
+    "reviews": 62,
+    "rating": 2.52,
+    "staff": 4.5,
+    "difficulty": 1.69,
+    "workload": 27
+  },
+  {
+    "code": "MGMT E-2790",
+    "name": "Private Equity",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-2795",
+    "name": "Venture Capital",
+    "reviews": 59,
+    "rating": 1.82,
+    "staff": 3.69,
+    "difficulty": 0.83,
+    "workload": 14
+  },
+  {
+    "code": "MGMT E-3010",
+    "name": "Leadership Communications",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-3012",
+    "name": "The Art of Communication",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-3013",
+    "name": "Advanced Art of Communication",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-3038",
+    "name": "Public Relations in Business and Entrepreneurship",
+    "reviews": 148,
+    "rating": 0.76,
+    "staff": 2.05,
+    "difficulty": 4,
+    "workload": 37
+  },
+  {
+    "code": "MGMT E-3045",
+    "name": "Corporate Sustainability Marketing and Communications",
+    "reviews": 153,
+    "rating": 3.87,
+    "staff": 1.93,
+    "difficulty": 3.22,
+    "workload": 39
+  },
+  {
+    "code": "MGMT E-3065",
+    "name": "Society and the Workplace: Power, Diversity, and Management Communication",
+    "reviews": 93,
+    "rating": 4,
+    "staff": 4.91,
+    "difficulty": 1.02,
+    "workload": 0
+  },
+  {
+    "code": "MGMT E-3300",
+    "name": "Development Communications",
+    "reviews": 20,
+    "rating": 4.77,
+    "staff": 4.16,
+    "difficulty": 2.56,
+    "workload": 3
+  },
+  {
+    "code": "MGMT E-3310",
+    "name": "Grant Proposal Writing",
+    "reviews": 121,
+    "rating": 2.59,
+    "staff": 0.77,
+    "difficulty": 4.34,
+    "workload": 0
+  },
+  {
+    "code": "MGMT E-3500",
+    "name": "Enterprise Social Media and Organizational Collaboration",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4000",
+    "name": "Organizational Behavior",
+    "reviews": 120,
+    "rating": 3.53,
+    "staff": 0.51,
+    "difficulty": 3.5,
+    "workload": 36
+  },
+  {
+    "code": "MGMT E-4030",
+    "name": "Leading through Change",
+    "reviews": 108,
+    "rating": 3.56,
+    "staff": 3.39,
+    "difficulty": 0.13,
+    "workload": 12
+  },
+  {
+    "code": "MGMT E-4100",
+    "name": "Managing Yourself and Others",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4140",
+    "name": "Gender, Leadership, and Management",
+    "reviews": 60,
+    "rating": 3.3,
+    "staff": 2.65,
+    "difficulty": 3.96,
+    "workload": 25
+  },
+  {
+    "code": "MGMT E-4160",
+    "name": "Creating and Leading Team Dynamics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4165",
+    "name": "Making Teams Work",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4178",
+    "name": "Optimizing Leadership",
+    "reviews": 119,
+    "rating": 1.14,
+    "staff": 3.19,
+    "difficulty": 4.87,
+    "workload": 38
+  },
+  {
+    "code": "MGMT E-4189",
+    "name": "Nonprofit Leadership and Community Engagement",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4190",
+    "name": "Case Studies in Leadership Through Literature and Film",
+    "reviews": 198,
+    "rating": 1.19,
+    "staff": 1.18,
+    "difficulty": 0.64,
+    "workload": 31
+  },
+  {
+    "code": "MGMT E-4191",
+    "name": "The Leadership Paradox",
+    "reviews": 179,
+    "rating": 3.6,
+    "staff": 3.31,
+    "difficulty": 0.46,
+    "workload": 35
+  },
+  {
+    "code": "MGMT E-4225",
+    "name": "Negotiation and Organizational Conflict Resolution",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4230",
+    "name": "Advanced Negotiation and Conflict Resolution Strategies: Mastering the Science and Art",
+    "reviews": 95,
+    "rating": 4.45,
+    "staff": 3.22,
+    "difficulty": 4.89,
+    "workload": 11
+  },
+  {
+    "code": "MGMT E-4240",
+    "name": "Human Resource Management",
+    "reviews": 31,
+    "rating": 4.33,
+    "staff": 3.68,
+    "difficulty": 0.29,
+    "workload": 38
+  },
+  {
+    "code": "MGMT E-4245",
+    "name": "Global Organizational Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4310",
+    "name": "Creativity and Innovation",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-4350",
+    "name": "Collaborating and Leading Across Boundaries: Inside and Across Organizations",
+    "reviews": 133,
+    "rating": 3.79,
+    "staff": 0.38,
+    "difficulty": 2.23,
+    "workload": 39
+  },
+  {
+    "code": "MGMT E-5000",
+    "name": "Strategic Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5002",
+    "name": "Business Strategy in the Real World",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5005",
+    "name": "Corporate Strategy",
+    "reviews": 128,
+    "rating": 2.05,
+    "staff": 0.42,
+    "difficulty": 3.68,
+    "workload": 4
+  },
+  {
+    "code": "MGMT E-5006",
+    "name": "Competitive Strategy",
+    "reviews": 49,
+    "rating": 0.64,
+    "staff": 1.8,
+    "difficulty": 2.98,
+    "workload": 6
+  },
+  {
+    "code": "MGMT E-5012",
+    "name": "The Art and Practice of Systems Thinking",
+    "reviews": 179,
+    "rating": 1.92,
+    "staff": 3.44,
+    "difficulty": 0.25,
+    "workload": 28
+  },
+  {
+    "code": "MGMT E-5015",
+    "name": "Applied Corporate Responsibility",
+    "reviews": 82,
+    "rating": 3.96,
+    "staff": 0.14,
+    "difficulty": 1.55,
+    "workload": 39
+  },
+  {
+    "code": "MGMT E-5030",
+    "name": "Project Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5032",
+    "name": "Process Improvement using Lean Six Sigma Methodology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5061",
+    "name": "Managing Service Design and Operations",
+    "reviews": 25,
+    "rating": 4.82,
+    "staff": 4.69,
+    "difficulty": 4.57,
+    "workload": 31
+  },
+  {
+    "code": "MGMT E-5064",
+    "name": "Business, Government, and Society: Understanding Nonmarket Strategies",
+    "reviews": 80,
+    "rating": 1.52,
+    "staff": 0.63,
+    "difficulty": 1.91,
+    "workload": 16
+  },
+  {
+    "code": "MGMT E-5070",
+    "name": "Data as a Second Language",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5072",
+    "name": "Data Literacy in the Age of Machine Learning",
+    "reviews": 139,
+    "rating": 3.58,
+    "staff": 1.71,
+    "difficulty": 0.15,
+    "workload": 25
+  },
+  {
+    "code": "MGMT E-5090",
+    "name": "Crisis Management and Emergency Preparedness",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5095",
+    "name": "Disaster Relief and Recovery",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5100",
+    "name": "Essentials of Management",
+    "reviews": 153,
+    "rating": 3.39,
+    "staff": 2.84,
+    "difficulty": 4.92,
+    "workload": 9
+  },
+  {
+    "code": "MGMT E-5310",
+    "name": "Leading and Managing Nonprofit Organizations",
+    "reviews": 194,
+    "rating": 0.31,
+    "staff": 1.11,
+    "difficulty": 1.51,
+    "workload": 38
+  },
+  {
+    "code": "MGMT E-5320",
+    "name": "Higher Education Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5330",
+    "name": "Principles and Practices of Fundraising",
+    "reviews": 123,
+    "rating": 4.69,
+    "staff": 2.79,
+    "difficulty": 2.3,
+    "workload": 4
+  },
+  {
+    "code": "MGMT E-5335",
+    "name": "Strategic Planning and Fundraising",
+    "reviews": 198,
+    "rating": 3,
+    "staff": 2.38,
+    "difficulty": 1.83,
+    "workload": 20
+  },
+  {
+    "code": "MGMT E-5400",
+    "name": "New Business Venturing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5408",
+    "name": "Breakthrough Innovation with Blockchain Technology",
+    "reviews": 116,
+    "rating": 1.82,
+    "staff": 2.96,
+    "difficulty": 1,
+    "workload": 0
+  },
+  {
+    "code": "MGMT E-5420",
+    "name": "Entrepreneurship and Innovation",
+    "reviews": 72,
+    "rating": 2.38,
+    "staff": 4.25,
+    "difficulty": 3.07,
+    "workload": 22
+  },
+  {
+    "code": "MGMT E-5425",
+    "name": "Design Thinking",
+    "reviews": 198,
+    "rating": 1.32,
+    "staff": 3.29,
+    "difficulty": 2.06,
+    "workload": 8
+  },
+  {
+    "code": "MGMT E-5445",
+    "name": "Eco-entrepreneurship",
+    "reviews": 135,
+    "rating": 1.71,
+    "staff": 2.53,
+    "difficulty": 2.24,
+    "workload": 33
+  },
+  {
+    "code": "MGMT E-5460",
+    "name": "Building A Better Business Model",
+    "reviews": 7,
+    "rating": 0.28,
+    "staff": 4.04,
+    "difficulty": 1.56,
+    "workload": 4
+  },
+  {
+    "code": "MGMT E-5472",
+    "name": "Strategic Business Insight",
+    "reviews": 144,
+    "rating": 4.29,
+    "staff": 2.58,
+    "difficulty": 2.37,
+    "workload": 37
+  },
+  {
+    "code": "MGMT E-5500",
+    "name": "Business Strategies for Sports Organizations",
+    "reviews": 2,
+    "rating": 0.77,
+    "staff": 0.11,
+    "difficulty": 0.5,
+    "workload": 2
+  },
+  {
+    "code": "MGMT E-5625",
+    "name": "Sustainability and International Business: Challenges, Opportunities, and Strategies",
+    "reviews": 148,
+    "rating": 1.73,
+    "staff": 1.2,
+    "difficulty": 3.95,
+    "workload": 6
+  },
+  {
+    "code": "MGMT E-5700",
+    "name": "Management Consulting",
+    "reviews": 113,
+    "rating": 0.11,
+    "staff": 3.79,
+    "difficulty": 0.4,
+    "workload": 20
+  },
+  {
+    "code": "MGMT E-5725",
+    "name": "Consulting with Clients for Management and Finance",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5750",
+    "name": "The Art and Science of Decision Making",
+    "reviews": 157,
+    "rating": 0.76,
+    "staff": 4.58,
+    "difficulty": 2.16,
+    "workload": 15
+  },
+  {
+    "code": "MGMT E-5790",
+    "name": "Ethics, Economics, and Organizations",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-5800",
+    "name": "Judgment and Decision Making",
+    "reviews": 175,
+    "rating": 1.25,
+    "staff": 0.12,
+    "difficulty": 4.86,
+    "workload": 17
+  },
+  {
+    "code": "MGMT E-5805",
+    "name": "Real Estate Enterprise Management",
+    "reviews": 145,
+    "rating": 2.19,
+    "staff": 2.24,
+    "difficulty": 0.25,
+    "workload": 5
+  },
+  {
+    "code": "MGMT E-6000",
+    "name": "Marketing Management",
+    "reviews": 175,
+    "rating": 2.87,
+    "staff": 3.36,
+    "difficulty": 4.24,
+    "workload": 29
+  },
+  {
+    "code": "MGMT E-6040",
+    "name": "International Marketing",
+    "reviews": 197,
+    "rating": 1.9,
+    "staff": 3.86,
+    "difficulty": 0.68,
+    "workload": 38
+  },
+  {
+    "code": "MGMT E-6050",
+    "name": "Business-to-Business Marketing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6100",
+    "name": "Branding Strategy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6200",
+    "name": "Consumer Behavior",
+    "reviews": 118,
+    "rating": 1.45,
+    "staff": 0.51,
+    "difficulty": 1.36,
+    "workload": 29
+  },
+  {
+    "code": "MGMT E-6600",
+    "name": "Strategic Brand Marketing",
+    "reviews": 155,
+    "rating": 3.83,
+    "staff": 0.48,
+    "difficulty": 1.61,
+    "workload": 10
+  },
+  {
+    "code": "MGMT E-6605",
+    "name": "Luxury Marketing",
+    "reviews": 139,
+    "rating": 1,
+    "staff": 1.59,
+    "difficulty": 1.26,
+    "workload": 2
+  },
+  {
+    "code": "MGMT E-6610",
+    "name": "Marketing Social Change",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6615",
+    "name": "Digital Marketing: Foundations and Framework for Success",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6630",
+    "name": "Sustainability Marketing and Branding",
+    "reviews": 7,
+    "rating": 2.65,
+    "staff": 2.48,
+    "difficulty": 4.86,
+    "workload": 3
+  },
+  {
+    "code": "MGMT E-6650",
+    "name": "Digital Media and Advertising Strategy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6652",
+    "name": "Integrated Marketing Communication",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6655",
+    "name": "Social Media Management",
+    "reviews": 63,
+    "rating": 3.06,
+    "staff": 4.87,
+    "difficulty": 1.32,
+    "workload": 28
+  },
+  {
+    "code": "MGMT E-6700",
+    "name": "Marketing Research",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MGMT E-6750",
+    "name": "Marketing Analytics: Fundamental Data-Driven Marketing",
+    "reviews": 59,
+    "rating": 2.57,
+    "staff": 1.56,
+    "difficulty": 3.48,
+    "workload": 28
+  },
+  {
+    "code": "MGMT E-6800",
+    "name": "Professional Selling and Sales Management",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-100",
+    "name": "Introduction to Museum Studies",
+    "reviews": 153,
+    "rating": 2.36,
+    "staff": 2.72,
+    "difficulty": 3.33,
+    "workload": 17
+  },
+  {
+    "code": "MUSE E-102",
+    "name": "Proseminar: Writing Skills for Museum Studies Scholars and Professionals",
+    "reviews": 109,
+    "rating": 2.24,
+    "staff": 0.13,
+    "difficulty": 4.09,
+    "workload": 8
+  },
+  {
+    "code": "MUSE E-105",
+    "name": "Managing the Twenty-First Century Museum",
+    "reviews": 30,
+    "rating": 3.36,
+    "staff": 1.98,
+    "difficulty": 4.89,
+    "workload": 38
+  },
+  {
+    "code": "MUSE E-106",
+    "name": "The Business of Museums",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-107",
+    "name": "Museums and the Law",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-109",
+    "name": "Exhibit Design Through Storytelling",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-110",
+    "name": "Museum Exhibition Content Development",
+    "reviews": 63,
+    "rating": 1.43,
+    "staff": 0.73,
+    "difficulty": 1.98,
+    "workload": 11
+  },
+  {
+    "code": "MUSE E-114",
+    "name": "Universal Design: Accessibility in Museums as Public Spaces",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-115",
+    "name": "Collections Management: Issues and Solutions",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-117",
+    "name": "Museum Collections Care",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-117B",
+    "name": "Managing Art Museum Collections",
+    "reviews": 125,
+    "rating": 1.56,
+    "staff": 2.5,
+    "difficulty": 1.42,
+    "workload": 7
+  },
+  {
+    "code": "MUSE E-119",
+    "name": "Museum Evaluation: Survey Development and Implementation",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-122",
+    "name": "Audience Engagement: How Museums Learned to Love their Visitors",
+    "reviews": 69,
+    "rating": 1.31,
+    "staff": 0.47,
+    "difficulty": 4.16,
+    "workload": 2
+  },
+  {
+    "code": "MUSE E-126",
+    "name": "Museum Evaluation and Audience Research",
+    "reviews": 89,
+    "rating": 0.16,
+    "staff": 0.46,
+    "difficulty": 2.06,
+    "workload": 36
+  },
+  {
+    "code": "MUSE E-130",
+    "name": "Museums and Technology",
+    "reviews": 90,
+    "rating": 1.88,
+    "staff": 4.49,
+    "difficulty": 3.29,
+    "workload": 39
+  },
+  {
+    "code": "MUSE E-135",
+    "name": "The Future of Historic House Museums",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-142",
+    "name": "The Body in the Art Museum",
+    "reviews": 147,
+    "rating": 2.59,
+    "staff": 4.57,
+    "difficulty": 1.63,
+    "workload": 10
+  },
+  {
+    "code": "MUSE E-145",
+    "name": "Museum Architecture: Modern and Contemporary",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-160",
+    "name": "Museums and Questions of Cultural Property: What's Loot, What's Not?",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-161",
+    "name": "Museum Ethics: Framework and Practice",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-180",
+    "name": "Museum Turnarounds",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-185",
+    "name": "Endowments of Cultural Institutions",
+    "reviews": 184,
+    "rating": 2.14,
+    "staff": 1.53,
+    "difficulty": 2.03,
+    "workload": 14
+  },
+  {
+    "code": "MUSE E-200",
+    "name": "Smithsonian and the Twenty-First Century Museum: Leadership Strategies",
+    "reviews": 1,
+    "rating": 4.99,
+    "staff": 2.4,
+    "difficulty": 3.3,
+    "workload": 2
+  },
+  {
+    "code": "MUSE E-210",
+    "name": "Smithsonian: Media, Marketing, and Museums in the Digital Age",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-220",
+    "name": "Smithsonian: Reimagining Museum Programs for Public Value and Social Impact",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-225",
+    "name": "Smithsonian: Museum Theater and Performance",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSE E-599",
+    "name": "Capstone Projects in Museum Studies",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "MUSI E-190R",
+    "name": "Technomusicology",
+    "reviews": 125,
+    "rating": 3.69,
+    "staff": 3.34,
+    "difficulty": 3.19,
+    "workload": 16
+  },
+  {
+    "code": "NUTR E-105",
+    "name": "Food and Nutrition in Health and Wellbeing",
+    "reviews": 149,
+    "rating": 2.35,
+    "staff": 3.31,
+    "difficulty": 0.13,
+    "workload": 6
+  },
+  {
+    "code": "PHIL E-100",
+    "name": "Introduction to Logic",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHIL E-102",
+    "name": "Power and Responsibility: Doing Philosophy with Superheroes",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHIL E-105",
+    "name": "The Meaning of Life",
+    "reviews": 62,
+    "rating": 0.73,
+    "staff": 1.23,
+    "difficulty": 0.89,
+    "workload": 28
+  },
+  {
+    "code": "PHIL E-125",
+    "name": "Existentialism: Existence and Anxiety",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHIL E-160",
+    "name": "Philosophical Foundations for Economic Justice",
+    "reviews": 137,
+    "rating": 1.11,
+    "staff": 4.07,
+    "difficulty": 0.09,
+    "workload": 14
+  },
+  {
+    "code": "PHIL E-166D",
+    "name": "Introduction to Ethics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHIL E-167",
+    "name": "Biomedical Ethics",
+    "reviews": 178,
+    "rating": 3.78,
+    "staff": 4.02,
+    "difficulty": 4.44,
+    "workload": 19
+  },
+  {
+    "code": "PHIL E-169",
+    "name": "From Sinners to Sociopaths: The Many Faces of Evil",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHIL E-4",
+    "name": "Introduction to Philosophy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHYS E-123A",
+    "name": "Laboratory Electronics: Analog Circuit Design",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHYS E-1AX",
+    "name": "Physics I (Lecture): Mechanics, Elasticity, Fluids, and Diffusion",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHYS E-1AXL",
+    "name": "Physics I (Lab): Mechanics, Elasticity, Fluids, Diffusion",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PHYS E-1BX",
+    "name": "Physics II (Lecture): Electromagnetism, Circuits, Waves, Optics",
+    "reviews": 179,
+    "rating": 4.45,
+    "staff": 4.11,
+    "difficulty": 2.47,
+    "workload": 24
+  },
+  {
+    "code": "PHYS E-1BXL",
+    "name": "Physics II (Lab): Electromagnetism, Circuits, Waves, Optics",
+    "reviews": 170,
+    "rating": 4.01,
+    "staff": 2.26,
+    "difficulty": 1.81,
+    "workload": 22
+  },
+  {
+    "code": "PSYC E-1014",
+    "name": "The Psychology of Trauma and Post-traumatic Stress Disorder",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1019",
+    "name": "Stress, Coping, and Resilience",
+    "reviews": 107,
+    "rating": 0.6,
+    "staff": 4.82,
+    "difficulty": 4.43,
+    "workload": 3
+  },
+  {
+    "code": "PSYC E-1025",
+    "name": "Developmental Psychology",
+    "reviews": 142,
+    "rating": 2.88,
+    "staff": 1.09,
+    "difficulty": 2.69,
+    "workload": 38
+  },
+  {
+    "code": "PSYC E-1030",
+    "name": "Human Development",
+    "reviews": 75,
+    "rating": 3.13,
+    "staff": 4.2,
+    "difficulty": 2.67,
+    "workload": 3
+  },
+  {
+    "code": "PSYC E-1036",
+    "name": "The Science of Physical Activity Applied to Health and Wellbeing",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1040",
+    "name": "Personality Psychology",
+    "reviews": 54,
+    "rating": 0.63,
+    "staff": 0.14,
+    "difficulty": 1.76,
+    "workload": 25
+  },
+  {
+    "code": "PSYC E-1050",
+    "name": "Introduction to Social Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1060",
+    "name": "Emotion",
+    "reviews": 37,
+    "rating": 3.96,
+    "staff": 3.73,
+    "difficulty": 4.74,
+    "workload": 31
+  },
+  {
+    "code": "PSYC E-1151",
+    "name": "Sensation and Perception",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1240",
+    "name": "Abnormal Psychology",
+    "reviews": 173,
+    "rating": 0.44,
+    "staff": 2.51,
+    "difficulty": 4.87,
+    "workload": 26
+  },
+  {
+    "code": "PSYC E-1356",
+    "name": "Evolution and Cognition",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1415",
+    "name": "Dopamine",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1420",
+    "name": "Addiction",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1425",
+    "name": "Opioid Use and Addiction in America",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1440",
+    "name": "Sleep and Mental Health",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-15",
+    "name": "Introduction to Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1503",
+    "name": "The Psychology of Close Relationships",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1504",
+    "name": "The Science and Application of Positive Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1507",
+    "name": "Psychology of Diversity",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1508",
+    "name": "Motivation",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1557",
+    "name": "Self and Identity",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1605",
+    "name": "The Brain in Psychology I: the Neuroanatomical Basis of Psychological Function",
+    "reviews": 173,
+    "rating": 3.29,
+    "staff": 1.85,
+    "difficulty": 3.34,
+    "workload": 22
+  },
+  {
+    "code": "PSYC E-1609",
+    "name": "Neuroscience of Learning: An Introduction to Mind, Brain, Health, and Education",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1610",
+    "name": "The Brain in Psychology II",
+    "reviews": 155,
+    "rating": 0.13,
+    "staff": 2.11,
+    "difficulty": 1.45,
+    "workload": 33
+  },
+  {
+    "code": "PSYC E-1611",
+    "name": "Mind, Body, Medicine, and Health",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1660",
+    "name": "Mind, Brain, and Illness",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1704",
+    "name": "Creativity: Geniuses, Madmen, and Harvard Students",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1707",
+    "name": "Personality and Self-Knowledge",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1770",
+    "name": "Science of Coaching Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1861",
+    "name": "Developmental Psychopathology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-1870",
+    "name": "Law and Psychology",
+    "reviews": 83,
+    "rating": 0.57,
+    "staff": 4.4,
+    "difficulty": 0.8,
+    "workload": 15
+  },
+  {
+    "code": "PSYC E-1880",
+    "name": "Clinical Psychology",
+    "reviews": 139,
+    "rating": 0.32,
+    "staff": 3.61,
+    "difficulty": 4.96,
+    "workload": 19
+  },
+  {
+    "code": "PSYC E-380",
+    "name": "Field Placement in Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-496",
+    "name": "Crafting the Thesis Proposal in Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "PSYC E-497",
+    "name": "Crafting the Thesis Proposal in Psychology Tutorial",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-1010",
+    "name": "World Religions",
+    "reviews": 57,
+    "rating": 0.54,
+    "staff": 1.49,
+    "difficulty": 3.14,
+    "workload": 33
+  },
+  {
+    "code": "RELI E-1047",
+    "name": "Religion, the Arts, and Social Change",
+    "reviews": 150,
+    "rating": 3.23,
+    "staff": 1.97,
+    "difficulty": 0.85,
+    "workload": 7
+  },
+  {
+    "code": "RELI E-1063",
+    "name": "Literature of Journey and Quest",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-1072",
+    "name": "Virginia Woolf and Religion",
+    "reviews": 118,
+    "rating": 2.81,
+    "staff": 4.24,
+    "difficulty": 3.94,
+    "workload": 37
+  },
+  {
+    "code": "RELI E-1505",
+    "name": "Religion, Education, and Democracy",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-1520",
+    "name": "Religion, Conflict, and Peace in Contemporary Global Affairs",
+    "reviews": 181,
+    "rating": 1.84,
+    "staff": 1.52,
+    "difficulty": 3.34,
+    "workload": 6
+  },
+  {
+    "code": "RELI E-1555",
+    "name": "Introduction to Islamic Mysticism: The Sufi Tradition",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-1701",
+    "name": "Mindfulness, Meaning, and Resilience",
+    "reviews": 143,
+    "rating": 0.16,
+    "staff": 4.59,
+    "difficulty": 2.15,
+    "workload": 7
+  },
+  {
+    "code": "RELI E-1704",
+    "name": "Zen Stories",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-2000",
+    "name": "Methods in Religious Studies and Education: Integrating the Study of Religion into Curricula",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "RELI E-497",
+    "name": "Crafting the Thesis Proposal in Religion Tutorial",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SOCI E-144",
+    "name": "Human Trafficking, Slavery, and Abolition in the Modern World",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SOCI E-46",
+    "name": "The Caribbean: Globalization, Socio-Economic Development, and Cultural Adaptations",
+    "reviews": 145,
+    "rating": 2.84,
+    "staff": 1.48,
+    "difficulty": 1.91,
+    "workload": 3
+  },
+  {
+    "code": "SPAN E-1",
+    "name": "Intensive Elementary Spanish I",
+    "reviews": 171,
+    "rating": 3.98,
+    "staff": 2.44,
+    "difficulty": 0.15,
+    "workload": 8
+  },
+  {
+    "code": "SPAN E-1A",
+    "name": "Elementary Spanish I",
+    "reviews": 131,
+    "rating": 3.15,
+    "staff": 1.69,
+    "difficulty": 2.94,
+    "workload": 34
+  },
+  {
+    "code": "SPAN E-1B",
+    "name": "Elementary Spanish I",
+    "reviews": 36,
+    "rating": 1.24,
+    "staff": 1.33,
+    "difficulty": 3.54,
+    "workload": 28
+  },
+  {
+    "code": "SPAN E-2",
+    "name": "Intensive Elementary Spanish II",
+    "reviews": 176,
+    "rating": 1.89,
+    "staff": 3.25,
+    "difficulty": 1.51,
+    "workload": 2
+  },
+  {
+    "code": "SPAN E-45",
+    "name": "Contemporary Latin American Films and Identities",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SPCH E-100",
+    "name": "Fundamentals of Public Speaking",
+    "reviews": 102,
+    "rating": 0.64,
+    "staff": 1.11,
+    "difficulty": 4.11,
+    "workload": 22
+  },
+  {
+    "code": "SPCH E-120",
+    "name": "Advanced Public Speaking and Professional Presenting",
+    "reviews": 155,
+    "rating": 4.27,
+    "staff": 1.02,
+    "difficulty": 3.96,
+    "workload": 0
+  },
+  {
+    "code": "SPCH E-125",
+    "name": "Perfecting Oral Communication",
+    "reviews": 79,
+    "rating": 1.54,
+    "staff": 3.11,
+    "difficulty": 2.12,
+    "workload": 32
+  },
+  {
+    "code": "SSCI E-100A",
+    "name": "Proseminar: Graduate Research Methods and Scholarly Writing in the Social Sciences—Anthropology and Psychology",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-100B",
+    "name": "Proseminar: Graduate Research Methods and Scholarly Writing in the Social  Sciences—Government and History",
+    "reviews": 140,
+    "rating": 0.75,
+    "staff": 3.78,
+    "difficulty": 2.15,
+    "workload": 1
+  },
+  {
+    "code": "SSCI E-101",
+    "name": "Education Policy Analysis and Research in Comparative Perspective",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-112",
+    "name": "The Idea of the Internet",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-115",
+    "name": "Class and Culture",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-121",
+    "name": "Dying Well",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-122",
+    "name": "Who Lives, Who Dies: Social Medicine in the United States",
+    "reviews": 2,
+    "rating": 3.75,
+    "staff": 2.64,
+    "difficulty": 3.02,
+    "workload": 11
+  },
+  {
+    "code": "SSCI E-125",
+    "name": "Case Studies in Global Health: Biosocial Perspectives",
+    "reviews": 118,
+    "rating": 3.17,
+    "staff": 1.44,
+    "difficulty": 4.49,
+    "workload": 1
+  },
+  {
+    "code": "SSCI E-171",
+    "name": "Exploring Social Class through Memoir",
+    "reviews": 90,
+    "rating": 3.48,
+    "staff": 3.68,
+    "difficulty": 0.47,
+    "workload": 37
+  },
+  {
+    "code": "SSCI E-496",
+    "name": "Crafting the Thesis Proposal in Government, History, and International Relations",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "SSCI E-497A",
+    "name": "Crafting the Thesis Proposal in International Relations Tutorial",
+    "reviews": 30,
+    "rating": 4.83,
+    "staff": 2.89,
+    "difficulty": 4.18,
+    "workload": 13
+  },
+  {
+    "code": "SSCI E-497B",
+    "name": "Crafting the Thesis Proposal in Anthropology, Government, and History Tutorial",
+    "reviews": 44,
+    "rating": 2.7,
+    "staff": 2.81,
+    "difficulty": 2.19,
+    "workload": 13
+  },
+  {
+    "code": "STAR E-114",
+    "name": "The Book as Art: Working with Letters, Ink, and Paper",
+    "reviews": 98,
+    "rating": 2.86,
+    "staff": 0.84,
+    "difficulty": 4.35,
+    "workload": 9
+  },
+  {
+    "code": "STAR E-170",
+    "name": "History of Film: The Beginnings to 1960",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAR E-176",
+    "name": "Nazi Cinema: The Art of Propaganda",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAR E-182",
+    "name": "American Dreams from Scarface to Easy Rider",
+    "reviews": 179,
+    "rating": 2.51,
+    "staff": 3.07,
+    "difficulty": 0.58,
+    "workload": 18
+  },
+  {
+    "code": "STAR E-192",
+    "name": "Artificial Intelligence, Augmented Reality, Virtual Reality: New Visual Worlds and Their New Stories",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-100",
+    "name": "Introduction to Quantitative Methods for the Social Sciences and Humanities",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-101",
+    "name": "Introduction to Statistics for the Behavioral Sciences",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-102",
+    "name": "Fundamentals of Biostatistics",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-104",
+    "name": "Introduction to Quantitative Methods for Economics and Other Quantitative Fields",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-109",
+    "name": "Introduction to Statistical Modeling",
+    "reviews": 18,
+    "rating": 4.43,
+    "staff": 4.51,
+    "difficulty": 3.01,
+    "workload": 6
+  },
+  {
+    "code": "STAT E-150",
+    "name": "Intermediate Statistics: Methods and Modeling",
+    "reviews": 0,
+    "rating": null,
+    "staff": null,
+    "difficulty": null,
+    "workload": null
+  },
+  {
+    "code": "STAT E-190",
+    "name": "Quantitative Research Methodology in the Social Sciences",
+    "reviews": 77,
+    "rating": 3.93,
+    "staff": 2.01,
+    "difficulty": 3.72,
+    "workload": 21
+  },
+  {
+    "code": "STAT E-200",
+    "name": "Advanced Quantitative Research Methodology",
+    "reviews": 166,
+    "rating": 3.19,
+    "staff": 4.28,
+    "difficulty": 4.75,
+    "workload": 12
+  }
+]
