@@ -38,16 +38,14 @@ router.post('/signup', (req, res) => {
       // Encrypt password then save everything to database
       bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(newUser.password, salt, (err, hash) => {
-          // TODO: This error handling is atrocious, fix it
-          // Throw if hash fails, or if newUser can't be saved
           if (err) {
-            throw err;
+            return next(err);
           }
           newUser.password = hash;
           newUser
             .save()
             .then((user) => res.json(user))
-            .catch((err) => console.log(err));
+            .catch(next);
         });
       })
     }

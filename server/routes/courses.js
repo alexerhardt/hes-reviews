@@ -25,7 +25,7 @@ router.get('/all', (req, res) => {
 
       return res.json(courseJson);
     })
-    .catch((err) => console.log(err));
+    .catch(next);
 });
 
 /**

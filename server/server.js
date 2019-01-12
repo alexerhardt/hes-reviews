@@ -39,6 +39,26 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
+
+if (process.env.NODE_ENV !== 'production') {
+  app.use((err, req, res, next) => {
+    console.log(err.stack);
+    res.status(err.status || 500);
+    res.json({'errors': {
+      message: err.message,
+      error: err
+    }});
+  });
+}
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500);
+  res.json({'errors': {
+    message: err.message,
+    error: {}
+  }});
+});
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
