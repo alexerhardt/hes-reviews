@@ -9,30 +9,36 @@ const Course = require('../models/Course');
  * @access Public
  */
 router.get('/all', (req, res, next) => {
-  // Retrieve all courses from the DB
-  // Format them into format consumable by client (maybe?)
   Course
     .find({})
     .then((rawCourseData) => {
-      const courseJson = rawCourseData.map((course) => ({
-        code: course.code,
-        name: course.name,
-        reviewCount: course.reviewCount,
-        avgRating: course.avgRating,
-        avgDifficulty: course.avgDifficulty,
-        avgWorkload: course.avgWorkload
-      }));
-
-      return res.json(courseJson);
+      const courseJSON = rawCourseData.map(course => course.toJSON());
+      return res.json(courseJSON);
     })
     .catch(next);
 });
 
 /**
- * @route  GET /courses/:id
+ * @route  GET /courses/by-id
  * @desc   Returns the information for a single course
  * @access Public
  */
+router.get('/by-id', (req, res, next) => {
+  const courseId = req.body.courseId;
+  if (!courseId) {
+    return res.status(400).json({courseCode: 'courseId required'});
+  }
 
+  Course
+    .findById(courseId)
+    .then((course) => {
+      if (!course) {
+        return res.status(400).json({courseCode: 'course not found'});
+      }
+
+      return res.json(course.toJSON());
+    })
+    .catch(next);
+});
 
  module.exports = router;

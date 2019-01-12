@@ -24,4 +24,16 @@ const CourseSchema = new Schema({
   }
 });
 
+CourseSchema.methods.toJSON = function() {
+  return {
+    id: this._id.toString(),
+    code: this.code,
+    name: this.name,
+    reviewCount: this.reviewCount,
+    avgRating: this.avgRating,
+    avgDifficulty: this.avgDifficulty,
+    avgWorkload: this.avgWorkload
+  }
+}
+
 module.exports = Course = mongoose.model('courses', CourseSchema);
