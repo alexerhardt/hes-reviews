@@ -36,8 +36,8 @@ mongoose
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
-app.use('/users', users);
-app.use('/courses', courses);
+app.use('/api/users', users);
+app.use('/api/courses', courses);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
