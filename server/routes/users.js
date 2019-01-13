@@ -30,27 +30,17 @@ router.post('/signup', (req, res, next) => {
       errors.email = 'Email already exists';
       return res.status(400).json(errors);
     }
-    else {
-      const newUser = new User({
-        email: req.body.email,
-        password: req.body.password
-      });
 
-      // Encrypt password then save everything to database
-      bcrypt.genSalt(10, (err, salt) => {
-        bcrypt.hash(newUser.password, salt, (err, hash) => {
-          if (err) {
-            return next(err);
-          }
-          newUser.password = hash;
-          newUser
-            .save()
-            .then((user) => res.json(user))
-            .catch(next);
-        });
-      })
-    }
-  })
+    const newUser = new User({
+      email: req.body.email,
+      password: req.body.password
+    });
+
+    newUser
+      .save()
+      .then((user) => res.json(user))
+      .catch(next);
+  });
 });
 
 

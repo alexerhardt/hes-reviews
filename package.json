@@ -8,6 +8,7 @@
   "scripts": {
     "start": "node server/server.js",
     "watch": "nodemon server/server.js",
+    "test-server": "export NODE_ENV=test && mocha server/**/*.test.js",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
@@ -44,10 +45,13 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
+    "expect": "21.1.0",
     "mini-css-extract-plugin": "^0.5.0",
+    "mocha": "3.0.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "supertest": "^2.0.0",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.14"
