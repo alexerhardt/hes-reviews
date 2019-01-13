@@ -12,6 +12,9 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server"
   },
+  "engines": {
+    "node": "10.15.0"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^6.2.0",

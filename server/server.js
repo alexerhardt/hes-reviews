@@ -10,6 +10,7 @@ const passport = require('passport');
 
 const users = require('./routes/users');
 const courses = require('./routes/courses');
+const reviews = require('./routes/reviews');
 
 const app = express();
 
@@ -32,12 +33,13 @@ mongoose
   .then(() => console.log('Connected to MongoDB'))
   .catch((err) => console.log(err))
 
-// Use Passport middleware and configure it
+// // Use Passport middleware and configure it
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
 app.use('/api/users', users);
 app.use('/api/courses', courses);
+app.use('/api/reviews', reviews);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
@@ -48,18 +50,16 @@ if (process.env.NODE_ENV !== 'production') {
   app.use((err, req, res, next) => {
     console.log(err.stack);
     res.status(err.status || 500);
-    res.json({'errors': {
-      message: err.message,
-      error: err
-    }});
+    res.json(err);
   });
 }
 
 app.use((err, req, res, next) => {
   res.status(err.status || 500);
+  const validationErrors = err.validationErrors || undefined;
   res.json({'errors': {
     message: err.message,
-    error: {}
+    validationErrors
   }});
 });
 

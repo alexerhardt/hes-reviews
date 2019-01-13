@@ -19,8 +19,7 @@ module.exports = (passport) => {
 
           return done(null, false);
         })
-        // TODO: Lousy error handling -- fix
-        .catch((err) => console.log(err));
+        .catch(done);
     })
   )
 }

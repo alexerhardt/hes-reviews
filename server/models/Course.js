@@ -22,7 +22,7 @@ const CourseSchema = new Schema({
   avgWorkload: {
     type: Number
   }
-});
+}, { timestamps: true });
 
 CourseSchema.methods.toJSON = function() {
   return {
