@@ -90,10 +90,27 @@ router.put('/update', authenticate, (req, res, next) => {
 
 
 /**
- * TODO:
  * @route   DELETE /api/reviews/delete
  * @desc    Deletes a review by its id
  * @access  Private
  */
+router.delete('/delete', authenticate, (req, res, next) => {
+  const reviewId = req.body.reviewId;
+
+  if (!reviewId) {
+    return res.status(400).json({validationErrors: 'Missing course id'});
+  }
+
+  Review 
+    .findByIdAndDelete(reviewId)
+    .then((review) => {
+      if (!review) {
+        return res.status(404).json({message: reviewId + ': review not found'});
+      }
+
+      return res.json(review.toJSON());
+    })
+    .catch(next);
+});
 
  module.exports = router;
