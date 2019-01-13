@@ -4,11 +4,11 @@ const Course = require('./Course');
 const { isSemesterValid } = require('../../utils/utils');
 
 const ReviewSchema = new Schema({
-  // author: { 
-  //   type: mongoose.Schema.Types.ObjectId, 
-  //   ref: 'User',
-  //   required: [true, 'Review must have an author']
-  // },
+  author: { 
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: 'User',
+    required: [true, 'Review must have an author']
+  },
   course: { 
     type: mongoose.Schema.Types.ObjectId, 
     ref: 'Course',
@@ -64,6 +64,20 @@ ReviewSchema.path('course').validate({
 
   message: 'Cannot find a course with id: {VALUE}'
 });
+
+ReviewSchema.methods.toJSON = function() {
+  return {
+    id: this._id.toString(),
+    author: this.author,
+    course: this.course,
+    semester: this.semester,
+    year: this.year,
+    rating: this.rating,
+    difficulty: this.difficulty,
+    workload: this.workload,
+    body: this.body
+  }
+}
 
 ReviewSchema.post('save', (err, doc, next) => {
   if (err.name === 'ValidationError') {

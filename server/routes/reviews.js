@@ -1,18 +1,19 @@
 const express = require('express');
 const router = express.Router();
+const authenticate = require('../middleware/auth');
 
 const Review = require('../models/Review');
 
 /**
- * TODO:
  * @route   POST /api/reviews/post
  * @desc    Posts a new review on the site
  * @access  Private
  */
-router.post('/post', (req, res, next) => {
-  // TODO: Check if safe
+router.post('/post', authenticate, (req, res, next) => {
+  // TODO: Check if spread is safe
   // https://stackoverflow.com/q/54167636/6854595
-  const review = new Review({...req.body});
+  const author = req.user.id;
+  const review = new Review({...req.body, author});
 
   review
     .save()
@@ -22,15 +23,29 @@ router.post('/post', (req, res, next) => {
 
 
 /**
- * TODO:
  * @route   GET /api/reviews/by-course-id 
  * @desc    Gets all the reviews for a course
- * @access  Private
+ * @access  Public 
  */
+router.get('/by-course-id', (req, res, next) => {
+  const courseId = req.body.courseId;
+  if (!courseId) {
+    return res.status(400).json({validationErrors: 'Missing course id'});
+  }
+
+  Review
+    .find({course: courseId})
+    .then((reviews) => {
+      if (reviews.length === 0) {
+        return res.status(404).json({message: courseId + ': course not found'});
+      }
+
+      return res.json(reviews.map(review => review.toJSON()));
+    });
+});
 
 
 /**
- * TODO:
  * @route   GET /api/reviews/by-review-id
  * @desc    Gets a single review by id
  * @access  Private
