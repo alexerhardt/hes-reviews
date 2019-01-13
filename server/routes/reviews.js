@@ -46,18 +46,47 @@ router.get('/by-course-id', (req, res, next) => {
 
 
 /**
+ * TODO:
  * @route   GET /api/reviews/by-review-id
  * @desc    Gets a single review by id
- * @access  Private
+ * @access  Public
  */
 
 
+
 /**
- * TODO:
  * @route   PUT /api/reviews/update
  * @desc    Updates a single review
  * @access  Private
  */
+router.put('/update', authenticate, (req, res, next) => {
+  const reviewId = req.body.reviewId;
+
+  if (!reviewId) {
+    return res.status(400).json({validationErrors: 'Missing course id'});
+  }
+
+  const { semester, year, rating, difficulty, workload, body } = req.body;
+  const update = {
+    semester,
+    year,
+    rating,
+    difficulty,
+    workload,
+    body
+  };
+
+  Review
+    .findByIdAndUpdate(reviewId, update, { runValidators: true})
+    .then((review) => {
+      if (!review) {
+        return res.status(404).json({message: reviewId + ': review not found'});
+      }
+
+      return res.json(review.toJSON());
+    })
+    .catch(next);
+});
 
 
 /**
