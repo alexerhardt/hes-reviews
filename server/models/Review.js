@@ -84,27 +84,12 @@ ReviewSchema.methods.insertCourseAggregates = function() {
 }
 
 
-// /**
-//  * updateCourseAggregates
-//  * Updates the course aggregates with the values of an inserted review
-//  */
-// ReviewSchema.methods.updateCourseAggregates = function(changes) {
-//   if (!changes.difficulty || !changes.rating || !changes.workload) {
-//     return Promise.reject();
-//   }
-
-//   const review = this;
-//   const update = {
-//     $inc: { 
-//       aggRating: changes.rating,
-//       aggDifficulty: changes.difficulty,
-//       aggWorkload: changes.workload, 
-//     }
-//   }
-//   const result = Course.findByIdAndUpdate(review.course, update, { new: true } );
-//   return Promise.all([result, review]);
-// }
-
+/**
+ * updateCourseAggregates
+ * Updates the aggregate metrics for a given course
+ * @param   {Object}  changes Changes to the aggregate
+ * @returns {Promise} Promise with the review and course  
+ */
 ReviewSchema.methods.updateCourseAggregates = function(changes) {
   const review = this;
   let newValues = {};
