@@ -1,4 +1,9 @@
 /**
+ * utils-global.js
+ * Global utilities, useful both client and server-side
+ */
+
+/**
  * Strips a course code from non-alphabetic characters
  */
 exports.courseIdFromCode = (code) => {

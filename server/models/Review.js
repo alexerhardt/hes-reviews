@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const Course = require('./Course');
-const { isSemesterValid } = require('../../utils/utils');
+const { isSemesterValid } = require('../../utils/utils-global');
 
 const ReviewSchema = new Schema({
   author: { 
@@ -64,6 +64,24 @@ ReviewSchema.path('course').validate({
 
   message: 'Cannot find a course with id: {VALUE}'
 });
+
+/**
+ * updateCourseAggregates
+ * Updates the course aggregates with a recently inserted / updated review
+ */
+ReviewSchema.methods.updateCourseAggregates = function() {
+  const review = this;
+  const update = { 
+    $inc: { 
+      reviewCount: 1, 
+      aggRating: review.rating,
+      aggDifficulty: review.difficulty,
+      aggWorkload: review.workload
+    }
+  }
+  const result = Course.findByIdAndUpdate(review.course, update, { new: true } );
+  return Promise.all([result, review]);
+}
 
 ReviewSchema.methods.toJSON = function() {
   return {
