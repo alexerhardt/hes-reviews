@@ -4,6 +4,11 @@ const Course = require('./Course');
 const { isSemesterValid, isEmptyObject } = require('../../utils/utils-global');
 
 const ReviewSchema = new Schema({
+  _id: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    auto: true 
+  },
   author: { 
     type: mongoose.Schema.Types.ObjectId, 
     ref: 'User',

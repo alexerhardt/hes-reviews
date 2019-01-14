@@ -3,6 +3,7 @@ const request = require('supertest');
 const User = require('../../models/User');
 const Course = require('../../models/Course');
 const users = require('../seed/users');
+const courses = require('../seed/courses');
 
 module.exports.populateUsers = function(done) {
   User
@@ -17,11 +18,13 @@ module.exports.populateUsers = function(done) {
 module.exports.populateCourses = function(done) {
   Course
     .deleteMany({})
-    .then(() => {
+    .then(function() {
       const saved = courses.map((course) => new Course(course).save());
       return Promise.all(saved);
     })
-    .then(() => done());
+    .then(function() {
+      done();
+    })
 }
 
 
