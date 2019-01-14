@@ -16,9 +16,9 @@ mongoose
         code: course.code,
         name: course.name,
         reviewCount: course.reviews, 
-        avgRating: course.rating,
-        avgDifficulty: course.difficulty,
-        avgWorkload: course.workload
+        aggRating: course.rating || 0,
+        aggDifficulty: course.difficulty || 0,
+        aggWorkload: course.workload || 0
       });
 
       newCourse

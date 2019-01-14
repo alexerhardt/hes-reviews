@@ -26,6 +26,8 @@ const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
 
 // Connect to database
+// patch: https://github.com/Automattic/mongoose/issues/7108
+mongoose.set('useFindAndModify', false);
 mongoose
   .connect(process.env.MONGODB_URI, {
     useNewUrlParser: true

@@ -17,7 +17,22 @@ router.post('/post', authenticate, (req, res, next) => {
 
   review
     .save()
-    .then((review) => res.json(review))
+    .then((review) => {
+      // TODO: Check if destructuring review works
+      const update = {
+        $inc: { 
+          reviewCount: 1,
+          aggRating: review.rating,
+          aggDifficulty: review.difficulty,
+          aggWorkload: review.workload
+        }
+      }
+      return Course
+              .findByIdAndUpdate(review.course, update, { new: true });
+    })
+    .then((course) => {
+      return res.json(course);
+    })
     .catch(next);
 });
 

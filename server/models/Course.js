@@ -11,16 +11,20 @@ const CourseSchema = new Schema({
     required: true
   },
   reviewCount: {
-    type: Number
+    type: Number,
+    required: true
   },
-  avgRating: {
-    type: Number
+  aggRating: {
+    type: Number,
+    required: true
   },
-  avgDifficulty: {
-    type: Number
+  aggDifficulty: {
+    type: Number,
+    required: true
   },
-  avgWorkload: {
-    type: Number
+  aggWorkload: {
+    type: Number,
+    required: true
   }
 }, { timestamps: true });
 
@@ -30,9 +34,9 @@ CourseSchema.methods.toJSON = function() {
     code: this.code,
     name: this.name,
     reviewCount: this.reviewCount,
-    avgRating: this.avgRating,
-    avgDifficulty: this.avgDifficulty,
-    avgWorkload: this.avgWorkload
+    aggRating: this.aggRating,
+    aggDifficulty: this.aggDifficulty,
+    aggWorkload: this.aggWorkload
   }
 }
 
