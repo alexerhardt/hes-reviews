@@ -3,6 +3,10 @@
  * Global utilities, useful both client and server-side
  */
 
+ exports.isEmptyObject = (obj) => {
+  Object.keys(obj).length === 0 && obj.constructor === Object
+ }
+
 /**
  * Strips a course code from non-alphabetic characters
  */

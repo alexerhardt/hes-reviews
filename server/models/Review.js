@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const Course = require('./Course');
-const { isSemesterValid } = require('../../utils/utils-global');
+const { isSemesterValid, isEmptyObject } = require('../../utils/utils-global');
 
 const ReviewSchema = new Schema({
   author: { 
@@ -66,10 +66,10 @@ ReviewSchema.path('course').validate({
 });
 
 /**
- * updateCourseAggregates
- * Updates the course aggregates with a recently inserted / updated review
+ * insertCourseAggregates
+ * Updates the course aggregates with the values of an inserted review
  */
-ReviewSchema.methods.updateCourseAggregates = function() {
+ReviewSchema.methods.insertCourseAggregates = function() {
   const review = this;
   const update = { 
     $inc: { 
@@ -82,6 +82,53 @@ ReviewSchema.methods.updateCourseAggregates = function() {
   const result = Course.findByIdAndUpdate(review.course, update, { new: true } );
   return Promise.all([result, review]);
 }
+
+
+// /**
+//  * updateCourseAggregates
+//  * Updates the course aggregates with the values of an inserted review
+//  */
+// ReviewSchema.methods.updateCourseAggregates = function(changes) {
+//   if (!changes.difficulty || !changes.rating || !changes.workload) {
+//     return Promise.reject();
+//   }
+
+//   const review = this;
+//   const update = {
+//     $inc: { 
+//       aggRating: changes.rating,
+//       aggDifficulty: changes.difficulty,
+//       aggWorkload: changes.workload, 
+//     }
+//   }
+//   const result = Course.findByIdAndUpdate(review.course, update, { new: true } );
+//   return Promise.all([result, review]);
+// }
+
+ReviewSchema.methods.updateCourseAggregates = function(changes) {
+  const review = this;
+  let newValues = {};
+  if (!changes) {
+    newValues = { 
+      reviewCount: 1,
+      aggRating: review.rating, 
+      aggDifficulty: review.difficulty, 
+      aggWorkload: review.workload 
+    }
+  }
+  else {
+    const { aggRating, aggDifficulty, aggWorkload } = changes;
+    if (aggRating == undefined || aggDifficulty == undefined || aggWorkload == undefined) {
+      return Promise.reject('Missing update values');
+    }
+    newValues = { aggRating, aggDifficulty, aggWorkload };
+  }
+  
+  const update = { $inc: newValues };
+  const result = Course.findByIdAndUpdate(review.course, update, { new: true } );
+  return Promise.all([result, review]);
+}
+
 
 ReviewSchema.methods.toJSON = function() {
   return {

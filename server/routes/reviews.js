@@ -70,23 +70,25 @@ router.put('/update', authenticate, (req, res, next) => {
   }
 
   const { semester, year, rating, difficulty, workload, body } = req.body;
-  const update = {
-    semester,
-    year,
-    rating,
-    difficulty,
-    workload,
-    body
-  };
+  const update = { semester, year, rating, difficulty, workload, body };
 
   Review
-    .findByIdAndUpdate(reviewId, update, { runValidators: true})
+    .findByIdAndUpdate(reviewId, update, { runValidators: true })
     .then((review) => {
       if (!review) {
         return res.status(404).json({message: reviewId + ': review not found'});
       }
 
-      return res.json(review.toJSON());
+      const changes = {
+        aggRating: update.rating - review.rating,
+        aggDifficulty: update.difficulty - review.difficulty,
+        aggWorkload: update.workload - review.workload
+      }
+
+      review.updateCourseAggregates(changes);
+    })
+    .then(([course, review] = result) => {
+      return res.json({course, review});
     })
     .catch(next);
 });
