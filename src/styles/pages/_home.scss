@@ -40,4 +40,42 @@ $pic9: 'https://media.istockphoto.com/photos/john-w-weeks-bridge-over-charles-ri
     background-attachment: fixed;
     background-size: auto auto;
     color: white !important;
+    text-shadow: 1px 1px 1px #757575;
+}
+
+
+// autosuggest styling
+.suggest__container--home {
+    position: absolute;
+    width: 100%
+}
+
+.suggest__input--home {
+    font-size: 1rem;
+}
+
+.suggest__suggestions-container--home {
+    background-color: white;
+    border: 0;
+    box-shadow: 0 .25rem 1rem rgba(48,55,66,.15);
+}
+
+.suggest__suggestions-list--home {
+    list-style-type: none;
+    margin: 0.8rem 0;
+    text-align: left;
+}
+
+.suggest__suggestion--home {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #dadee4;
+    margin: 0;
+    padding: 0.3rem 0.3rem 0.3rem;
+}
+
+.suggest__suggestion--highlighted--home {
+    background-color: lighten($light-blue-b, 20%); 
+    cursor: pointer;
 }
