@@ -3,10 +3,37 @@
 
 // ...
 
+$navbar-height: 4rem;
+
+$color-bg-navbar: white;
+$color-link-navbar: $accent-color;
+$color-bg-btn-navbar: $accent-color;
+$color-btn-navbar: white;
+
+
 .navbar {
     height: $navbar-height;
     width: 100%;
 }
+
+.bg-navbar {
+    background-color: $color-bg-navbar !important;
+    box-shadow: 0 0 1px 1px rgba(25, 25, 25, 0.1);
+    margin-bottom: 1px;
+    a {
+        color: $color-link-navbar;
+    }
+    .btn {
+        background-color: $color-bg-btn-navbar;
+        color: $color-btn-navbar;
+    }
+}
+
+.navbar-brand {
+    font-family: $headline-font-family;
+    // TODO: Experiment with drop-shadow and weight
+}
+
 
 // Hide the desktop-only portion of the navbar
 @media (max-width: 640px) {

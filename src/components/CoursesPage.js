@@ -67,7 +67,7 @@ class CoursesPage extends React.Component
     }]
 
     return (
-      <div id="container-coursepage" className="container-outer">
+      <div id="container-coursepage" className="container-outer bg-gray">
         <Header />
         <div className="container-coursepage-inner p-4">
           <input 

@@ -2,6 +2,8 @@
 
 // ...
 
+$color-bg-coursetable: white;
+
 $table-width-adj: (
     code: 15,
     name: 100,
@@ -18,4 +20,8 @@ $table-width-adj: (
         width: 80 !important;
         min-width: 25px !important;
     }
+}
+
+.wrapper-course-table {
+    background-color: $color-bg-coursetable;
 }

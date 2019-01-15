@@ -34,7 +34,7 @@ class Header extends React.Component
   render()
   {
     return (
-      <div id="container-nav" className="bg-white">
+      <div id="container-nav" className="bg-navbar">
 
         <Menu 
           isOpen={this.state.menuOpen}
@@ -53,7 +53,7 @@ class Header extends React.Component
 
           <section className="navbar-section nav-desktop">
             <Link to="/courses" className="ml-4">See All Courses</Link>
-            <Link to="/login" className="btn btn-primary ml-4">Login</Link>
+            <Link to="/login" className="btn btn-accent ml-4">Login</Link>
           </section>
 
         </header>

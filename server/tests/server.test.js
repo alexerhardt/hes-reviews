@@ -53,7 +53,6 @@ describe('POST /api/reviews/post', function() {
           done(err);
         }
 
-        // console.log('res: ', res.body);
         const id = res.body.review.id;
         Review
           .findById(id)
@@ -63,5 +62,5 @@ describe('POST /api/reviews/post', function() {
           })
           .catch(function (e) { done(e) });
       });
-  })
-})
+  });
+});

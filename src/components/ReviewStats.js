@@ -12,19 +12,19 @@ class ReviewStats extends React.Component
             <h3>Key Stats</h3>
           </div>
           <div className="col-12 col-md-6">
-            <h6 className="text-italic">Course Rating</h6>
+            <h6 className="text-uppercase">Course Rating</h6>
             <h4>4.88</h4>
           </div>
           <div className="col-12 col-md-6">
-            <h6 className="text-italic">Staff Rating</h6>
+            <h6 className="text-uppercase">Staff Rating</h6>
             <h4>3.77</h4>
           </div>
           <div className="col-12 col-md-6">
-            <h6 className="text-italic">Difficulty</h6>
+            <h6 className="text-uppercase">Difficulty</h6>
             <h4>3.22</h4>
           </div>
           <div className="col-12 col-md-6">
-            <h6 className="text-italic">Weekly Workload</h6>
+            <h6 className="text-uppercase">Weekly Workload</h6>
             <h4>13h</h4>
           </div>
         </div>

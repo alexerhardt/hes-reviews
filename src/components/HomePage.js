@@ -52,7 +52,7 @@ class HomePage extends React.Component
 
         <div className="container-inner container-inner--homepage">
 
-          <section className="section-hero bg-primary">
+          <section className="section-hero hero-shot">
             <div className="container grid-md text-center v-center">
               <div className="columns">
                 <div className="col-md-12 col-7 col-mx-auto">
