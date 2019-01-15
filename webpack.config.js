@@ -30,7 +30,7 @@ module.exports = (env) =>
               MiniCssExtractPlugin.loader,
               {
                 loader: 'css-loader',
-                options: {sourceMap: true}
+                options: { sourceMap: true }
               },
               {
                 loader: 'sass-loader',

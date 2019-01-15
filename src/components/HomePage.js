@@ -3,43 +3,46 @@ import Header from './Header';
 import CourseSearchBox from './CourseSearchBox';
 import jss from 'jss';
 
-// This CSS-in-JS for the course search component
-// The course search uses React Themable:
-// https://github.com/markdalgleish/react-themeable#jss
-// Styles are attached to the JSS file (not sure how...)
-// then style classes are passed down to the search component
-const searchBoxStyle = jss.createStyleSheet({
-  container: {
-    "position": "absolute",
-    "width": "100%"
-  },
-  suggestionsContainer: {
-    "background-color": "white",
-    "border": "0",
-    "box-shadow": "0 .25rem 1rem rgba(48,55,66,.15)"
-  },
-  suggestionsList: {
-    "list-style-type": 'none',
-    "padding": "0.35rem",
-    "margin": "0.8rem 0",
-    "text-align": "left"
-  },
-  suggestionHighlighted: {
-    "background-color": "#f1f1fc",
-    "color": "#5755d9 !important",
-    "cursor": "pointer"
-  },
-  suggestion: {
-    "overflow": "hidden",
-    "text-overflow": "ellipsis",
-    "white-space": "nowrap",
-    // TODO: can't remove link underlining this way - fix
-    "text-decoration": "none !important",
-    "color": "black",
-    "border-bottom": "1px solid #dadee4",
-    "margin": "0 0 0.5rem"
-  }
-}).attach();
+import { autosuggestNameGen } from '../utils/utils-client';
+
+// // This CSS-in-JS for the course search component
+// // The course search uses React Themable:
+// // https://github.com/markdalgleish/react-themeable#jss
+// // Styles are attached to the JSS file (not sure how...)
+// // then style classes are passed down to the search component
+// const searchBoxStyle = jss.createStyleSheet({
+//   container: {
+//     "position": "absolute",
+//     "width": "100%"
+//   },
+//   suggestionsContainer: {
+//     "background-color": "white",
+//     "border": "0",
+//     "box-shadow": "0 .25rem 1rem rgba(48,55,66,.15)"
+//   },
+//   suggestionsList: {
+//     "list-style-type": 'none',
+//     "padding": "0.35rem",
+//     "margin": "0.8rem 0",
+//     "text-align": "left"
+//   },
+//   suggestionHighlighted: {
+//     "background-color": "#f1f1fc",
+//     "color": "#5755d9 !important",
+//     "cursor": "pointer"
+//   },
+//   suggestion: {
+//     "overflow": "hidden",
+//     "text-overflow": "ellipsis",
+//     "white-space": "nowrap",
+//     // TODO: can't remove link underlining this way - fix
+//     "text-decoration": "none !important",
+//     "color": "black",
+//     "border-bottom": "1px solid #dadee4",
+//     "margin": "0 0 0.5rem"
+//   }
+// }).attach();
+const theme = autosuggestNameGen('home');
 
 class HomePage extends React.Component
 {
@@ -55,11 +58,11 @@ class HomePage extends React.Component
           <section className="section-hero hero-shot">
             <div className="container grid-md text-center v-center">
               <div className="columns">
-                <div className="col-md-12 col-7 col-mx-auto">
+                <div className="col-md-12 col-8 col-mx-auto">
                   <h1>Course Reviews for <br /> Harvard Extension School</h1>
                   <h5 className="mb-5">Find info on course workloads, difficulty and more!</h5>
                   <div className="course-search-wrapper__home">
-                    <CourseSearchBox theme={searchBoxStyle.classes} />
+                    <CourseSearchBox theme={theme} />
                   </div>
                 </div>
               </div>
