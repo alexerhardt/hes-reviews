@@ -33,9 +33,14 @@
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
+    background: $accent-color;
+    // background: #373a47;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    color: white;
+    a {
+        color: white;
+    }
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -64,12 +69,14 @@
 // Use custom icon, and show it in tablets and below
 
 .burger {
-  position: absolute;
   font-size: 1rem;
   right: 1.2rem;
   top: 1rem;
   cursor: pointer;
   display: none !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 640px) {

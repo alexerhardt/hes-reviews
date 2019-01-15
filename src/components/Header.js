@@ -48,7 +48,8 @@ class Header extends React.Component
 
         <header className="navbar px-4">
           <section className="navbar-section">
-            <Link to="/" className="navbar-brand mr-2">HARVARD EXTENSION REVIEWS</Link>
+            <Link to="/" className="navbar-brand logo-desktop mr-2">HARVARD EXTENSION REVIEWS</Link>
+            <Link to="/" className="navbar-brand logo-mobile mr-2">H | E | Reviews</Link>
           </section>
 
           <section className="navbar-section nav-desktop">

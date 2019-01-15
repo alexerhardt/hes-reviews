@@ -24,8 +24,8 @@ class ReviewStats extends React.Component
             <h4>3.22</h4>
           </div>
           <div className="col-12 col-md-6">
-            <h6 className="text-uppercase">Weekly Workload</h6>
-            <h4>13h</h4>
+            <h6 className="text-uppercase">Workload</h6>
+            <h4>13h / week</h4>
           </div>
         </div>
       </div>

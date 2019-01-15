@@ -13,7 +13,7 @@ class ReviewFilters extends React.Component
           <div className="col-12">
             <h3>Filters</h3>
           </div>
-          <div className="col-12 col-md-6 mb-2">
+          <div className="filter-wrap col-12 col-md-6 mb-2">
             <Select 
               placeholder="Semesters"
               isMulti
@@ -24,7 +24,7 @@ class ReviewFilters extends React.Component
               classNamePrefix="react-select"
             />
           </div>
-          <div className="col-12 col-md-6 mb-2">
+          <div className="filter-wrap col-12 col-md-6 mb-2">
             <Select 
               placeholder="Rating"
               isMulti
@@ -35,7 +35,7 @@ class ReviewFilters extends React.Component
               classNamePrefix="react-select"
             />
           </div>
-          <div className="col-12 col-md-6 mb-2"> 
+          <div className="filter-wrap col-12 col-md-6 mb-2"> 
             <Select 
               placeholder="Difficulty"
               isMulti

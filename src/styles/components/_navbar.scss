@@ -10,13 +10,13 @@ $color-link-navbar: $accent-color;
 $color-bg-btn-navbar: $accent-color;
 $color-btn-navbar: white;
 
+#container-nav {
+    position: relative; // needed to position the burger
+}
 
 .navbar {
     height: $navbar-height;
     width: 100%;
-}
-
-.bg-navbar {
     background-color: $color-bg-navbar !important;
     box-shadow: 0 0 1px 1px rgba(25, 25, 25, 0.1);
     margin-bottom: 1px;
@@ -30,8 +30,14 @@ $color-btn-navbar: white;
 }
 
 .navbar-brand {
+    font-size: 1.1rem !important;
     font-family: $headline-font-family;
-    // TODO: Experiment with drop-shadow and weight
+    text-shadow: 1px 1px 3px rgba(25,25, 25,0.2);
+    font-weight: 900;
+}
+
+.logo-mobile {
+    display: none;
 }
 
 
@@ -39,5 +45,13 @@ $color-btn-navbar: white;
 @media (max-width: 640px) {
     .nav-desktop {
         display: none !important;
+    }
+
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: unset;
     }
 }

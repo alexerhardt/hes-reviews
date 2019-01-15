@@ -40,7 +40,9 @@ $pic9: 'https://media.istockphoto.com/photos/john-w-weeks-bridge-over-charles-ri
     background-attachment: fixed;
     background-size: auto auto;
     color: white !important;
-    text-shadow: 1px 1px 1px #757575;
+    h1, h5 {
+        text-shadow: 1px 1px 1px #757575;
+    }
 }
 
 
@@ -78,4 +80,7 @@ $pic9: 'https://media.istockphoto.com/photos/john-w-weeks-bridge-over-charles-ri
 .suggest__suggestion--highlighted--home {
     background-color: lighten($light-blue-b, 20%); 
     cursor: pointer;
+    a {
+        text-decoration: none;
+    }
 }

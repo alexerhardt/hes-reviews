@@ -38,6 +38,12 @@ div[class*="react-select"] {
     to { opacity: 1; }
 }
 
+@media (max-width: $brkpoint-sm) {
+    .filter-wrap {
+        padding: 0 0.2rem;
+    }
+}
+
 @media (max-width: $brkpoint-md) {
     .col-stats {
         padding: 0.8rem;
@@ -47,5 +53,4 @@ div[class*="react-select"] {
     .col-reviews {
         padding: 0.8rem;
     }
-
 }

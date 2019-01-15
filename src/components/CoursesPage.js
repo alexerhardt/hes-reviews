@@ -30,8 +30,6 @@ class CoursesPage extends React.Component
       className: 'table-width-adj-name',
       minWidth: 200,
       Cell: props => {
-        // const path = props.original.code.replace(" ", "_");
-        // return (<a href={"/reviews/" + path}>{props.value}</a>)
         return (<a href={"/reviews/"}>{props.value}</a>)
       }
     }, {
@@ -46,13 +44,8 @@ class CoursesPage extends React.Component
       headerClassName: 'table-width-adj-rating',
       className: 'table-width-adj-rating',
       Cell: props => props.value || "N/A"
-    }, {
-      Header: 'Staff',
-      accessor: 'staff',
-      headerClassName: 'table-width-adj-staff',
-      className: 'table-width-adj-staff',
-      Cell: props => props.value || "N/A"
-    }, {
+    }, 
+    {
       Header: 'Difficulty',
       accessor: 'difficulty',
       headerClassName: 'table-width-adj-difficulty',
@@ -69,9 +62,9 @@ class CoursesPage extends React.Component
     return (
       <div id="container-coursepage" className="container-outer bg-gray">
         <Header />
-        <div className="container-coursepage-inner p-4">
+        <div className="container-coursepage-inner bg-gray">
           <input 
-            className="mb-5"
+            className="table-search-input mb-5"
             type="text" 
             placeholder="Search for a course" 
             onChange={this.filterTableData}
@@ -79,6 +72,7 @@ class CoursesPage extends React.Component
           <div className="wrapper-course-table">
             <ReactTable
             data={this.state.tableData}
+            defaultPageSize={12}
             columns={columns}
             />
           </div>
