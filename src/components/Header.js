@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Menu from 'react-burger-menu/lib/menus/slide';
+import AuthModal from './AuthModal';
 
 /**
  * Header
@@ -13,7 +14,8 @@ import Menu from 'react-burger-menu/lib/menus/slide';
 class Header extends React.Component
 {
   state = {
-    menuOpen: false
+    menuOpen: false,
+    authModalOpen: false
   }
 
   handleStateChange(state)
@@ -29,6 +31,14 @@ class Header extends React.Component
   toggleMenu()
   {
     this.setState({menuOpen: !this.state.menuOpen});
+  }
+
+  openAuthModal = () => {
+    this.setState({authModalOpen: true});
+  }
+
+  closeAuthModal  = () => {
+    this.setState({authModalOpen: false});
   }
 
   render()
@@ -54,14 +64,19 @@ class Header extends React.Component
 
           <section className="navbar-section nav-desktop">
             <Link to="/courses" className="ml-4">See All Courses</Link>
-            <Link to="/login" className="btn btn-accent ml-4">Login</Link>
+            <a href="#" className="ml-4" onClick={this.openAuthModal}>Login / Sign Up</a>
           </section>
 
         </header>
 
-        <i className="icon icon-menu burger" onClick={() => this.toggleMenu()}></i>
+        <i className="icon icon-menu burger" onClick={this.toggleMenu}></i>
 
+        <AuthModal 
+          isOpen={this.state.authModalOpen} 
+          closeAuthModal={this.closeAuthModal}
+        />
       </div>
+
     )
   }
 }

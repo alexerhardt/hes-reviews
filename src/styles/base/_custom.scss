@@ -64,3 +64,15 @@ $util-size-extensions: (
     }
   }
 }
+
+// The source lightens only at 10% which has an abhorrent effect
+// Increase lighten to 45% for subtle effect
+.form-input {
+  &:not(:placeholder-shown) {
+    &:invalid {
+      &:focus {
+        @include control-shadow($error-color);
+        background: lighten($error-color, 45%); }
+    }
+  }
+}

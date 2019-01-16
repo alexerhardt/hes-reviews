@@ -1,0 +1,18 @@
+// _auth.scss
+// Styling for authentication components (signup / login)
+
+// ...
+
+.btn--auth {
+    float: right;
+    margin-top: 1rem;
+}
+
+.auth-form {
+    display: none;
+}
+
+.auth-form.active {
+    display: unset;
+}
+
