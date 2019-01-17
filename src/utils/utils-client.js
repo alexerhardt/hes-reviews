@@ -2,6 +2,7 @@
  * utils-client.js
  * Utilities for the front end
  */
+import axios from 'axios';
 
 /**
  * Creates a styling namespace for the react autosuggest component
@@ -33,4 +34,31 @@ export const autosuggestNameGen = (suffix) => {
 
   return ret;
 }
+
+
+/**
+ * Checks if an object or string is empty, null or undefined
+ * @param   {Object or String} value The object to check
+ * @return  {Boolean} Whether the argument is empty
+ */
+export const isEmpty = (value) =>
+  value === undefined ||
+  value === null ||
+  (typeof value === 'object' && Object.keys(value).length === 0) ||
+  (typeof value === 'string' && value.trim().length === 0);
+
+
+/**
+ * Sets the auth token for axios requests
+ * @param {String} token 
+ */
+export const setAuthToken = (token) => {
+  if (token) {
+    // Apply to every request
+    axios.defaults.headers.common['Authorization'] = token;
+  } else {
+    // Delete auth header
+    delete axios.defaults.headers.common['Authorization'];
+  }
+};
 
