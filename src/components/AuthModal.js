@@ -1,15 +1,32 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
+import { connect } from 'react-redux';
+import { signupUser } from '../actions/authActions';
 
 class AuthModal extends Component {
 
   state = {
-    isLoginOpen: true
+    isLoginOpen: true,
+    errors: {}
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    if (nextProps.auth.isAuthenticated) {
+      console.log('AuthModal received props: is authenticated');
+      this.setState({ errors: 'Logging you in...'});
+
+      setTimeout(() => {
+        this.props.closeAuthModal();
+      }, 6000);
+
+    }
+    console.log('AuthModal received props: is NOT authenticated');
   }
 
   handleSwitchTabs = (prev) => {
-    this.setState({isLoginOpen: !prev.isLoginOpen})
+    this.setState({ isLoginOpen: !prev.isLoginOpen })
   }
 
   render() {
@@ -36,6 +53,7 @@ class AuthModal extends Component {
               onClick={this.props.closeAuthModal}
             >
             </a>
+
           </div>
 
           <div className="modal-body">
@@ -56,6 +74,10 @@ class AuthModal extends Component {
           </div>
 
           <div className="modal-footer">
+            {
+              this.state.message &&
+              <div className="toast toast-success">{'Everything went swimmingly'}</div>
+            }
          </div>
 
         </div>
@@ -64,7 +86,15 @@ class AuthModal extends Component {
   }
 }
 
-export default AuthModal;
+AuthModal.propTypes = {
+  auth: PropTypes.object.isRequired
+}
+
+const mapStateToProps = (state) => ({
+  auth: state.auth
+});
+
+export default connect(mapStateToProps, { signupUser })(AuthModal);
 
 
 

@@ -18,6 +18,8 @@ $yellow-a: #FFBA4F;
 $pink-a: #FF8782;
 $orange-a: #CF634A;
 $orange-b: #C47047;
+$green-a: #4BB872;
+$green-b: #7FC184;
 
 
 // Core colors
@@ -45,7 +47,8 @@ $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
 // Control colors
-$success-color: #32b643 !default;
+// $success-color: #32b643 !default;
+$success-color: $green-a;
 $warning-color: #ffb700 !default;
 // $error-color: #e85600 !default;
 $error-color: $orange-b !default;

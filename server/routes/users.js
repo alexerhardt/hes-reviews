@@ -17,9 +17,11 @@ const User = require('../models/User');
  */
 router.post('/signup', (req, res, next) => {
   // Validate signup request, return error if not valid
+  console.log('/signup route received');
   const { errors, isValid } = validateSignupInput(req.body);
 
   if (!isValid) {
+    console.log('signup validation error', errors);
     return res.status(400).json(errors);
   }
 
@@ -60,7 +62,7 @@ router.post('/login', (req, res, next) => {
 
   User.findOne({ email }).then((user) => {
     if (!user) {
-      errors.email = 'User not found';
+      errors.email = 'User / Password not recognized';
       return res.status(400).json(errors);
     }
 
@@ -81,7 +83,7 @@ router.post('/login', (req, res, next) => {
         )
       }
       else {
-        errors.password = 'Password incorrect';
+        errors.email = 'User / Password not recognized';
         return res.status(400).json(errors);
       }
     });

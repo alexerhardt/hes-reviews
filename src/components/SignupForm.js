@@ -2,23 +2,22 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { signupUser } from '../actions/authActions';
 import { connect } from 'react-redux';
+import classnames from 'classnames';
 
 class SignupForm extends Component {
   state = {
     email: '',
     password: '',
     password2: '',
+    errors: {}
   }
 
   onChange = (e) => {
-    console.log('onChange triggered');
     this.setState({ [e.target.name]: e.target.value });
-    console.log('onChange after state', this.state);
   }
 
   onSubmit = (e) => {
     e.preventDefault();
-
 
     const user = {
       email: this.state.email,
@@ -26,47 +25,82 @@ class SignupForm extends Component {
       password2: this.state.password2
     }
 
-    console.log('form submitted, user', user);
-
     this.props.signupUser(user);
   }
 
+  componentWillReceiveProps = (nextProps) => {
+    console.log('signupForm receives props: ', nextProps);
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+  }
+
   render() {
-    const activeClass = this.props.isOpen ? 'active' : '';
+    const { errors } = this.state;
+
     return (
-      <form className={'form-group auth-form' + activeClass} onSubmit={this.onSubmit}>
-        <label className="form-label" htmlFor="input-example-1">Email</label>
-        <input 
-          className="form-input" 
-          type="email" 
-          placeholder="Email" 
-          name="email"
-          value={this.state.email}
-          onChange={this.onChange}
-        >
-        </input>
+      <form 
+        className={classnames('form-group auth-form', {
+          'active': this.props.isOpen
+        })}
+        onSubmit={this.onSubmit}
+      >
+        <div className="form-group">
+          <label className="form-label" htmlFor="input-example-1">Email</label>
+          <input 
+            className={classnames('form-input', {
+              'is-error': errors.email
+            })}
+            type="email" 
+            placeholder="Email" 
+            name="email"
+            value={this.state.email}
+            onChange={this.onChange}
+          >
+          </input>
+          {
+            errors.email &&
+            <p className="form-input-hint">{errors.email}</p>
+          }
+        </div>
 
-        <label className="form-label" htmlFor="input-example-1">Password</label>
-        <input 
-          className="form-input" 
-          type="password" 
-          placeholder="Password" 
-          name="password"
-          value={this.state.password}
-          onChange={this.onChange}
-        >
-        </input>
+        <div className="form-group">
+          <label className="form-label" htmlFor="input-example-1">Password</label>
+          <input 
+            className={classnames('form-input', {
+              'is-error': errors.password
+            })}
+            type="password" 
+            placeholder="Password" 
+            name="password"
+            value={this.state.password}
+            onChange={this.onChange}
+          >
+          </input>
+          {
+            errors.password &&
+            <p className="form-input-hint">{errors.password}</p>
+          }
+        </div>
 
-        <label className="form-label" htmlFor="input-example-1">Password Confirmation</label>
-        <input 
-          className="form-input" 
-          type="password" 
-          placeholder="Password Confirmation" 
-          name="password2"
-          value={this.state.password2}
-          onChange={this.onChange}
-        >
-        </input>
+        <div className="form-group">
+          <label className="form-label" htmlFor="input-example-1">Password Confirmation</label>
+          <input 
+            className={classnames('form-input', {
+              'is-error': errors.password2
+            })}
+            type="password" 
+            placeholder="Password Confirmation" 
+            name="password2"
+            value={this.state.password2}
+            onChange={this.onChange}
+          >
+          </input>
+          {
+            errors.password2 &&
+            <p className="form-input-hint">{errors.password2}</p>
+          }
+        </div>
 
         <input className="btn btn-primary btn--auth" type="submit" value="Sign Up"></input>
       </form>
@@ -77,10 +111,12 @@ class SignupForm extends Component {
 SignupForm.propTypes = {
   signupUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
+  errors: PropTypes.object
 };
 
 const mapStateToProps = (state) => ({
-  auth: state.auth
+  auth: state.auth,
+  errors: state.errors
 });
 
 export default connect(mapStateToProps, { signupUser })(SignupForm);
