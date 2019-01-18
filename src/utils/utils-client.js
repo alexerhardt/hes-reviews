@@ -53,6 +53,7 @@ export const isEmpty = (value) =>
  * @param {String} token 
  */
 export const setAuthToken = (token) => {
+  console.log('set auth token called');
   if (token) {
     // Apply to every request
     axios.defaults.headers.common['Authorization'] = token;
@@ -60,5 +61,6 @@ export const setAuthToken = (token) => {
     // Delete auth header
     delete axios.defaults.headers.common['Authorization'];
   }
+  console.log('set auth token done');
 };
 

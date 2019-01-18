@@ -46,7 +46,7 @@ class SignupForm extends Component {
         onSubmit={this.onSubmit}
       >
         <div className="form-group">
-          <label className="form-label" htmlFor="input-example-1">Email</label>
+          <label className="form-label">Email</label>
           <input 
             className={classnames('form-input', {
               'is-error': errors.email
@@ -65,7 +65,7 @@ class SignupForm extends Component {
         </div>
 
         <div className="form-group">
-          <label className="form-label" htmlFor="input-example-1">Password</label>
+          <label className="form-label">Password</label>
           <input 
             className={classnames('form-input', {
               'is-error': errors.password
@@ -84,7 +84,7 @@ class SignupForm extends Component {
         </div>
 
         <div className="form-group">
-          <label className="form-label" htmlFor="input-example-1">Password Confirmation</label>
+          <label className="form-label">Password Confirmation</label>
           <input 
             className={classnames('form-input', {
               'is-error': errors.password2

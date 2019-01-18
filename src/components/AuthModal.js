@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
 import { connect } from 'react-redux';
-import { signupUser } from '../actions/authActions';
+import { signupUser, loginUser } from '../actions/authActions';
 
 class AuthModal extends Component {
 
@@ -20,9 +20,10 @@ class AuthModal extends Component {
       setTimeout(() => {
         this.props.closeAuthModal();
       }, 6000);
-
     }
-    console.log('AuthModal received props: is NOT authenticated');
+    else {
+      console.log('AuthModal received props: is NOT authenticated');
+    }
   }
 
   handleSwitchTabs = (prev) => {
@@ -94,7 +95,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth
 });
 
-export default connect(mapStateToProps, { signupUser })(AuthModal);
+export default connect(mapStateToProps, { signupUser, loginUser })(AuthModal);
 
 
 
