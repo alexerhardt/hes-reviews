@@ -28,9 +28,13 @@ class LoginForm extends Component {
 
   componentWillReceiveProps = (nextProps) => {
     console.log('loginForm receives props: ', nextProps);
+    if (!nextProps.isOpen) {
+      this.setState({ email: '', password: '' });
+    }
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
+
   }
 
   render() {

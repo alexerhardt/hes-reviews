@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import { signupUser } from '../actions/authActions';
+import { signupUser, clearAllMessages } from '../actions/authActions';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 
@@ -25,11 +25,14 @@ class SignupForm extends Component {
       password2: this.state.password2
     }
 
-    this.props.signupUser(user);
+    this.props.signupUser(user, this.props.switchTabs);
   }
 
   componentWillReceiveProps = (nextProps) => {
     console.log('signupForm receives props: ', nextProps);
+    if (!nextProps.isOpen) {
+      this.setState({ email: '', password: '', password2: '' });
+    }
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
@@ -110,6 +113,7 @@ class SignupForm extends Component {
 
 SignupForm.propTypes = {
   signupUser: PropTypes.func.isRequired,
+  clearAllMessages: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   errors: PropTypes.object
 };
@@ -119,4 +123,4 @@ const mapStateToProps = (state) => ({
   errors: state.errors
 });
 
-export default connect(mapStateToProps, { signupUser })(SignupForm);
+export default connect(mapStateToProps, { signupUser, clearAllMessages })(SignupForm);

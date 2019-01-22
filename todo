@@ -7,9 +7,15 @@ GENERAL
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
+Auth Modal
+- Switch from CSS display to a Componenent Mount architecture
+- Clear the fields when the components disappear
 
 
 Did:
+
+22/01/2018
+Nearly finish Authentication Modal.
 
 08/01/2018
 Improve CourseSearchBox styling

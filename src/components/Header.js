@@ -1,7 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Menu from 'react-burger-menu/lib/menus/slide';
 import AuthModal from './AuthModal';
+import { clearAllMessages } from '../actions/authActions';
 
 /**
  * Header
@@ -38,6 +41,7 @@ class Header extends React.Component
   }
 
   closeAuthModal  = () => {
+    this.props.clearAllMessages();
     this.setState({authModalOpen: false});
   }
 
@@ -81,4 +85,11 @@ class Header extends React.Component
   }
 }
 
-export default Header
+Header.propTypes = {
+  clearAllMessages: PropTypes.func.isRequired
+}
+
+const mapStateToProps = (state) => {{}};
+
+// export default Header
+export default connect(mapStateToProps, { clearAllMessages })(Header);
