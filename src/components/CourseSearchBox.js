@@ -1,9 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Autosuggest from 'react-autosuggest';
 import matchSorter from 'match-sorter';
 
 import courseData from '../data/random-data.json';
+
+import { getCourses } from '../actions/courseActions';
 
 /**
  * CourseSearchBox
@@ -20,6 +24,14 @@ class CourseSearchBox extends React.Component
   state = {
     searchValue: '',   // the input box value
     matchedCourses: [] // suggestions returned from user input
+  }
+
+  componentDidMount = () => {
+    console.log('CourseSearchBox: componentDidMount');
+    if (this.props.courses.length === 0) {
+      console.log('CourseSearchBox: courses are empty, call getCourses()');
+      this.props.getCourses();
+    }
   }
 
   /**
@@ -96,7 +108,15 @@ class CourseSearchBox extends React.Component
       />
     )
   }
-
 }
 
-export default CourseSearchBox;
+CourseSearchBox.propTypes = {
+  getCourses: PropTypes.func.isRequired
+}
+
+const mapStateToProps = (state) => ({
+  courses: state.courses
+});
+
+export default connect(mapStateToProps, { getCourses })(CourseSearchBox);
+
