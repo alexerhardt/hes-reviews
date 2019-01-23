@@ -46,6 +46,12 @@ export const setCurrentUser = (decoded) => {
   };
 };
 
+export const logoutUser = () => (dispatch) => {
+  localStorage.removeItem('jwtToken');
+  setAuthToken(false);
+  dispatch(setCurrentUser({}));
+}
+
 export const setMessage = (message) => {
   return {
     type: SET_MESSAGE,
@@ -61,6 +67,7 @@ export const getErrors = (errors) => {
 };
 
 export const clearErrors = () => (dispatch) => {
+  console.log('clearErrors called');
   dispatch(getErrors({}));
 };
 

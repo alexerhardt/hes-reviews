@@ -89,7 +89,9 @@ Header.propTypes = {
   clearAllMessages: PropTypes.func.isRequired
 }
 
-const mapStateToProps = (state) => {{}};
+const mapStateToProps = (state) => ({
+  auth: state.auth
+});
 
 // export default Header
 export default connect(mapStateToProps, { clearAllMessages })(Header);

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import jwt_decode from 'jwt-decode';
+import { setAuthToken } from './utils/utils-client';
 
 import { Provider } from 'react-redux';
 import store from './store/store';
@@ -14,6 +16,19 @@ import AccountPage from './components/AccountPage';
 
 import 'react-table/react-table.css';
 import './styles/styles.scss';
+
+// if (localStorage.jwtToken) {
+//   const decoded = jwt_decode(localStorage.jwtToken);
+
+//   const currentTime = Date.now() / 1000;
+//   if (decoded.exp < currentTime) {
+//     store.dispatch(logoutUser());
+//   }
+//   else {
+//     setAuthToken(localStorage.jwtToken);
+//     store.dispatch(setCurrentUser(decoded));
+//   }
+// }
 
 const NotFoundPage = () => (
   <div>
