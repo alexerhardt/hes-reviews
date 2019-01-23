@@ -15,16 +15,17 @@ class AuthModal extends Component {
 
   componentWillReceiveProps = (nextProps) => {
     console.log('AuthModal componentWillReceiveProps');
-    if (nextProps.message.activeMessage) {
-      this.setState({ message: nextProps.message });
-    }
+    // if (nextProps.message.activeMessage) {
+    //   this.setState({ message: nextProps.message });
+    // }
+    this.setState({ message: nextProps.message });
 
     if (nextProps.auth.isAuthenticated) {
       console.log('AuthModal received props: is authenticated');
 
       setTimeout(() => {
         this.props.closeAuthModal();
-      }, 3000);
+      }, 2000);
     }
   }
 

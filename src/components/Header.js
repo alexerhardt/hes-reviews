@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Menu from 'react-burger-menu/lib/menus/slide';
 import AuthModal from './AuthModal';
-import { clearAllMessages } from '../actions/authActions';
+import { logoutUser, clearAllMessages } from '../actions/authActions';
+
 
 /**
  * Header
@@ -18,7 +19,13 @@ class Header extends React.Component
 {
   state = {
     menuOpen: false,
-    authModalOpen: false
+    authModalOpen: false,
+    isAuthenticated: this.props.auth.isAuthenticated 
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log('Header componentWillReceiveProps, is auth:', nextProps.auth.isAuthenticated);
+    this.setState({ isAuthenticated: nextProps.auth.isAuthenticated });
   }
 
   handleStateChange(state)
@@ -45,8 +52,32 @@ class Header extends React.Component
     this.setState({authModalOpen: false});
   }
 
+  logOut = () => {
+    this.props.logoutUser();
+  }
+
+  nonAuthNav = (
+    <div>
+      <Link to="/courses" className="ml-4">See All Courses</Link>
+      <a href="#" className="ml-4" onClick={this.openAuthModal}>Login / Sign Up</a>
+    </div>
+  );
+
+  authNav = (
+    <div>
+      <Link to="/write-review">Write Review</Link>
+      <Link to="/courses" className="ml-4">See All Courses</Link>
+      <Link to="/my-account" className="ml-4">My Account</Link>
+      <a href="#" className="ml-4" onClick={this.logOut}>Logout</a>
+    </div>
+  )
+
   render()
   {
+    // const isAuthenticated = this.props.auth.isAuthenticated;
+    const isAuthenticated = this.state.isAuthenticated;
+    console.log('Header render, isAuthenticated: ', isAuthenticated);
+    
     return (
       <div id="container-nav" className="bg-navbar">
 
@@ -56,8 +87,9 @@ class Header extends React.Component
           customBurgerIcon={false}
           right
         >
-          <Link to="/courses" className="ml-4">See All Courses</Link>
-          <Link to="/login" className="ml-4">Login</Link>
+          {/* <Link to="/courses" className="ml-4">See All Courses</Link>
+          <Link to="/login" className="ml-4">Login</Link> */}
+          { isAuthenticated ? this.authNav : this.nonAuthNav }
         </Menu>
 
         <header className="navbar px-4">
@@ -67,8 +99,9 @@ class Header extends React.Component
           </section>
 
           <section className="navbar-section nav-desktop">
-            <Link to="/courses" className="ml-4">See All Courses</Link>
-            <a href="#" className="ml-4" onClick={this.openAuthModal}>Login / Sign Up</a>
+            {/* <Link to="/courses" className="ml-4">See All Courses</Link>
+            <a href="#" className="ml-4" onClick={this.openAuthModal}>Login / Sign Up</a> */}
+            { isAuthenticated ? this.authNav : this.nonAuthNav }
           </section>
 
         </header>
@@ -86,7 +119,8 @@ class Header extends React.Component
 }
 
 Header.propTypes = {
-  clearAllMessages: PropTypes.func.isRequired
+  clearAllMessages: PropTypes.func.isRequired,
+  logoutUser: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({
@@ -94,4 +128,4 @@ const mapStateToProps = (state) => ({
 });
 
 // export default Header
-export default connect(mapStateToProps, { clearAllMessages })(Header);
+export default connect(mapStateToProps, { logoutUser, clearAllMessages })(Header);

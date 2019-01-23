@@ -24,12 +24,14 @@ export const loginUser = (userData) => (dispatch) => {
   axios
     .post('/api/users/login', userData)
     .then((res) => {
+      console.log('loginUser successful');
       const { token } = res.data;
       localStorage.setItem('jwtToken', token)
       setAuthToken(token);
       const decoded = jwtDecode(token);
       dispatch(setCurrentUser(decoded));
       dispatch(setMessage(messages.loginSuccess));
+      console.log('login user dispatching concluded');
     })
     .catch((err) => {
       dispatch({

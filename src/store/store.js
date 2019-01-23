@@ -17,9 +17,11 @@ const checkTokenExpiration = (store) => (next) => (action) => {
     setAuthToken(false);
     store.dispatch(logoutUser());
   }
+  next(action);
 }
 
 const middleware = [thunk, checkTokenExpiration];
+// const middleware = [thunk];
 
 const store = createStore(
   rootReducer,
