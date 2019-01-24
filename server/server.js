@@ -11,6 +11,7 @@ const passport = require('passport');
 const users = require('./routes/users');
 const courses = require('./routes/courses');
 const reviews = require('./routes/reviews');
+const test = require('./routes/test');
 
 const app = express();
 
@@ -42,6 +43,7 @@ require('./config/passport')(passport);
 app.use('/api/users', users);
 app.use('/api/courses', courses);
 app.use('/api/reviews', reviews);
+app.use('/api/test', test);
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));

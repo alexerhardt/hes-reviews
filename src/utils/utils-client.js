@@ -69,3 +69,18 @@ export const setAuthToken = (token) => {
   console.log('set auth token done');
 };
 
+
+/**
+ * Redirects to an error page on server error
+ */
+export const redirectToErrorPage = (err, history) => {
+  history.push({
+    pathname: '/' + err.response.status,
+    state: { 
+      status: err.response.status,
+      statusText: err.response.statusText,
+      detail: err.response.data 
+    }
+  });
+};
+

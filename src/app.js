@@ -7,6 +7,7 @@ import { setAuthToken } from './utils/utils-client';
 import { Provider } from 'react-redux';
 import store from './store/store';
 
+import Header from './components/Header';
 import HomePage from './components/HomePage';
 import CoursesPage from './components/CoursesPage'
 import ReviewsPage from './components/ReviewsPage';
@@ -17,24 +18,25 @@ import AccountPage from './components/AccountPage';
 import 'react-table/react-table.css';
 import './styles/styles.scss';
 
-// if (localStorage.jwtToken) {
-//   const decoded = jwt_decode(localStorage.jwtToken);
-
-//   const currentTime = Date.now() / 1000;
-//   if (decoded.exp < currentTime) {
-//     store.dispatch(logoutUser());
-//   }
-//   else {
-//     setAuthToken(localStorage.jwtToken);
-//     store.dispatch(setCurrentUser(decoded));
-//   }
-// }
 
 const NotFoundPage = () => (
   <div>
     404 - Not found
   </div>
-)
+);
+
+const ErrorPage = (props) => {
+  const { state } = props.location;
+  console.log('state:', state);
+
+  return (
+    <div>
+      <Header />
+      <h3>{`${state.status}: ${state.statusText}`}</h3>
+      <p>{`${state.detail}`}</p>
+    </div>
+  )
+};
 
 const routes = (
   <Provider store={store}>
@@ -45,6 +47,7 @@ const routes = (
           <Route path="/reviews/:id" component={ReviewsPage}></Route>
           <Route path="/write-review" component={WriteReviewPage}></Route>
           <Route path="/my-account" component={AccountPage}></Route>
+          <Route path="/([0-9]{3})" component={ErrorPage}></Route>
           <Route component={NotFoundPage} />
         </Switch>
     </BrowserRouter>

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import Autosuggest from 'react-autosuggest';
 import matchSorter from 'match-sorter';
 
@@ -30,7 +30,8 @@ class CourseSearchBox extends React.Component
     console.log('CourseSearchBox: componentDidMount');
     if (this.props.courses.length === 0) {
       console.log('CourseSearchBox: courses are empty, call getCourses()');
-      this.props.getCourses();
+      console.log('history: ', this.props.history);
+      this.props.getCourses(this.props.history);
     }
   }
 
@@ -118,5 +119,7 @@ const mapStateToProps = (state) => ({
   courses: state.courses
 });
 
-export default connect(mapStateToProps, { getCourses })(CourseSearchBox);
+// https://reacttraining.com/react-router/core/api/withRouter
+// There's a note on shouldComponentUpdate which I don't understand... investigate
+export default connect(mapStateToProps, { getCourses })(withRouter(CourseSearchBox));
 

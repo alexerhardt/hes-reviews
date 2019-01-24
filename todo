@@ -7,9 +7,14 @@ GENERAL
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
-Auth Modal
+AUTH MODAL
 - Switch from CSS display to a Componenent Mount architecture
 - Clear the fields when the components disappear
+
+ERROR HANDLING
+- Style front-end error page
+- Add reactive modals instead of redirects as errors
+- Wire server and client errors better
 
 
 Did:
