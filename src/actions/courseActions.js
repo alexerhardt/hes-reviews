@@ -1,12 +1,15 @@
 import axios from 'axios';
+import { GET_COURSES } from '../actions/types';
 import { redirectToErrorPage } from '../utils/utils-client';
 
 export const getCourses = (history) => (dispatch) => {
   axios
-    // .get('/api/courses/all')
-    .get('/api/test/force-500')
+    .get('/api/courses/all')
     .then((res) => {
-      console.log('courses get response', res);
+      dispatch({
+        type: GET_COURSES,
+        payload: res.data
+      });
     })
     .catch((err) => {
       redirectToErrorPage(err, history);

@@ -27,10 +27,7 @@ class CourseSearchBox extends React.Component
   }
 
   componentDidMount = () => {
-    console.log('CourseSearchBox: componentDidMount');
     if (this.props.courses.length === 0) {
-      console.log('CourseSearchBox: courses are empty, call getCourses()');
-      console.log('history: ', this.props.history);
       this.props.getCourses(this.props.history);
     }
   }

@@ -1,13 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ReactTable from 'react-table';
+import { connect } from 'react-redux';
 import TableData from '../data/random-data.json';
 import Header from '../components/Header';
 import matchSorter from 'match-sorter';
 
+import { getCourses } from '../actions/courseActions';
+
 class CoursesPage extends React.Component
 {
   state = {
-    tableData: TableData
+    tableData: this.props.courses 
+  }
+
+  componentDidMount = () => {
+    if (this.props.courses.length === 0) {
+      this.props.getCourses(this.props.history);
+    }
+  }
+
+  componentWillReceiveProps = (nextProps) => {
+    this.setState({ tableData: nextProps.courses });
   }
 
   filterTableData = (event) => {
@@ -71,9 +85,9 @@ class CoursesPage extends React.Component
           />
           <div className="wrapper-course-table">
             <ReactTable
-            data={this.state.tableData}
-            defaultPageSize={12}
-            columns={columns}
+              data={this.state.tableData}
+              defaultPageSize={12}
+              columns={columns}
             />
           </div>
         </div>
@@ -82,4 +96,12 @@ class CoursesPage extends React.Component
   }
 }
 
-export default CoursesPage;
+CoursesPage.propTypes = {
+  getCourses: PropTypes.func.isRequired
+}
+
+const mapStateToProps = (state) => ({
+  courses: state.courses
+});
+
+export default connect(mapStateToProps, { getCourses })(CoursesPage);
