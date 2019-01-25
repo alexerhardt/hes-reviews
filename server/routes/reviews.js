@@ -32,7 +32,6 @@ router.post('/post', authenticate, (req, res, next) => {
  */
 router.get('/:courseId', (req, res, next) => {
   const courseId = req.params.courseId;
-  console.log('get reviews by courseId', courseId);
   if (!courseId) {
     return res.status(400).json({validationErrors: 'Missing course id'});
   }

@@ -30,7 +30,7 @@ class ReviewsPage extends React.Component
 
     return reviews.filter((review) => {
       const f = this.state.activeFilters;
-      return (f.rating.length == 0 || f.rating.includes(review.courseRating))
+      return (f.rating.length == 0 || f.rating.includes(review.rating))
           && (f.difficulty.length == 0 || f.difficulty.includes(review.difficulty))
           && (f.semester.length == 0 || f.semester.includes(review.semester));
     });

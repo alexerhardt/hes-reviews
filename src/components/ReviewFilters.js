@@ -13,7 +13,7 @@ class ReviewFilters extends React.Component
           <div className="col-12">
             <h3>Filters</h3>
           </div>
-          <div className="filter-wrap col-12 col-md-6 mb-2">
+          <div className="filter-wrap col-12 col-md-6 mb-2 text-capitalize">
             <Select 
               placeholder="Semesters"
               isMulti

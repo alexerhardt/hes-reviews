@@ -8,13 +8,14 @@ const ReviewBox = props => (
 
           <div className="columns mb-3">
             <div className="column col-6 col-md-12 mb-2">
-              {props.review.author}
+              {/* {props.review.author} */}
+              Anonymous Reviewer
             </div>
             <div className="column col-6 col-md-12 col-ml-auto mb-2 text-right">
               {props.review.reviewDate}
             </div>
             <div className="column col-12 text-capitalize">
-              {props.review.semester}
+              {props.review.semester + ' ' + props.review.year}
             </div>
           </div>
 
