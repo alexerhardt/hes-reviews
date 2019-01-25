@@ -16,8 +16,20 @@ ERROR HANDLING
 - Add reactive modals instead of redirects as errors
 - Wire server and client errors better
 
+REVIEW PAGE 
+- Add Year filter
+- Add Write Review page that populates the review field directly
+
 
 Did:
+ 
+25/01/2018
+Wire Review id request
+Fix issues with filters
+
+23/01/2018 - 24/01/2018
+Finish Authentication
+Add Courses to Redux store, wire to Courses view
 
 22/01/2018
 Nearly finish Authentication Modal.

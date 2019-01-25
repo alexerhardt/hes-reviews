@@ -23,7 +23,9 @@ class CourseSearchBox extends React.Component
 {
   state = {
     searchValue: '',   // the input box value
-    matchedCourses: [] // suggestions returned from user input
+    matchedCourses: [], // suggestions returned from user input
+    selectedCourseName: '',
+    selectedCourseId: ''
   }
 
   componentDidMount = () => {
@@ -71,10 +73,12 @@ class CourseSearchBox extends React.Component
    */
   onChange = (event, { newValue }) =>
   {
+    console.log('onChange called, newValue: ', newValue);
     this.setState({
       searchValue: newValue
     });
   };
+
 
   /**
    * This is the value for the HTML input, but in our case it's useless;
@@ -87,10 +91,12 @@ class CourseSearchBox extends React.Component
   render()
   {
     const { searchValue, matchedCourses } = this.state;
+    const { selectedCourseName } = this.props;
+    console.log('course searchbox render state: ', this.state);
 
     const inputProps = {
       placeholder: 'Search for a course...',
-      value: searchValue,
+      value: selectedCourseName || searchValue,
       onChange: this.onChange
     }
 
@@ -100,7 +106,8 @@ class CourseSearchBox extends React.Component
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         getSuggestionValue={this.getSuggestionValue}
-        renderSuggestion={this.renderSuggestion}
+        renderSuggestion={this.props.renderSuggestion || this.renderSuggestion}
+        onSuggestionSelected={this.props.onSuggestionSelected}
         inputProps={inputProps}
         theme={this.props.theme}
       />
