@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './Header';
 import CourseSearchBox from './CourseSearchBox';
-import jss from 'jss';
 
 import { autosuggestNameGen } from '../utils/utils-client';
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { redirectToErrorPage } from '../utils/utils-client';
+import axios from 'axios';
 
 import Header from './Header';
 import ReviewStats from './ReviewStats';
@@ -14,7 +16,7 @@ const difficultyLabels = ["Very Easy", "Easy", "Medium", "Hard", "Very Hard"];
 class ReviewsPage extends React.Component
 {
   state = {
-    reviewData: ReviewData,
+    reviewData: [],
     activeFilters: {
       rating: [],
       difficulty: [],
@@ -24,7 +26,9 @@ class ReviewsPage extends React.Component
 
   getFilteredReviews()
   {
-    return ReviewData.filter((review) => {
+    const reviews = this.state.reviewData;
+
+    return reviews.filter((review) => {
       const f = this.state.activeFilters;
       return (f.rating.length == 0 || f.rating.includes(review.courseRating))
           && (f.difficulty.length == 0 || f.difficulty.includes(review.difficulty))
@@ -35,10 +39,12 @@ class ReviewsPage extends React.Component
   // create filter options for filter component
   getFilterOptions()
   {
+    const reviews = this.state.reviewData;
+
     let sets = [new Set(), new Set(), new Set()];
 
-    ReviewData.forEach((review) => {
-      sets[0].add(review.courseRating);
+    reviews.forEach((review) => {
+      sets[0].add(review.rating);
       sets[1].add(review.difficulty);
       sets[2].add(review.semester);
     });
@@ -79,8 +85,34 @@ class ReviewsPage extends React.Component
     this.forceUpdate();
   }
 
+  /**
+   * TODO: This is blatantly wrong...
+   * URLS should be accessible by course id instead of course code
+   * At present users cannot save a Review page (such as bookmark it)
+   */
+  componentDidMount = () => {
+    console.log('ReviewsPage cWM() history', this.props.location.state);
+    const { courseId } = this.props.location.state;
+
+    if (!courseId) {
+      const error = {
+        status: 500,
+        statusText: 'Server Error',
+        data: 'Review not found. Go to Courses page and try from there'
+      }
+      redirectToErrorPage(error, this.props.history);
+    }
+    else {
+      axios
+        .get('/api/reviews/' + courseId)
+        .then((res => this.setState({ reviewData: res.data })))
+        .catch((err) => redirectToErrorPage(err, this.props.history));
+    }
+  }
+
   render()
   {
+    console.log('ReviewsPage render() history', this.props.location.state);
     const filteredReviews = this.getFilteredReviews();
 
     return (

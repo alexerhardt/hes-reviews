@@ -13,7 +13,7 @@ const ReviewBox = props => (
             <div className="column col-6 col-md-12 col-ml-auto mb-2 text-right">
               {props.review.reviewDate}
             </div>
-            <div className="column col-12">
+            <div className="column col-12 text-capitalize">
               {props.review.semester}
             </div>
           </div>
@@ -21,16 +21,12 @@ const ReviewBox = props => (
           <div className="columns mb-3">
             <div className="column col-12">
               <div className="chip"> 
-                <figure className="avatar avatar-sm" data-initial={props.review.courseRating}></figure>
+                <figure className="avatar avatar-sm" data-initial={props.review.rating}></figure>
                 Course Rating
               </div>
               <div className="chip"> 
                 <figure className="avatar avatar-sm" data-initial={props.review.difficulty}></figure>
                 Difficulty
-              </div>
-              <div className="chip"> 
-                <figure className="avatar avatar-sm" data-initial={props.review.staffRating}></figure>
-                Staff Rating
               </div>
               <div className="chip"> 
                 <figure className="avatar avatar-sm" data-initial={props.review.workload}></figure>
@@ -41,7 +37,7 @@ const ReviewBox = props => (
 
           <div className="columns">
             <div className="column col-12">
-              <p>{props.review.reviewText}</p>
+              <p>{props.review.body}</p>
             </div>
           </div>
 

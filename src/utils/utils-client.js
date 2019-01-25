@@ -75,11 +75,11 @@ export const setAuthToken = (token) => {
  */
 export const redirectToErrorPage = (err, history) => {
   history.push({
-    pathname: '/' + err.response.status,
+    pathname: '/' + err.status,
     state: { 
-      status: err.response.status,
-      statusText: err.response.statusText,
-      detail: err.response.data 
+      status: err.status,
+      statusText: err.statusText,
+      detail: err.data 
     }
   });
 };

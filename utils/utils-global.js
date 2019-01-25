@@ -8,9 +8,9 @@
  }
 
 /**
- * Strips a course code from non-alphabetic characters
+ * Strips a course code from non-alphanumeric characters
  */
-exports.courseIdFromCode = (code) => {
+exports.stripCourseCode = (code) => {
   return code.trim().replace(/\W*_*/g, '').toLowerCase();
 }
 

@@ -12,7 +12,7 @@ export const getCourses = (history) => (dispatch) => {
       });
     })
     .catch((err) => {
-      redirectToErrorPage(err, history);
+      redirectToErrorPage(err.response, history);
     });
 }; 
 

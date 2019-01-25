@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import ReactTable from 'react-table';
 import { connect } from 'react-redux';
 import TableData from '../data/random-data.json';
 import Header from '../components/Header';
 import matchSorter from 'match-sorter';
+import { stripCourseCode } from '../../utils/utils-global';
 
 import { getCourses } from '../actions/courseActions';
+import { strip } from 'ansi-colors';
 
 class CoursesPage extends React.Component
 {
@@ -43,8 +46,15 @@ class CoursesPage extends React.Component
       headerClassName: 'table-width-adj-name',
       className: 'table-width-adj-name',
       minWidth: 200,
-      Cell: props => {
-        return (<a href={"/reviews/"}>{props.value}</a>)
+      Cell: ({ row, value }) => {
+        return (
+          <Link to={{
+            pathname: '/reviews/' + stripCourseCode(row.code),
+            state: { courseId: row._original.id }
+          }}>
+            {value}
+          </Link>
+        )
       }
     }, {
       Header: 'Reviews',
