@@ -6,8 +6,8 @@ import Autosuggest from 'react-autosuggest';
 import matchSorter from 'match-sorter';
 
 import courseData from '../data/random-data.json';
-
 import { getCourses } from '../actions/courseActions';
+import { stripCourseCode } from '../../utils/utils-global';
 
 /**
  * CourseSearchBox
@@ -40,7 +40,7 @@ class CourseSearchBox extends React.Component
   onSuggestionsFetchRequested = ({ value }) => 
   {
     const keys = {keys: ['code', 'name']};
-    const matchedCourses = matchSorter(courseData, value, keys).slice(0, 5);
+    const matchedCourses = matchSorter(this.props.courses, value, keys).slice(0, 5);
     this.setState(() => ({matchedCourses}));
   };
 
@@ -61,10 +61,14 @@ class CourseSearchBox extends React.Component
    */
   renderSuggestion = (suggestion) => 
   {
-    const url = suggestion.code.trim().replace(/\s/g, '-').toLowerCase();
-
+    console.log('renderSuggestion suggestion:', suggestion);
     return (
-      <Link to={'reviews/' + url}>{`${suggestion.code} - ${suggestion.name}`}</Link>
+      <Link to={{
+        pathname: '/reviews/' + stripCourseCode(suggestion.code),
+        state: { courseId: suggestion.id }
+      }}>
+        {suggestion.name}
+      </Link>
     );
   };
 

@@ -9,7 +9,6 @@ import matchSorter from 'match-sorter';
 import { stripCourseCode } from '../../utils/utils-global';
 
 import { getCourses } from '../actions/courseActions';
-import { strip } from 'ansi-colors';
 
 class CoursesPage extends React.Component
 {
@@ -28,7 +27,7 @@ class CoursesPage extends React.Component
   }
 
   filterTableData = (event) => {
-    const keys = {keys: ['code', 'name']};
+    const keys = { keys: ['code', 'name'] };
     const tableData = matchSorter(TableData, event.target.value, keys);
     this.setState(() => ({tableData}));
   }

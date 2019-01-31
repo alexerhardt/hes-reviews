@@ -91,7 +91,7 @@ class ReviewsPage extends React.Component
    * At present users cannot save a Review page (such as bookmark it)
    */
   componentDidMount = () => {
-    console.log('ReviewsPage cWM() history', this.props.location.state);
+    console.log('ReviewsPage cWM() history', this.props.location);
     const { courseId } = this.props.location.state;
 
     if (!courseId) {
