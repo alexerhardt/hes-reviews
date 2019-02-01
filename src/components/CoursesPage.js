@@ -28,7 +28,7 @@ class CoursesPage extends React.Component
 
   filterTableData = (event) => {
     const keys = { keys: ['code', 'name'] };
-    const tableData = matchSorter(TableData, event.target.value, keys);
+    const tableData = matchSorter(this.props.courses, event.target.value, keys);
     this.setState(() => ({tableData}));
   }
 

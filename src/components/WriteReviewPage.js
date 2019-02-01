@@ -34,7 +34,8 @@ class WriteReviewPage extends React.Component
       editorValue: defaultText,
       windowPosition: this.editorWindowStates.INIT,
       selectedCourseName: '',
-      selectedCourseId: ''
+      selectedCourseId: '',
+      searchValue: ''
   }
 
   handleEditorFocus = () => {
@@ -69,6 +70,14 @@ class WriteReviewPage extends React.Component
       selectedCourseId: suggestion.id
     });
   }
+
+  onCourseSearchBoxChange = (_, { newValue }) => {
+    this.setState({
+      selectedCourseName: '',
+      selectedCourseId: '',
+      searchValue: newValue
+    });
+  }
       
   render()
   {
@@ -81,12 +90,17 @@ class WriteReviewPage extends React.Component
 
           <div className="container review-form-items card p-3 mb-5">
             <div className="columns">
-              <div className="column col-12 py-2">
+              <div className="column col-2 py-2">
                 <h5>Course</h5>
+              </div>
+              <div className="column col-10 course-select-col py-2">
                 <CourseSearchBox
                   renderSuggestion={(suggestion) => suggestion.code + ' ' + suggestion.name}
                   onSuggestionSelected={this.onSuggestionSelected}
                   selectedCourseName={this.state.selectedCourseName}
+                  onChange={this.onCourseSearchBoxChange}
+                  searchValue={this.state.searchValue}
+                  theme={autosuggestNameGen('editor')}
                 />
               </div>
             </div>

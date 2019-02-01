@@ -5,7 +5,6 @@ import { Link, withRouter } from 'react-router-dom';
 import Autosuggest from 'react-autosuggest';
 import matchSorter from 'match-sorter';
 
-import courseData from '../data/random-data.json';
 import { getCourses } from '../actions/courseActions';
 import { stripCourseCode } from '../../utils/utils-global';
 
@@ -41,7 +40,7 @@ class CourseSearchBox extends React.Component
   {
     const keys = {keys: ['code', 'name']};
     const matchedCourses = matchSorter(this.props.courses, value, keys).slice(0, 5);
-    this.setState(() => ({matchedCourses}));
+    this.setState(() => ({ matchedCourses }));
   };
 
   /**
@@ -94,14 +93,17 @@ class CourseSearchBox extends React.Component
 
   render()
   {
-    const { searchValue, matchedCourses } = this.state;
+    const { matchedCourses } = this.state;
+    const searchValue  = this.props.searchValue || this.state.searchValue;
     const { selectedCourseName } = this.props;
     console.log('course searchbox render state: ', this.state);
+    console.log('selectedCourseName: ', selectedCourseName);
+    console.log('searchValue: ', searchValue);
 
     const inputProps = {
       placeholder: 'Search for a course...',
       value: selectedCourseName || searchValue,
-      onChange: this.onChange
+      onChange: this.props.onChange || this.onChange
     }
 
     return (
