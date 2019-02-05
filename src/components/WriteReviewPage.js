@@ -3,8 +3,9 @@ import Header from './Header';
 import BasicSelect from './BasicSelect';
 import MarkdownEditor from './MarkdownEditor';
 import CourseSearchBox from './CourseSearchBox';
-
+import classnames from 'classnames';
 import { autosuggestNameGen } from '../utils/utils-client';
+import { isEmptyObject } from '../../utils/utils-global';
 
 import Maps from '../utils/Maps';
 
@@ -84,13 +85,56 @@ class WriteReviewPage extends React.Component
     });
   }
 
+  onWorkloadChange = (e) => {
+    const workload = e.target.value;
+
+    if (!workload || workload.match(/^\d{1,3}$/)) {
+      this.setState({ workload });
+    }
+  }
+
   onReviewSubmit = () => {
     console.log('state', this.state);
+
+    const { difficulty, rating, workload, editorValue, 
+            semester, selectedCourseName, selectedCourseId } = this.state;
+
+    const errors = {};
+    if (workload < 1 || workload > 144) {
+      errors.workload = 'Must be between 1 and 144 hours';
+    }
+    if (!difficulty) {
+      errors.difficulty = "Value can't be empty";
+    }
+    if (!rating) {
+      errors.workload = "Value can't be empty";
+    }
+    if (!semester) {
+      errors.semester = "Value can't be empty";
+    }
+    if (!selectedCourseId) {
+      errors.course = "There was an error fetching the course id";
+    }
+    if (!selectedCourseName) {
+      errors.course = 'Must select a course';
+    }
+    if (!editorValue || editorValue === defaultText) {
+      errors.body = "You must write something";
+    }
+
+    if (isEmptyObject(errors)) {
+      console.log("All good, sending");
+    }
+    else {
+      console.log("validation errors: ", errors);
+      this.setState({ errors });
+    }
   }
       
   render()
   {
     console.log("Maps: " + Maps.difficulty);
+    const { errors } = this.state;
     return (
       <div id="container-writepage" className="outer-container bg-gray">
         <Header />
@@ -142,16 +186,27 @@ class WriteReviewPage extends React.Component
               </div>
               <div className="column col-3 col-sm-12 py-2">
                 <h5>Workload</h5>
-                <div className="form-group has-icon-left">
+                <div 
+                  className={classnames(
+                    'form-group has-icon-left', 
+                    { 'has-error': errors.workload }
+                  )}
+                >
                   <input 
                     className="form-input" 
                     type="text" 
                     id="workload-input" 
                     placeholder="Hours / Week, eg: 10"
                     value={this.state.workload}
-                    onChange={(e) => this.setState({ workload: e.target.value }) }
+                    onChange={this.onWorkloadChange}
                   />
                   <i className="form-icon icon icon-arrow-right"></i>
+                  {
+                  errors.workload &&
+                  <p className="form-input-hint">
+                    {errors.workload}
+                  </p>
+                  }
                 </div>
               </div>
 

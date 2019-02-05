@@ -1,9 +1,14 @@
 To do:
 
+NEXT / IMMEDIATE
+- Finish front validation (add warnings where appropriate)
+- Add textinput length max (see server too)
+- Wire review API route
+
+SERVER
+- Add review length validation
 
 GENERAL
-- Do front-page search engine
-- Wire dynamic routes
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
@@ -22,8 +27,13 @@ REVIEW PAGE
 
 
 Did:
+
+05/02/2019
+Restyled the write-review page (particularly course box)
+Added onChange handlers for all form elements
+Started wiring front-end validation
  
-25/01/2018
+25/01/2019
 Wire Review id request
 Fix issues with filters
 
