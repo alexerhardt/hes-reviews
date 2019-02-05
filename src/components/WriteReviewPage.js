@@ -35,7 +35,12 @@ class WriteReviewPage extends React.Component
       windowPosition: this.editorWindowStates.INIT,
       selectedCourseName: '',
       selectedCourseId: '',
-      searchValue: ''
+      searchValue: '',
+      difficulty: '',
+      rating: '',
+      semester: '',
+      workload: '',
+      errors: {}
   }
 
   handleEditorFocus = () => {
@@ -78,6 +83,10 @@ class WriteReviewPage extends React.Component
       searchValue: newValue
     });
   }
+
+  onReviewSubmit = () => {
+    console.log('state', this.state);
+  }
       
   render()
   {
@@ -111,6 +120,7 @@ class WriteReviewPage extends React.Component
                 <BasicSelect 
                   placeholder={"Difficulty..."}
                   options={Maps.difficulty}
+                  onChange={(e) => this.setState({ difficulty: e.target.value })}
                 />
               </div>
 
@@ -119,6 +129,7 @@ class WriteReviewPage extends React.Component
                 <BasicSelect 
                   placeholder={"Rating..."}
                   options={Maps.rating}
+                  onChange={(e) => this.setState({ rating: e.target.value })}
                 />
               </div>
               <div className="column col-3 col-sm-12 py-2">
@@ -126,13 +137,21 @@ class WriteReviewPage extends React.Component
                 <BasicSelect 
                   placeholder={"Semester..."}
                   options={Maps.semester}
+                  onChange={(e) => this.setState({ semester: e.target.value })}
                 />
               </div>
               <div className="column col-3 col-sm-12 py-2">
                 <h5>Workload</h5>
                 <div className="form-group has-icon-left">
-                  <input class="form-input" type="text" id="workload-input" placeholder="Hours / Week, eg: 10" />
-                  <i class="form-icon icon icon-arrow-right"></i>
+                  <input 
+                    className="form-input" 
+                    type="text" 
+                    id="workload-input" 
+                    placeholder="Hours / Week, eg: 10"
+                    value={this.state.workload}
+                    onChange={(e) => this.setState({ workload: e.target.value }) }
+                  />
+                  <i className="form-icon icon icon-arrow-right"></i>
                 </div>
               </div>
 
@@ -153,6 +172,7 @@ class WriteReviewPage extends React.Component
               <div className="column col-12">
                 {/* Inverted due to flex + float */}
                 <button 
+                  onClick={this.onReviewSubmit}
                   className="btn btn-lg btn-primary btn--editor btn--send-review"
                 >
                   <i className="icon icon-share"></i>
@@ -160,7 +180,8 @@ class WriteReviewPage extends React.Component
                   Submit Review
                 </button>
 
-                <button className="btn btn-lg btn--editor btn--preview"
+                <button 
+                  className="btn btn-lg btn--editor btn--preview"
                   onClick={this.handleToggleClick}
                 >
                   <i className="icon icon-resize-horiz"></i>

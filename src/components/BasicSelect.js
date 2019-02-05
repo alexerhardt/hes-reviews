@@ -6,11 +6,14 @@ class BasicSelect extends React.Component
   {
     return (
       <div className="form-group">
-        <select className="form-select">
-          <option>{this.props.placeholder}</option>
+        <select 
+          className="form-select"
+          onChange={this.props.onChange}
+        >
+          <option value="">{this.props.placeholder}</option>
           {
-            Array.from(this.props.options.values()).map(value => (
-              <option>{value}</option>
+            Array.from(this.props.options.values()).map((value, i) => (
+              <option value={i + 1}>{value}</option>
             ))
           }
         </select>
