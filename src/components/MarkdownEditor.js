@@ -28,7 +28,7 @@ class MarkdownEditor extends React.Component
             <div className="pane pane--preview">
               <h3 className="text-center">Preview</h3>
               <div  
-                className="user-textbox user-textbox-preview"
+                className="user-textbox user-textbox--preview"
                 dangerouslySetInnerHTML={this.createMarkup(this.props.editorValue)}>
               </div>
             </div>

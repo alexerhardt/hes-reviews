@@ -53,8 +53,18 @@
     position: relative;
 }
 
+.course-select-row {
+    position: relative;
+}
+
+.course-select-header {
+    position: absolute;
+    bottom: 0;
+}
+
 .suggest__input--editor {
     width: 100%;
+    // font-size: 1rem;
 }
 
 .suggest__container--editor {

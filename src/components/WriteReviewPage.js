@@ -89,11 +89,11 @@ class WriteReviewPage extends React.Component
         <div className="container-inner container-inner--writepage">
 
           <div className="container review-form-items card p-3 mb-5">
-            <div className="columns">
-              <div className="column col-2 py-2">
-                <h5>Course</h5>
+            <div className="columns course-select-row">
+              <div className="column col-3 py-2">
+                <h5 className="course-select-header">Course Reviewed</h5>
               </div>
-              <div className="column col-10 course-select-col py-2">
+              <div className="column col-9 course-select-col py-2">
                 <CourseSearchBox
                   renderSuggestion={(suggestion) => suggestion.code + ' ' + suggestion.name}
                   onSuggestionSelected={this.onSuggestionSelected}
