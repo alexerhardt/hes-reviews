@@ -93,6 +93,7 @@ class WriteReviewPage extends React.Component
     }
   }
 
+  // TODO: Abstract the validation logic elsewhere - it's ugly
   onReviewSubmit = () => {
     console.log('state', this.state);
 
@@ -100,23 +101,25 @@ class WriteReviewPage extends React.Component
             semester, selectedCourseName, selectedCourseId } = this.state;
 
     const errors = {};
+    const emptyMsg = "Must select one."
+
     if (workload < 1 || workload > 144) {
       errors.workload = 'Must be between 1 and 144 hours';
     }
     if (!difficulty) {
-      errors.difficulty = "Value can't be empty";
+      errors.difficulty = emptyMsg;
     }
     if (!rating) {
-      errors.workload = "Value can't be empty";
+      errors.rating = emptyMsg;
     }
     if (!semester) {
-      errors.semester = "Value can't be empty";
+      errors.semester = emptyMsg;
     }
     if (!selectedCourseId) {
       errors.course = "There was an error fetching the course id";
     }
     if (!selectedCourseName) {
-      errors.course = 'Must select a course';
+      errors.course = emptyMsg;
     }
     if (!editorValue || editorValue === defaultText) {
       errors.body = "You must write something";
@@ -146,7 +149,11 @@ class WriteReviewPage extends React.Component
               <div className="column col-3 py-2">
                 <h5 className="course-select-header">Course Reviewed</h5>
               </div>
-              <div className="column col-9 course-select-col py-2">
+              <div className={classnames(
+                'column col-9 course-select-col py-2',
+                { 'has-error': errors.course }
+              )}
+              >
                 <CourseSearchBox
                   renderSuggestion={(suggestion) => suggestion.code + ' ' + suggestion.name}
                   onSuggestionSelected={this.onSuggestionSelected}
@@ -155,6 +162,12 @@ class WriteReviewPage extends React.Component
                   searchValue={this.state.searchValue}
                   theme={autosuggestNameGen('editor')}
                 />
+                {
+                  errors.course &&
+                  <p className="form-input-hint">
+                    {errors.course}
+                  </p>
+                }
               </div>
             </div>
 
@@ -165,6 +178,7 @@ class WriteReviewPage extends React.Component
                   placeholder={"Difficulty..."}
                   options={Maps.difficulty}
                   onChange={(e) => this.setState({ difficulty: e.target.value })}
+                  error={this.state.errors.difficulty}
                 />
               </div>
 
@@ -174,6 +188,7 @@ class WriteReviewPage extends React.Component
                   placeholder={"Rating..."}
                   options={Maps.rating}
                   onChange={(e) => this.setState({ rating: e.target.value })}
+                  error={this.state.errors.rating}
                 />
               </div>
               <div className="column col-3 col-sm-12 py-2">
@@ -182,6 +197,7 @@ class WriteReviewPage extends React.Component
                   placeholder={"Semester..."}
                   options={Maps.semester}
                   onChange={(e) => this.setState({ semester: e.target.value })}
+                  error={this.state.errors.semester}
                 />
               </div>
               <div className="column col-3 col-sm-12 py-2">

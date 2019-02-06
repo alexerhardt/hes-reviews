@@ -23,7 +23,7 @@
 }
 
 /**
- * In movile, the container is wider and the buttons have a set width
+ * In mobile, the container is wider and the buttons have a set width
  */
 @media (max-width: $brkpoint-sm) {
     .container-inner--writepage {
@@ -57,10 +57,11 @@
     position: relative;
 }
 
-.course-select-header {
-    position: absolute;
-    bottom: 0;
-}
+// .course-select-header {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
 
 .suggest__input--editor {
     width: 100%;
