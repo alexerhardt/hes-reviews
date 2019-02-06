@@ -4,7 +4,9 @@
  */
 
  exports.isEmptyObject = (obj) => {
-  Object.keys(obj).length === 0 && obj.constructor === Object
+   const ret = Object.keys(obj).length === 0 && obj.constructor === Object
+   console.log('isEmptyObject, ret: ', ret);
+   return ret;
  }
 
 /**

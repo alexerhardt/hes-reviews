@@ -4,6 +4,7 @@ import BasicSelect from './BasicSelect';
 import MarkdownEditor from './MarkdownEditor';
 import CourseSearchBox from './CourseSearchBox';
 import classnames from 'classnames';
+import jwtDecode from 'jwt-decode';
 import { autosuggestNameGen } from '../utils/utils-client';
 import { isEmptyObject } from '../../utils/utils-global';
 
@@ -97,7 +98,8 @@ class WriteReviewPage extends React.Component
   onReviewSubmit = () => {
     console.log('state', this.state);
 
-    const { difficulty, rating, workload, editorValue, 
+    // TODO: Change to const
+    let { difficulty, rating, workload, editorValue, 
             semester, selectedCourseName, selectedCourseId } = this.state;
 
     const errors = {};
@@ -127,6 +129,12 @@ class WriteReviewPage extends React.Component
 
     if (isEmptyObject(errors)) {
       console.log("All good, sending");
+      const year = 2018;
+      semester = 'spring';
+      const course = selectedCourseId;
+      const body = editorValue;
+      const data = { course, semester, year, rating, difficulty, workload, body };
+      console.log('data: ', data);
     }
     else {
       console.log("validation errors: ", errors);

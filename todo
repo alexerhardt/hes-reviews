@@ -4,6 +4,8 @@ NEXT / IMMEDIATE
 - Finish front validation (add warnings where appropriate)
 - Add textinput length max (see server too)
 - Wire review API route
+- Fix Year + Semester front-end cockup
+- Check if jwtToken localStorage will cause namespacing conflicts
 
 SERVER
 - Add review length validation
@@ -24,6 +26,9 @@ ERROR HANDLING
 REVIEW PAGE 
 - Add Year filter
 - Add Write Review page that populates the review field directly
+
+WRITE-REVIEW
+- Validation and data sending is very messy, clean up
 
 
 Did:
