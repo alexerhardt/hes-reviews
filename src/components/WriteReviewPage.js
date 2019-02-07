@@ -153,11 +153,11 @@ class WriteReviewPage extends React.Component
 
           <div className="container review-form-items card p-3 mb-5">
             <div className="columns course-select-row">
-              <div className="column col-3 py-2">
-                <h5 className="course-select-header">Course Reviewed</h5>
+              <div className="column col-2 py-2">
+                <h5 className="course-select-header">Course</h5>
               </div>
               <div className={classnames(
-                'column col-9 course-select-col py-2',
+                'column col-10 course-select-col py-2',
                 { 'has-error': errors.course }
               )}
               >
@@ -179,7 +179,27 @@ class WriteReviewPage extends React.Component
             </div>
 
             <div className="columns">
-              <div className="column col-3 col-sm-12 py-2">
+              <div className="column col-2 col-sm-12 py-2">
+                <h5>Semester</h5>
+                <BasicSelect 
+                  placeholder={"Semester..."}
+                  options={Maps.semester}
+                  onChange={(e) => this.setState({ semester: e.target.value })}
+                  error={this.state.errors.semester}
+                />
+              </div>
+
+              <div className="column col-2 col-sm-12 py-2">
+                <h5>Year</h5>
+                <BasicSelect 
+                  placeholder={"Semester..."}
+                  options={Maps.semester}
+                  onChange={(e) => this.setState({ semester: e.target.value })}
+                  error={this.state.errors.semester}
+                />
+              </div>
+
+              <div className="column col-2 col-sm-12 py-2">
                 <h5>Difficulty</h5>
                 <BasicSelect 
                   placeholder={"Difficulty..."}
@@ -189,7 +209,7 @@ class WriteReviewPage extends React.Component
                 />
               </div>
 
-              <div className="column col-3 col-sm-12 py-2">
+              <div className="column col-2 col-sm-12 py-2">
                 <h5>Rating</h5>
                 <BasicSelect 
                   placeholder={"Rating..."}
@@ -198,16 +218,7 @@ class WriteReviewPage extends React.Component
                   error={this.state.errors.rating}
                 />
               </div>
-              <div className="column col-3 col-sm-12 py-2">
-                <h5>Semester</h5>
-                <BasicSelect 
-                  placeholder={"Semester..."}
-                  options={Maps.semester}
-                  onChange={(e) => this.setState({ semester: e.target.value })}
-                  error={this.state.errors.semester}
-                />
-              </div>
-              <div className="column col-3 col-sm-12 py-2">
+              <div className="column col-4 col-sm-12 py-2">
                 <h5>Workload</h5>
                 <div 
                   className={classnames(
