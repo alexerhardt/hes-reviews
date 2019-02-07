@@ -15,7 +15,7 @@ class ReviewFilters extends React.Component
           </div>
           <div className="filter-wrap col-12 col-md-6 mb-2 text-capitalize">
             <Select 
-              placeholder="Semesters"
+              placeholder="Semester"
               isMulti
               name="semesters"
               options={filterOpts.semester}

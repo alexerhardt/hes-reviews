@@ -28,14 +28,17 @@ ERROR HANDLING
 - Wire server and client errors better
 
 REVIEW PAGE 
-- Add Year filter
 - Add Write Review page that populates the review field directly
+- Populate stats with real calculations!
 
 WRITE-REVIEW
 - Validation and data sending is very messy, clean up
 
 
 Did:
+
+07/02/2019
+Fix problem with reviews page year/semester filters
 
 05/02/2019
 Restyled the write-review page (particularly course box)
