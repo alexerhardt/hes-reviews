@@ -7,7 +7,6 @@ import Header from './Header';
 import ReviewStats from './ReviewStats';
 import ReviewFilters from './ReviewFilters';
 import ReviewBox from './ReviewBox';
-import ReviewData from '../data/review-data.json';
 
 
 const ratingLabels = ["Very Poor", "Poor", "Normal", "Good", "Very Good"];
@@ -20,8 +19,13 @@ class ReviewsPage extends React.Component
     activeFilters: {
       rating: [],
       difficulty: [],
-      semester: []
-    }
+      semester: [],
+      year: []
+    },
+    semesterFilter: [],
+    yearFilter: [],
+    ratingFilter: [],
+    difficultyFilter: []
   }
 
   getFilteredReviews()
@@ -29,24 +33,31 @@ class ReviewsPage extends React.Component
     const reviews = this.state.reviewData;
 
     return reviews.filter((review) => {
-      const f = this.state.activeFilters;
-      return (f.rating.length == 0 || f.rating.includes(review.rating))
-          && (f.difficulty.length == 0 || f.difficulty.includes(review.difficulty))
-          && (f.semester.length == 0 || f.semester.includes(review.semester));
+      const { semesterFilter, yearFilter, ratingFilter, difficultyFilter} = this.state;
+      return (yearFilter.length === 0 || yearFilter.includes(review.year))
+        && (difficultyFilter.length === 0 || difficultyFilter.includes(review.difficulty))
+        && (semesterFilter.length === 0 || semesterFilter.includes(review.semester))
+        && (ratingFilter.length === 0 || ratingFilter.includes(review.rating))
     });
   }
 
-  // create filter options for filter component
+ /**
+   * Takes all reviews, and creates Sets of its unique
+   * fields (rating, difficulty, semester, year)
+   * @returns {Object} An object with values and labels for the filter dropdowns
+   */
   getFilterOptions()
   {
     const reviews = this.state.reviewData;
 
-    let sets = [new Set(), new Set(), new Set()];
+    let sets = [new Set(), new Set(), new Set(), new Set()];
 
+    // Create sets with unique field values for the reviews
     reviews.forEach((review) => {
       sets[0].add(review.rating);
       sets[1].add(review.difficulty);
       sets[2].add(review.semester);
+      sets[3].add(review.year);
     });
 
     // TODO: term names are not sorted, do something about it
@@ -56,33 +67,38 @@ class ReviewsPage extends React.Component
       difficulty: [...sets[1]].sort().map(diff => 
         ({value: diff, label: difficultyLabels[diff - 1]})),
       semester: [...sets[2]].map(term => 
-        ({value: term, label: term}))
+        ({value: term, label: term})),
+      year: [...sets[3]].map(year =>
+        ({value: year, label: year}))
     }
   }
 
-  /**
-   * Mutating state directly is bad, but as long as shouldComponentUpdate()
-   * is not needed, this should do. See discussion:
-   * https://stackoverflow.com/a/29537485/6854595
-   */
-
+  // TODO: We should inline these bad boys in render()
   onChangeDifficultyFilter = (e) => 
   {
-    this.state.activeFilters.difficulty = e.map(opt => opt.value);
-    this.forceUpdate();
+    this.setState({
+      difficultyFilter: e.map(opt => opt.value)
+    });
   }
 
   onChangeSemesterFilter = (e) =>
   {
-    console.log("onChangeSemesterFilter fired");
-    this.state.activeFilters.semester = e.map(opt => opt.value);
-    this.forceUpdate();
+    this.setState({
+      semesterFilter: e.map(opt => opt.value)
+    });
   }
 
   onChangeRatingFilter = (e) =>
   {
-    this.state.activeFilters.rating = e.map(opt => opt.value);
-    this.forceUpdate();
+    this.setState({
+      ratingFilter: e.map(opt => opt.value)
+    })
+  }
+
+  onChangeYearFilter = (e) => {
+    this.setState({
+      yearFilter: e.map(opt => opt.value)
+    })
   }
 
   /**
@@ -129,6 +145,7 @@ class ReviewsPage extends React.Component
                 onChangeDifficultyFilter={this.onChangeDifficultyFilter}
                 onChangeRatingFilter={this.onChangeRatingFilter}
                 onChangeSemesterFilter={this.onChangeSemesterFilter}
+                onChangeYearFilter={this.onChangeYearFilter}
               />
             </div>
 

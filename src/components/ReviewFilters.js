@@ -26,6 +26,17 @@ class ReviewFilters extends React.Component
           </div>
           <div className="filter-wrap col-12 col-md-6 mb-2">
             <Select 
+              placeholder="Year"
+              isMulti
+              name="year"
+              options={filterOpts.year}
+              onChange={this.props.onChangeYearFilter}
+              className="multi-select"
+              classNamePrefix="react-select"
+            />
+          </div>
+          <div className="filter-wrap col-12 col-md-6 mb-2">
+            <Select 
               placeholder="Rating"
               isMulti
               name="rating"

@@ -4,7 +4,6 @@ import BasicSelect from './BasicSelect';
 import MarkdownEditor from './MarkdownEditor';
 import CourseSearchBox from './CourseSearchBox';
 import classnames from 'classnames';
-import jwtDecode from 'jwt-decode';
 import { autosuggestNameGen } from '../utils/utils-client';
 import { isEmptyObject } from '../../utils/utils-global';
 

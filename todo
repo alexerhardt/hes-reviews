@@ -7,6 +7,10 @@ NEXT / IMMEDIATE
 - Fix Year + Semester front-end cockup
 - Check if jwtToken localStorage will cause namespacing conflicts
 
+BUGS
+- Navbar menu collapses into two rows
+- Mobile hamburger doesn't work
+
 SERVER
 - Add review length validation
 
