@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import { setAuthToken } from './utils/utils-client';
+import { setCurrentUser, logoutUser } from './actions/authActions';
 
 import { Provider } from 'react-redux';
 import store from './store/store';
@@ -18,6 +19,27 @@ import AccountPage from './components/AccountPage';
 import 'react-table/react-table.css';
 import './styles/styles.scss';
 
+// TODO: This here in global scope looks filthy
+// Look for better ways
+// Check for token
+if (localStorage.jwtToken) {
+  // Set auth token header auth
+  setAuthToken(localStorage.jwtToken);
+  // Decode token and get user info and exp
+  const decoded = jwt_decode(localStorage.jwtToken);
+  // Set user and isAuthenticated
+  store.dispatch(setCurrentUser(decoded));
+
+  // Check for expired token
+  const currentTime = Date.now() / 1000;
+  if (decoded.exp < currentTime) {
+    // Logout user
+    store.dispatch(logoutUser());
+    // TODO: Check if we should redirect home?
+    // // Redirect to login
+    // window.location.href = '/login';
+  }
+}
 
 const NotFoundPage = () => (
   <div>

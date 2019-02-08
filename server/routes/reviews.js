@@ -10,10 +10,13 @@ const Review = require('../models/Review');
  * @access  Private
  */
 router.post('/post', authenticate, (req, res, next) => {
+  console.log('/api/reviews/post');
   // TODO: Check if spread is safe
   // https://stackoverflow.com/q/54167636/6854595
-  const author = req.user.id;
+  console.log('req.user: ', req.user);
+  const author = req.user._id;
   const review = new Review({...req.body, author});
+  review.semester = review.semester.toLowerCase();
 
   review
     .save()

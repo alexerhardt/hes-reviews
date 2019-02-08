@@ -11,7 +11,9 @@ const initialState = {};
 // https://stackoverflow.com/a/44986487/6854595
 const checkTokenExpiration = (store) => (next) => (action) => {
   const token = localStorage.jwtToken;
+  console.log('checking token expiration for token: ', token);
   if (token && jwt_decode(token).exp < Date.now() / 1000) {
+    console.log('token has expired, deleting it');
     next(action);
     localStorage.removeItem('jwtToken');
     setAuthToken(false);

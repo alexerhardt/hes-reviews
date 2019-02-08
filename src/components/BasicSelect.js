@@ -5,6 +5,8 @@ class BasicSelect extends React.Component
 {
   render()
   {
+    const useValue = this.props.useValue;
+
     return (
       <div
         className={classnames(
@@ -18,9 +20,12 @@ class BasicSelect extends React.Component
         >
           <option value="">{this.props.placeholder}</option>
           {
-            Array.from(this.props.options.values()).map((value, i) => (
-              <option value={i + 1}>{value}</option>
-            ))
+            
+            Array.from(this.props.options.values()).map((value, i) => {
+              // A disgusting hack to switch between value and index
+              const val = useValue ? value : i + 1;
+              return <option value={val}>{value}</option>
+            })
           }
         </select>
         {

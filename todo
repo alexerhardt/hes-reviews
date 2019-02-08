@@ -10,6 +10,7 @@ NEXT / IMMEDIATE
 BUGS
 - Navbar menu collapses into two rows
 - Mobile hamburger doesn't work
+- Expired tokens don't log out the user automatically - causing 401s
 
 SERVER
 - Add review length validation

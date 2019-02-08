@@ -3,6 +3,7 @@ import Header from './Header';
 import BasicSelect from './BasicSelect';
 import MarkdownEditor from './MarkdownEditor';
 import CourseSearchBox from './CourseSearchBox';
+import axios from 'axios';
 import classnames from 'classnames';
 import { autosuggestNameGen } from '../utils/utils-client';
 import { isEmptyObject } from '../../utils/utils-global';
@@ -98,8 +99,10 @@ class WriteReviewPage extends React.Component
     console.log('state', this.state);
 
     // TODO: Change to const
-    let { difficulty, rating, workload, editorValue, 
+    const { difficulty, rating, workload, editorValue,  
             semester, selectedCourseName, selectedCourseId } = this.state;
+          
+    const year = parseInt(this.state.year);
 
     const errors = {};
     const emptyMsg = "Must select one."
@@ -128,12 +131,26 @@ class WriteReviewPage extends React.Component
 
     if (isEmptyObject(errors)) {
       console.log("All good, sending");
-      const year = 2018;
-      semester = 'spring';
       const course = selectedCourseId;
       const body = editorValue;
       const data = { course, semester, year, rating, difficulty, workload, body };
       console.log('data: ', data);
+      axios
+        .post('/api/reviews/post', data)
+        .then((res) => {
+          // update course in redux
+          // show success modal
+          // redirect user to /courses or /home
+          // res.data.course
+          console.log('posted review correctly, res: ', res);
+
+        })
+        .catch((err) => {
+          // show modal / skirt
+          console.log('an error occurred: ', err);
+        })
+
+      
     }
     else {
       console.log("validation errors: ", errors);
@@ -143,7 +160,7 @@ class WriteReviewPage extends React.Component
       
   render()
   {
-    console.log("Maps: " + Maps.difficulty);
+    console.log('write-review render(), localStorage.jwtToken: ', localStorage.jwtToken);
     const { errors } = this.state;
     return (
       <div id="container-writepage" className="outer-container bg-gray">
@@ -186,16 +203,18 @@ class WriteReviewPage extends React.Component
                   options={Maps.semester}
                   onChange={(e) => this.setState({ semester: e.target.value })}
                   error={this.state.errors.semester}
+                  useValue
                 />
               </div>
 
               <div className="column col-2 col-sm-12 py-2">
                 <h5>Year</h5>
                 <BasicSelect 
-                  placeholder={"Semester..."}
-                  options={Maps.semester}
-                  onChange={(e) => this.setState({ semester: e.target.value })}
+                  placeholder={"Year..."}
+                  options={Maps.year}
+                  onChange={(e) => this.setState({ year: e.target.value })}
                   error={this.state.errors.semester}
+                  useValue
                 />
               </div>
 
@@ -247,13 +266,23 @@ class WriteReviewPage extends React.Component
             </div>
           </div>
 
-          <div id="markdown-editor-wrapper" className="mb-5">
+          <div 
+            id="markdown-editor-wrapper" 
+            className={classnames('mb-5', { 'has-error': errors.body })}
+          >
             <MarkdownEditor
               windowPosition={this.state.windowPosition}
               editorValue={this.state.editorValue}
               onFocus={this.handleEditorFocus}
               onChange={this.handleEditorChange}
             />
+            {
+              errors.body &&
+              <p className="form-input-hint">
+                {errors.body}
+
+              </p>
+            }
           </div>
 
           <div className="container review-submit-box">
