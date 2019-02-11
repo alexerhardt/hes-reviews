@@ -19,6 +19,7 @@ class MarkdownEditor extends React.Component
                     value={this.props.editorValue}
                     onFocus={this.props.onFocus}
                     onChange={this.props.onChange}
+                    maxLength={this.props.maxLength}
                 >
                 </textarea>
             </div>

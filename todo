@@ -4,7 +4,6 @@ NEXT / IMMEDIATE
 - Finish front validation (add warnings where appropriate)
 - Add textinput length max (see server too)
 - Wire review API route
-- Fix Year + Semester front-end cockup
 - Check if jwtToken localStorage will cause namespacing conflicts
 
 BUGS

@@ -10,6 +10,8 @@ import { isEmptyObject } from '../../utils/utils-global';
 
 import Maps from '../utils/Maps';
 
+const maxReviewLength = 3000;
+
 const defaultText = 
 `## Your course review.
 
@@ -42,20 +44,28 @@ class WriteReviewPage extends React.Component
       rating: '',
       semester: '',
       workload: '',
-      errors: {}
+      errors: {},
+      wordCount: defaultText.length 
   }
 
   handleEditorFocus = () => {
       if (this.FIRST_TIME) {
           this.FIRST_TIME = 0;
           this.setState(() => ({
-              editorValue: ""
+              editorValue: "",
+              wordCount: 0
           }));
       }
   }
 
   handleEditorChange = (event) => {
-      this.setState({editorValue: event.target.value});
+    const reviewText = event.target.value;
+    if (reviewText.length <= maxReviewLength) {
+      this.setState({ 
+        editorValue: event.target.value,
+        wordCount: reviewText.length
+      });
+    }
   }
 
   handleToggleClick = () => {
@@ -275,14 +285,22 @@ class WriteReviewPage extends React.Component
               editorValue={this.state.editorValue}
               onFocus={this.handleEditorFocus}
               onChange={this.handleEditorChange}
+              maxLength={3000}
             />
-            {
-              errors.body &&
-              <p className="form-input-hint">
-                {errors.body}
+            <div className="columns">
+              <div className="column col-6">
+                {
+                  errors.body &&
+                  <p className="form-input-hint">
+                    {errors.body}
 
-              </p>
-            }
+                  </p>
+                }
+              </div>
+              <div className="column col-6 text-right">
+                <span>{this.state.wordCount} / {maxReviewLength}</span>
+              </div>
+            </div>
           </div>
 
           <div className="container review-submit-box">
