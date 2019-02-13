@@ -48,12 +48,13 @@ const ReviewSchema = new Schema({
   workload: {
     type: Number,
     min: [0, 'Minimum {PATH} is 1'],
-    max: [40, 'Maximum {WORKLOAD} is 40'],
+    max: [168, 'Maximum {WORKLOAD} is 168'],
     required: [true, 'Review must have a {PATH}'],
     validate: [Number.isInteger, '{PATH} must be an integer']
   },
   body: {
     type: String,
+    maxlength: 3000,
     required: [true, 'You must write something']
   }
 }, { timestamps: true });

@@ -3,6 +3,8 @@ import Header from './Header';
 import BasicSelect from './BasicSelect';
 import MarkdownEditor from './MarkdownEditor';
 import CourseSearchBox from './CourseSearchBox';
+import MessageToast from './MessageToast';
+
 import axios from 'axios';
 import classnames from 'classnames';
 import { autosuggestNameGen } from '../utils/utils-client';
@@ -28,6 +30,11 @@ class WriteReviewPage extends React.Component
 {
   FIRST_TIME = 1;
 
+  networkStates = {
+    IDLE: 0,
+    WAITING: 1
+  }
+
   editorWindowStates = {
     INIT: "",
     LEFT: "slide-left",
@@ -36,6 +43,7 @@ class WriteReviewPage extends React.Component
 
   state = {
       editorValue: defaultText,
+      networkState: this.networkStates.IDLE,
       windowPosition: this.editorWindowStates.INIT,
       selectedCourseName: '',
       selectedCourseId: '',
@@ -45,7 +53,8 @@ class WriteReviewPage extends React.Component
       semester: '',
       workload: '',
       errors: {},
-      wordCount: defaultText.length 
+      wordCount: defaultText.length,
+      bottomToast: {}
   }
 
   handleEditorFocus = () => {
@@ -106,6 +115,12 @@ class WriteReviewPage extends React.Component
 
   // TODO: Abstract the validation logic elsewhere - it's ugly
   onReviewSubmit = () => {
+    if (this.state.networkState != this.networkStates.IDLE) {
+      return;
+    }
+
+    this.setState({ networkState: this.networkStates.WAITING });
+
     console.log('state', this.state);
 
     // TODO: Change to const
@@ -148,6 +163,15 @@ class WriteReviewPage extends React.Component
       axios
         .post('/api/reviews/post', data)
         .then((res) => {
+
+          this.setState({ 
+            networkState: this.networkStates.IDLE,
+            bottomToast: {
+              class: 'toast-success',
+              headline: 'Review posted successfully',
+              body: 'Redirecting you back to courses...'
+            }
+          });
           // update course in redux
           // show success modal
           // redirect user to /courses or /home
@@ -157,6 +181,15 @@ class WriteReviewPage extends React.Component
         })
         .catch((err) => {
           // show modal / skirt
+          this.setState({ 
+            networkState: this.networkStates.IDLE,
+            bottomToast: {
+              class: 'toast-error',
+              headline: 'An error occurred',
+              body: 'Please try again later'
+            }
+          });
+
           console.log('an error occurred: ', err);
         })
 
@@ -329,6 +362,15 @@ class WriteReviewPage extends React.Component
           </div>
         </div>
 
+        {
+          this.state.bottomToast.headline &&
+          <MessageToast
+            class={this.state.bottomToast.class}
+            headline={this.state.bottomToast.headline}
+            body={this.state.bottomToast.body}
+            onClickDismiss={() => this.setState({ bottomToast: {} })}
+          />
+        }
       </div>
     )
   }
