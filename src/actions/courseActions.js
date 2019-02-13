@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { GET_COURSES } from '../actions/types';
+import { GET_COURSES, UPDATE_COURSE } from '../actions/types';
 import { redirectToErrorPage } from '../utils/utils-client';
 
 export const getCourses = (history) => (dispatch) => {
@@ -15,4 +15,11 @@ export const getCourses = (history) => (dispatch) => {
       redirectToErrorPage(err.response, history);
     });
 }; 
+
+export const updateCourse = (courseData) => (dispatch) => {
+  dispatch({
+    type: UPDATE_COURSE,
+    payload: courseData
+  });
+};
 

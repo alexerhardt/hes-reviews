@@ -6,6 +6,9 @@ import CourseSearchBox from './CourseSearchBox';
 import MessageToast from './MessageToast';
 
 import axios from 'axios';
+import { connect } from 'react-redux';
+import { updateCourse } from '../actions/courseActions';
+
 import classnames from 'classnames';
 import { autosuggestNameGen } from '../utils/utils-client';
 import { isEmptyObject } from '../../utils/utils-global';
@@ -163,6 +166,12 @@ class WriteReviewPage extends React.Component
       axios
         .post('/api/reviews/post', data)
         .then((res) => {
+          console.log('posted review correctly, res: ', res);
+
+          if (res.data.course) {
+            console.log('updating course in Redux...');
+            this.props.updateCourse(res.data.course);
+          }
 
           this.setState({ 
             networkState: this.networkStates.IDLE,
@@ -172,11 +181,13 @@ class WriteReviewPage extends React.Component
               body: 'Redirecting you back to courses...'
             }
           });
+
+          setTimeout(() => this.props.history.push('/courses'), 2000);
+
           // update course in redux
           // show success modal
           // redirect user to /courses or /home
           // res.data.course
-          console.log('posted review correctly, res: ', res);
 
         })
         .catch((err) => {
@@ -376,4 +387,5 @@ class WriteReviewPage extends React.Component
   }
 }
 
-export default WriteReviewPage;
+const mapStateToProps = undefined;
+export default connect(mapStateToProps, { updateCourse } )(WriteReviewPage);
