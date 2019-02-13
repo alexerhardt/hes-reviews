@@ -1,8 +1,9 @@
 To do:
 
 NEXT / IMMEDIATE
-- Finish front validation (add warnings where appropriate)
-- Wire review API route
+- Fix problem with course stats in Course Table page
+- Check if course metrics are indeed being updated via Redux
+- Add proper course stats on Review page
 - Check if jwtToken localStorage will cause namespacing conflicts
 
 
