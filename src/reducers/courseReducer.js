@@ -12,7 +12,7 @@ export default (state = coursesDefaultState, action) => {
       console.log('UPDATE_COURSE called, course: ', action.payload);
     
       return state.map((course) => {
-        if (course.id === action.id) {
+        if (course.id === action.payload.id) {
           return {
             ...course,
             ...action.payload
