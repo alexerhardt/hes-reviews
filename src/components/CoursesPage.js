@@ -34,6 +34,9 @@ class CoursesPage extends React.Component
 
   render()
   {
+    console.log('render tableData: ', this.state.tableData);
+
+    
     const columns = [{
       Header: 'Code',
       accessor: 'code',
@@ -57,26 +60,26 @@ class CoursesPage extends React.Component
       }
     }, {
       Header: 'Reviews',
-      accessor: 'reviews',
+      accessor: 'reviewCount',
       headerClassName: 'table-width-adj-reviews',
       className: 'table-width-adj-reviews',
       Cell: props => props.value || "N/A"
     }, {
       Header: 'Rating',
-      accessor: 'rating',
+      accessor: 'aggRating',
       headerClassName: 'table-width-adj-rating',
       className: 'table-width-adj-rating',
       Cell: props => props.value || "N/A"
     }, 
     {
       Header: 'Difficulty',
-      accessor: 'difficulty',
+      accessor: 'aggDifficulty',
       headerClassName: 'table-width-adj-difficulty',
       className: 'table-width-adj-difficulty',
       Cell: props => props.value || "N/A"
     }, {
       Header: 'Workload',
-      accessor: 'workload',
+      accessor: 'aggWorkload',
       headerClassName: 'table-width-adj-workload',
       className: 'table-width-adj-workload',
       Cell: props => props.value ? props.value + "h / week" : "N/A"
