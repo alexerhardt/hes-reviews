@@ -15,10 +15,10 @@ mongoose
       const newCourse = new Course ({
         code: course.code,
         name: course.name,
-        reviewCount: course.reviews, 
-        aggRating: course.rating || 0,
-        aggDifficulty: course.difficulty || 0,
-        aggWorkload: course.workload || 0
+        reviewCount: 0, 
+        aggRating: 0,
+        aggDifficulty: 0,
+        aggWorkload: 0 
       });
 
       newCourse

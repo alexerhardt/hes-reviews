@@ -56,12 +56,22 @@ function randomizeReviews(courseId) {
     reviews.push(review);
   }
 
-  return Review
-    .insertMany(reviews)
-    .then((res) => { 
-       return res;
-    })
-    .catch((err) => console.log(err));
+  // console.log('courseId: ', courseId);
+
+  // TODO: This is monstrous and it gets stuck
+  // Next time, try this:
+  // https://stackoverflow.com/questions/28478606/saving-items-in-mongoose-for-loop-with-schema-methods
+  reviews.forEach((review) => {
+    console.log('review id: ', review._id);
+    review
+      .save()
+      .then((review) => {
+        console.log('review saved, updating course aggregates for review: ', review._id);
+        review.updateCourseAggregates()
+        console.log('updated course aggregates for review: ', review._id)
+      })
+      .catch((err) => console.log(err));
+  });
 }
 
 async function processCourses(courses) {
@@ -87,7 +97,7 @@ function main() {
     })
     .then(() => {
       console.log('Done');
-      mongoose.disconnect();
+      // mongoose.disconnect();
     })
     .catch((err) => { console.log(err); });
 }
