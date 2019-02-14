@@ -84,3 +84,11 @@ export const redirectToErrorPage = (err, history) => {
   });
 };
 
+/**
+ * Calculates average stat for a course
+ * @returns {number}
+ */
+export const getAverage = (aggregateStat, reviewCount) => {
+  return Math.floor( (aggregateStat / reviewCount) * 100 ) / 100;
+}
+

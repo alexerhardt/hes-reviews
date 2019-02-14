@@ -7,6 +7,7 @@ import TableData from '../data/random-data.json';
 import Header from '../components/Header';
 import matchSorter from 'match-sorter';
 import { stripCourseCode } from '../../utils/utils-global';
+import { getAverage } from '../utils/utils-client';
 
 import { getCourses } from '../actions/courseActions';
 
@@ -69,20 +70,23 @@ class CoursesPage extends React.Component
       accessor: 'aggRating',
       headerClassName: 'table-width-adj-rating',
       className: 'table-width-adj-rating',
-      Cell: props => props.value || "N/A"
+      Cell: ({ row, value }) => getAverage(value, row._original.reviewCount) || "N/A"
     }, 
     {
       Header: 'Difficulty',
       accessor: 'aggDifficulty',
       headerClassName: 'table-width-adj-difficulty',
       className: 'table-width-adj-difficulty',
-      Cell: props => props.value || "N/A"
+      Cell: ({ row, value }) => getAverage(value, row._original.reviewCount) || "N/A"
     }, {
       Header: 'Workload',
       accessor: 'aggWorkload',
       headerClassName: 'table-width-adj-workload',
       className: 'table-width-adj-workload',
-      Cell: props => props.value ? props.value + "h / week" : "N/A"
+      Cell: ({ row, value }) => {
+        const avg = Math.round(value / row._original.reviewCount);
+        return avg ? avg + "h / week" : "N/A";
+      } 
     }]
 
     return (
