@@ -1,10 +1,8 @@
 To do:
 
 NEXT / IMMEDIATE
-- Fix problem with course stats in Course Table page
-- Check if course metrics are indeed being updated via Redux
-- Add proper course stats on Review page
 - Check if jwtToken localStorage will cause namespacing conflicts
+- Fix User View page
 
 
 BUGS
@@ -13,7 +11,6 @@ BUGS
 - Expired tokens don't log out the user automatically - causing 401s
 
 SERVER
-- Add review length validation
 
 GENERAL
 - Install ESLint
@@ -22,7 +19,6 @@ GENERAL
 
 AUTH MODAL
 - Switch from CSS display to a Componenent Mount architecture
-- Clear the fields when the components disappear
 
 ERROR HANDLING
 - Style front-end error page
@@ -31,13 +27,22 @@ ERROR HANDLING
 
 REVIEW PAGE 
 - Add Write Review page that populates the review field directly
-- Populate stats with real calculations!
+- Stats are populated but there is a delay which screws everything up - fix
 
 WRITE-REVIEW
 - Validation and data sending is very messy, clean up
 
-
 Did:
+
+21/02/2019
+- Add real stats to review page
+
+
+UNKOWN
+- Fix problem with course stats in Course Table page
+- Add review length validation
+- Check if course metrics are indeed being updated via Redux
+
 
 07/02/2019
 Fix problem with reviews page year/semester filters

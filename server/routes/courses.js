@@ -23,8 +23,8 @@ router.get('/all', (req, res, next) => {
  * @desc   Returns the information for a single course
  * @access Public
  */
-router.get('/by-id', (req, res, next) => {
-  const courseId = req.body.courseId;
+router.get('/by-id/:courseId', (req, res, next) => {
+  const courseId = req.params.courseId;
   if (!courseId) {
     return res.status(400).json({courseCode: 'courseId required'});
   }

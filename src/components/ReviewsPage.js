@@ -16,6 +16,7 @@ class ReviewsPage extends React.Component
 {
   state = {
     reviewData: [],
+    // TODO: Remove?
     activeFilters: {
       rating: [],
       difficulty: [],
@@ -121,7 +122,8 @@ class ReviewsPage extends React.Component
     else {
       axios
         .get('/api/reviews/' + courseId)
-        .then((res => this.setState({ reviewData: res.data })))
+        // TODO: Check if this has broken anything
+        .then((res) => this.setState({ reviewData: res.data }))
         .catch((err) => redirectToErrorPage(err, this.props.history));
     }
   }
@@ -139,7 +141,9 @@ class ReviewsPage extends React.Component
           <div className="columns">
 
             <div className="column col-3 col-md-12 col-stats bg-primary">
-              <ReviewStats />
+              <ReviewStats
+                courseId={this.props.location.state.courseId}
+              />
               <ReviewFilters 
                 filterOptions={this.getFilterOptions()} 
                 onChangeDifficultyFilter={this.onChangeDifficultyFilter}
