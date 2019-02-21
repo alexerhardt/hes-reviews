@@ -1,6 +1,7 @@
 To do:
 
 NEXT / IMMEDIATE
+- Check why the console shows constant activity - seems to be Redux and authentication
 - Check if jwtToken localStorage will cause namespacing conflicts
 - Fix User View page
 
@@ -38,7 +39,7 @@ Did:
 - Add real stats to review page
 
 
-UNKOWN
+UNKNOWN
 - Fix problem with course stats in Course Table page
 - Add review length validation
 - Check if course metrics are indeed being updated via Redux
