@@ -4,6 +4,7 @@
 // ...
 
 $navbar-height: 4rem;
+$navbar-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.05);
 
 $color-bg-navbar: white;
 $color-link-navbar: $accent-color;
@@ -12,6 +13,7 @@ $color-btn-navbar: white;
 
 #container-nav {
     position: relative; // needed to position the burger
+    box-shadow: $navbar-shadow;
 }
 
 .navbar {

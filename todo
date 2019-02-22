@@ -15,6 +15,7 @@ SERVER
 
 GENERAL
 - Install ESLint
+- Comment everything
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
