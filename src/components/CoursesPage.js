@@ -39,12 +39,12 @@ class CoursesPage extends React.Component
 
     
     const columns = [{
-      Header: 'Code',
+      Header: (<span className="table-header">Code</span>),
       accessor: 'code',
       headerClassName: 'table-width-adj-code',
       className: 'table-width-adj-code',
     }, {
-      Header: 'Name',
+      Header: (<span className="table-header">Name</span>),
       accessor: 'name',
       headerClassName: 'table-width-adj-name',
       className: 'table-width-adj-name',
@@ -60,26 +60,26 @@ class CoursesPage extends React.Component
         )
       }
     }, {
-      Header: 'Reviews',
+      Header: (<span className="table-header">Reviews</span>),
       accessor: 'reviewCount',
       headerClassName: 'table-width-adj-reviews',
       className: 'table-width-adj-reviews',
       Cell: props => props.value || "N/A"
     }, {
-      Header: 'Rating',
+      Header: (<span className="table-header">Rating</span>),
       accessor: 'aggRating',
       headerClassName: 'table-width-adj-rating',
       className: 'table-width-adj-rating',
       Cell: ({ row, value }) => getAverage(value, row._original.reviewCount) || "N/A"
     }, 
     {
-      Header: 'Difficulty',
+      Header: (<span className="table-header">Difficulty</span>),
       accessor: 'aggDifficulty',
       headerClassName: 'table-width-adj-difficulty',
       className: 'table-width-adj-difficulty',
       Cell: ({ row, value }) => getAverage(value, row._original.reviewCount) || "N/A"
     }, {
-      Header: 'Workload',
+      Header: (<span className="table-header">Workload</span>),
       accessor: 'aggWorkload',
       headerClassName: 'table-width-adj-workload',
       className: 'table-width-adj-workload',
@@ -90,16 +90,16 @@ class CoursesPage extends React.Component
     }]
 
     return (
-      <div id="container-coursepage" className="container-outer bg-gray">
+      <div id="container-coursepage" className="container-outer">
         <Header />
-        <div className="container-coursepage-inner bg-gray">
+        <div className="container-coursepage-inner">
           <input 
-            className="table-search-input mb-5"
+            className="table-search-input mb-5 four-shadows"
             type="text" 
             placeholder="Search for a course" 
             onChange={this.filterTableData}
           />
-          <div className="wrapper-course-table">
+          <div className="wrapper-course-table four-shadows">
             <ReactTable
               data={this.state.tableData}
               defaultPageSize={12}
