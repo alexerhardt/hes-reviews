@@ -1,9 +1,10 @@
+/* eslint no-underscore-dangle: 0 */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ReactTable from 'react-table';
 import { connect } from 'react-redux';
-import TableData from '../data/random-data.json';
 import Header from '../components/Header';
 import matchSorter from 'match-sorter';
 import { stripCourseCode } from '../../utils/utils-global';
@@ -11,10 +12,9 @@ import { getAverage } from '../utils/utils-client';
 
 import { getCourses } from '../actions/courseActions';
 
-class CoursesPage extends React.Component
-{
+class CoursesPage extends React.Component {
   state = {
-    tableData: this.props.courses 
+    tableData: this.props.courses,
   }
 
   componentDidMount = () => {
@@ -30,7 +30,7 @@ class CoursesPage extends React.Component
   filterTableData = (event) => {
     const keys = { keys: ['code', 'name'] };
     const tableData = matchSorter(this.props.courses, event.target.value, keys);
-    this.setState(() => ({tableData}));
+    this.setState(() => ({ tableData }));
   }
 
   render()
@@ -93,10 +93,10 @@ class CoursesPage extends React.Component
       <div id="container-coursepage" className="container-outer">
         <Header />
         <div className="container-coursepage-inner">
-          <input 
+          <input
             className="table-search-input mb-5 four-shadows"
-            type="text" 
-            placeholder="Search for a course" 
+            type="text"
+            placeholder="Search for a course"
             onChange={this.filterTableData}
           />
           <div className="wrapper-course-table four-shadows">

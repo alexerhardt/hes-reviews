@@ -4,6 +4,7 @@ NEXT / IMMEDIATE
 - Check why the console shows constant activity - seems to be Redux and authentication
 - Check if jwtToken localStorage will cause namespacing conflicts
 - Fix User View page
+- Add route login protection for unauthenticated routes
 
 
 BUGS

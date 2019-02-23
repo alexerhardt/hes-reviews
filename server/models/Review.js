@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+
 const Schema = mongoose.Schema;
 const Course = require('./Course');
 const { isSemesterValid, isEmptyObject } = require('../../utils/utils-global');

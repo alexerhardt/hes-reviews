@@ -2,14 +2,15 @@ import React from 'react';
 import Header from './Header';
 import ReviewBox from './ReviewBox';
 
-import ReviewData from '../data/review-data.json';
+// import ReviewData from '../data/review-data.json';
+// const userReviews = ReviewData.slice(0, 9);
 
-const userReviews = ReviewData.slice(0, 9);
+class AccountPage extends React.Component {
+  state = {
+    reviews: [],
+  }
 
-class AccountPage extends React.Component
-{
-  render()
-  {
+  render() {
     return (
       <div id="container-accountpage" className="bg-gray">
         <Header />
@@ -90,21 +91,16 @@ class AccountPage extends React.Component
               </div>
               <div className="column col-12">
                 {
-                  userReviews.map((review) => (
+                  this.state.reviews.map(review => (
                     <ReviewBox review={review} showEditOptions></ReviewBox>
                   ))
                 }
               </div>
             </div>
           </div>
-
         </div>
-
-
       </div>
-    
-      
-    )
+    );
   }
 }
 
