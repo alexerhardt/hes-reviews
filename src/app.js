@@ -14,6 +14,7 @@ import CoursesPage from './components/CoursesPage'
 import ReviewsPage from './components/ReviewsPage';
 import WriteReviewPage from './components/WriteReviewPage';
 import AccountPage from './components/AccountPage';
+import LoginPage from './components/LoginPage';
 
 
 import 'react-table/react-table.css';
@@ -70,10 +71,11 @@ const routes = (
           <Route path="/write-review" component={WriteReviewPage}></Route>
           <Route path="/my-account" component={AccountPage}></Route>
           <Route path="/([0-9]{3})" component={ErrorPage}></Route>
+          <Route path="/login" component={LoginPage}></Route>
           <Route component={NotFoundPage} />
         </Switch>
     </BrowserRouter>
   </Provider>
-)
+);
 
 ReactDOM.render(routes, document.getElementById('app'));

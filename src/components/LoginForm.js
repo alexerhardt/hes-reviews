@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { loginUser } from '../actions/authActions';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
+import { loginUser } from '../actions/authActions';
 
 class LoginForm extends Component {
   state = {
     email: '',
     password: '',
-    errors: {}
+    errors: {},
   }
 
   onChange = (e) => {
@@ -20,8 +20,8 @@ class LoginForm extends Component {
 
     const user = {
       email: this.state.email,
-      password: this.state.password
-    }
+      password: this.state.password,
+    };
 
     this.props.loginUser(user);
   }
@@ -34,25 +34,24 @@ class LoginForm extends Component {
     if (nextProps.errors) {
       this.setState({ errors: nextProps.errors });
     }
-
-  }
+  };
 
   render() {
-    const { errors  } = this.state;
-    
+    const { errors } = this.state;
+
     return (
-      <form 
+      <form
         // TODO: Review this, don't think isOpen is right
         className={classnames('form-group auth-form', {
-          'active': this.props.isOpen
+          active: this.props.isOpen,
         })}
         onSubmit={this.onSubmit}
       >
         <div className="form-group">
           <label className="form-label">Email</label>
-          <input 
-            className="form-input" 
-            type="email" 
+          <input
+            className="form-input"
+            type="email"
             placeholder="Email"
             name="email"
             value={this.state.email}
@@ -60,16 +59,16 @@ class LoginForm extends Component {
           >
           </input>
           {
-            errors.email &&
-            <p className="form-input-hint">{errors.email}</p>
+            errors.email
+            && <p className="form-input-hint">{errors.email}</p>
           }
         </div>
 
         <div className="form-group">
           <label className="form-label">Password</label>
-          <input 
-            className="form-input" 
-            type="password" 
+          <input
+            className="form-input"
+            type="password"
             placeholder="Password"
             name="password"
             value={this.state.password}
@@ -80,19 +79,20 @@ class LoginForm extends Component {
 
         <input className="btn btn-primary btn--auth" type="submit" value="Log In"></input>
       </form>
-    )
+    );
   }
 }
 
 LoginForm.propTypes = {
   loginUser: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object
+  errors: PropTypes.object,
+  isOpen: PropTypes.bool,
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
 });
 
 export default connect(mapStateToProps, { loginUser })(LoginForm);

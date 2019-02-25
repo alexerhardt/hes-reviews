@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
-import { connect } from 'react-redux';
 import { signupUser, loginUser, clearErrors } from '../actions/authActions';
-import { isEmpty } from '../utils/utils-client';
 
 class AuthModal extends Component {
 
@@ -117,8 +116,3 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { signupUser, loginUser, clearErrors })(AuthModal);
-
-
-
-
-
