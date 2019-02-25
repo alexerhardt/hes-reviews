@@ -5,3 +5,16 @@
 .four-shadows {
     box-shadow: 0 0 5px 2px #ffffff59;
 }
+
+// Styling for login + signup forms
+// Top margin is set by the markup
+.auth-page-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media(max-width: $brkpoint-md) {
+    .auth-page-form {
+        width: 90%;
+    }
+}

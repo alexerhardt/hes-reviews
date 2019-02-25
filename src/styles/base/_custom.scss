@@ -15,6 +15,7 @@ $util-size-extensions: (
   .ml-#{$index} { margin-left: $size; }
   .mr-#{$index} { margin-right: $size; }
   .mb-#{$index} { margin-bottom: $size; }
+  .mt-#{$index} { margin-top: $size; }
   .m-#{$index} { margin: $size; }
   .p-#{$index} { padding: $size; }
   .px-#{$index} {
