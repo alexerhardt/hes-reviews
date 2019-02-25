@@ -1,7 +1,7 @@
 To do:
 
 NEXT / IMMEDIATE
-- Add login / signup pages
+- Decouple signup / login from modal closing
 - Protect routes
 - Check why the console shows constant activity - seems to be Redux and authentication
 - Check if jwtToken localStorage will cause namespacing conflicts
@@ -17,13 +17,15 @@ BUGS
 SERVER
 
 GENERAL
-- Install ESLint
 - Comment everything
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
 
 AUTH MODAL
 - Switch from CSS display to a Componenent Mount architecture
+
+LOGIN PAGE
+- Style further
 
 ERROR HANDLING
 - Style front-end error page
@@ -38,6 +40,9 @@ WRITE-REVIEW
 - Validation and data sending is very messy, clean up
 
 Did:
+
+25/02/2019
+- Add Login and Signup pages
 
 21/02/2019
 - Add real stats to review page

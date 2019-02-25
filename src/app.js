@@ -19,6 +19,7 @@ import LoginPage from './components/LoginPage';
 
 import 'react-table/react-table.css';
 import './styles/styles.scss';
+import SignupPage from './components/SignupPage';
 
 // TODO: This here in global scope looks filthy
 // Look for better ways
@@ -72,6 +73,7 @@ const routes = (
           <Route path="/my-account" component={AccountPage}></Route>
           <Route path="/([0-9]{3})" component={ErrorPage}></Route>
           <Route path="/login" component={LoginPage}></Route>
+          <Route path="/signup" component={SignupPage}></Route>
           <Route component={NotFoundPage} />
         </Switch>
     </BrowserRouter>
