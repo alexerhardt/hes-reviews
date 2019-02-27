@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { loginUser } from '../actions/authActions';
+import { isEmptyObject } from '../../utils/utils-global';
 
 class LoginForm extends Component {
   state = {
@@ -44,6 +45,7 @@ class LoginForm extends Component {
         // TODO: Review this, don't think isOpen is right
         className={classnames('form-group auth-form', {
           active: this.props.isOpen,
+          'has-error': !isEmptyObject(errors),
         })}
         onSubmit={this.onSubmit}
       >
