@@ -1,7 +1,6 @@
 To do:
 
 NEXT / IMMEDIATE
-- Decouple signup / login from modal closing
 - Protect routes
 - Check why the console shows constant activity - seems to be Redux and authentication
 - Check if jwtToken localStorage will cause namespacing conflicts
@@ -17,9 +16,12 @@ BUGS
 SERVER
 
 GENERAL
-- Comment everything
 - Refactor AppRouter to its own folder
 - Improve style (a little bit)
+
+LOGIN + SIGNUP FORM
+- Need to add network states... The button should show as loading etc.
+
 
 AUTH MODAL
 - Switch from CSS display to a Componenent Mount architecture
@@ -40,6 +42,9 @@ WRITE-REVIEW
 - Validation and data sending is very messy, clean up
 
 Did:
+
+27/02/2019
+- Restyle Login and add login redirect
 
 25/02/2019
 - Add Login and Signup pages
