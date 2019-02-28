@@ -1,8 +1,8 @@
+/* eslint-disable class-methods-use-this */
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Header from './Header';
-/* eslint-disable class-methods-use-this */
 import LoginForm from './LoginForm';
 
 class LoginPage extends React.Component {

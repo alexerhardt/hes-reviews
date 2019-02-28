@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { setAuthToken } from '../utils/utils-client';
 import jwtDecode from 'jwt-decode';
+import { setAuthToken } from '../utils/utils-client';
 import messages from '../messages/messages';
 
 import { SET_CURRENT_USER, GET_ERRORS, SET_MESSAGE } from './types';
@@ -8,19 +8,19 @@ import { SET_CURRENT_USER, GET_ERRORS, SET_MESSAGE } from './types';
 export const signupUser = (userData, switchTabs) => (dispatch) => {
   axios
     .post('/api/users/signup', userData)
-    .then((res) => {
+    .then(() => {
       dispatch(setMessage(messages.signupSuccess));
       switchTabs();
     })
     .catch((err) => {
       dispatch({
         type: GET_ERRORS,
-        payload: err.response.data
-      })
+        payload: err.response.data,
+      });
     });
 };
 
-export const loginUser = (userData) => (dispatch) => {
+export const loginUser = userData => (dispatch) => {
   axios
     .post('/api/users/login', userData)
     .then((res) => {
@@ -57,14 +57,14 @@ export const logoutUser = () => (dispatch) => {
 export const setMessage = (message) => {
   return {
     type: SET_MESSAGE,
-    payload: message
+    payload: message,
   };
 };
 
 export const getErrors = (errors) => {
   return {
     type: GET_ERRORS,
-    payload: errors
+    payload: errors,
   }
 };
 

@@ -2,6 +2,7 @@ To do:
 
 NEXT / IMMEDIATE
 - Protect routes
+- Think of a HOC or similar solution for dealing with network states and messages
 - Check why the console shows constant activity - seems to be Redux and authentication
 - Check if jwtToken localStorage will cause namespacing conflicts
 - Fix User View page

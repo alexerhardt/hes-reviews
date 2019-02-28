@@ -5,11 +5,13 @@ import classnames from 'classnames';
 import { loginUser } from '../actions/authActions';
 import { isEmptyObject } from '../../utils/utils-global';
 
+
 class LoginForm extends Component {
   state = {
     email: '',
     password: '',
     errors: {},
+    waiting: false,
   }
 
   onChange = (e) => {
@@ -24,16 +26,25 @@ class LoginForm extends Component {
       password: this.state.password,
     };
 
+    this.setState({ waiting: true });
+
     this.props.loginUser(user);
   }
 
   componentWillReceiveProps = (nextProps) => {
-    console.log('loginForm receives props: ', nextProps);
     if (!nextProps.isOpen) {
-      this.setState({ email: '', password: '' });
+      this.setState({
+        email: '',
+        password: '',
+        waiting: false,
+      });
     }
+
     if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
+      this.setState({
+        errors: this.props.errors,
+        waiting: false,
+      });
     }
   };
 
@@ -79,7 +90,14 @@ class LoginForm extends Component {
           </input>
         </div>
 
-        <input className="btn btn-primary btn--auth" type="submit" value="Log In"></input>
+        <input
+          className={classnames('btn btn-primary btn--auth', {
+            loading: this.state.waiting,
+          })}
+          type="submit"
+          value="Log In"
+        >
+        </input>
       </form>
     );
   }
