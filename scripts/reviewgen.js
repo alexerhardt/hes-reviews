@@ -35,10 +35,8 @@ function getRandomYear() {
   return y;
 }
 
-function randomizeReviews(courseId) {
+function randomizeReviews(courseId, reviewArr) {
   const num = getRandomInt(0, 50);
-
-  const reviews = [];
 
   for (let i = 0; i < num; i++) {
     const review = new Review({
@@ -52,35 +50,21 @@ function randomizeReviews(courseId) {
       body: faker.lorem.paragraphs(getRandomInt(1, 3)),
     });
 
-    reviews.push(review);
+    reviewArr.push(review);
   }
-
-  // console.log('courseId: ', courseId);
-
-  // TODO: This is monstrous and it gets stuck
-  // Next time, try this:
-  // https://stackoverflow.com/questions/28478606/saving-items-in-mongoose-for-loop-with-schema-methods
-  reviews.forEach(review => {
-    console.log('review id: ', review._id);
-    review
-      .save()
-      .then(review => {
-        console.log(
-          'review saved, updating course aggregates for review: ',
-          review._id,
-        );
-        review.updateCourseAggregates();
-        console.log('updated course aggregates for review: ', review._id);
-      })
-      .catch(err => console.log(err));
-  });
 }
 
-async function processCourses(courses) {
-  for (const course of courses) {
-    const ret = randomizeReviews(course.id);
-    await ret;
-  }
+function processCourses(courses) {
+  let reviews = [];
+  courses.forEach(course => randomizeReviews(course.id, reviews));
+
+  console.log('reviews length: ', reviews.length);
+
+  Review
+    .collection
+    .insertMany(reviews)
+    .then(_ => console.log('finished batch insert'))
+    .catch(e => console.log('could not insert reviews, error: ', e));
 }
 
 function main() {
@@ -100,7 +84,6 @@ function main() {
     })
     .then(() => {
       console.log('Done');
-      // mongoose.disconnect();
     })
     .catch(err => {
       console.log(err);
