@@ -4,7 +4,7 @@
  */
 const Validator = require('validator');
 
-module.exports = (data) => {
+module.exports = data => {
   let errors = {};
 
   if (Validator.isEmpty(data.email)) {
@@ -34,6 +34,6 @@ module.exports = (data) => {
   return {
     errors,
     // Test if object is empty
-    isValid: Object.keys(errors).length === 0 && errors.constructor === Object
+    isValid: Object.keys(errors).length === 0 && errors.constructor === Object,
   };
-} 
+};

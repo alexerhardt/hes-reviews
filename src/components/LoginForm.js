@@ -5,20 +5,19 @@ import classnames from 'classnames';
 import { loginUser } from '../actions/authActions';
 import { isEmptyObject } from '../../utils/utils-global';
 
-
 class LoginForm extends Component {
   state = {
     email: '',
     password: '',
     errors: {},
     waiting: false,
-  }
+  };
 
-  onChange = (e) => {
+  onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
-  }
+  };
 
-  onSubmit = (e) => {
+  onSubmit = e => {
     e.preventDefault();
 
     const user = {
@@ -29,9 +28,9 @@ class LoginForm extends Component {
     this.setState({ waiting: true });
 
     this.props.loginUser(user);
-  }
+  };
 
-  componentWillReceiveProps = (nextProps) => {
+  componentWillReceiveProps = nextProps => {
     if (!nextProps.isOpen) {
       this.setState({
         email: '',
@@ -69,12 +68,8 @@ class LoginForm extends Component {
             name="email"
             value={this.state.email}
             onChange={this.onChange}
-          >
-          </input>
-          {
-            errors.email
-            && <p className="form-input-hint">{errors.email}</p>
-          }
+          />
+          {errors.email && <p className="form-input-hint">{errors.email}</p>}
         </div>
 
         <div className="form-group">
@@ -86,18 +81,17 @@ class LoginForm extends Component {
             name="password"
             value={this.state.password}
             onChange={this.onChange}
-          >
-          </input>
+          />
         </div>
 
+        {/* TODO: Abstract this into LoadButton component */}
         <input
           className={classnames('btn btn-primary btn--auth', {
             loading: this.state.waiting,
           })}
           type="submit"
           value="Log In"
-        >
-        </input>
+        />
       </form>
     );
   }
@@ -115,4 +109,7 @@ const mapStateToProps = state => ({
   errors: state.errors,
 });
 
-export default connect(mapStateToProps, { loginUser })(LoginForm);
+export default connect(
+  mapStateToProps,
+  { loginUser },
+)(LoginForm);

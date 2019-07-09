@@ -1,113 +1,121 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { signupUser, clearAllMessages } from '../actions/authActions';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
+import { signupUser, clearAllMessages } from '../actions/authActions';
 
 class SignupForm extends Component {
   state = {
     email: '',
     password: '',
     password2: '',
-    errors: {}
-  }
+    errors: {},
+    waiting: false,
+  };
 
-  onChange = (e) => {
+  onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
-  }
+  };
 
-  onSubmit = (e) => {
+  onSubmit = e => {
     e.preventDefault();
 
     const user = {
       email: this.state.email,
       password: this.state.password,
-      password2: this.state.password2
-    }
+      password2: this.state.password2,
+    };
+
+    this.setState({ waiting: true });
 
     this.props.signupUser(user, this.props.switchTabs);
-  }
+  };
 
-  componentWillReceiveProps = (nextProps) => {
+  componentWillReceiveProps = nextProps => {
     console.log('signupForm receives props: ', nextProps);
     if (!nextProps.isOpen) {
-      this.setState({ email: '', password: '', password2: '' });
+      this.setState({
+        email: '',
+        password: '',
+        password2: '',
+        waiting: false,
+      });
     }
+
     if (nextProps.errors) {
-      this.setState({ errors: nextProps.errors });
+      this.setState({ errors: nextProps.errors, waiting: false });
     }
-  }
+  };
 
   render() {
     const { errors } = this.state;
 
     return (
-      <form 
+      <form
         className={classnames('form-group auth-form', {
-          'active': this.props.isOpen
+          active: this.props.isOpen,
         })}
         onSubmit={this.onSubmit}
       >
         <div className="form-group">
           <label className="form-label">Email</label>
-          <input 
+          <input
             className={classnames('form-input', {
-              'is-error': errors.email
+              'is-error': errors.email,
             })}
-            type="email" 
-            placeholder="Email" 
+            type="email"
+            placeholder="Email"
             name="email"
             value={this.state.email}
             onChange={this.onChange}
-          >
-          </input>
-          {
-            errors.email &&
-            <p className="form-input-hint">{errors.email}</p>
-          }
+          />
+          {errors.email && <p className="form-input-hint">{errors.email}</p>}
         </div>
 
         <div className="form-group">
           <label className="form-label">Password</label>
-          <input 
+          <input
             className={classnames('form-input', {
-              'is-error': errors.password
+              'is-error': errors.password,
             })}
-            type="password" 
-            placeholder="Password" 
+            type="password"
+            placeholder="Password"
             name="password"
             value={this.state.password}
             onChange={this.onChange}
-          >
-          </input>
-          {
-            errors.password &&
+          />
+          {errors.password && (
             <p className="form-input-hint">{errors.password}</p>
-          }
+          )}
         </div>
 
         <div className="form-group">
           <label className="form-label">Password Confirmation</label>
-          <input 
+          <input
             className={classnames('form-input', {
-              'is-error': errors.password2
+              'is-error': errors.password2,
             })}
-            type="password" 
-            placeholder="Password Confirmation" 
+            type="password"
+            placeholder="Password Confirmation"
             name="password2"
             value={this.state.password2}
             onChange={this.onChange}
-          >
-          </input>
-          {
-            errors.password2 &&
+          />
+          {errors.password2 && (
             <p className="form-input-hint">{errors.password2}</p>
-          }
+          )}
         </div>
 
-        <input className="btn btn-primary btn--auth" type="submit" value="Sign Up"></input>
+        {/* TODO: Abstract this into LoadButton component */}
+        <input
+          className={classnames('btn btn-primary btn--auth', {
+            loading: this.state.waiting,
+          })}
+          type="submit"
+          value="Sign Up"
+        />
       </form>
-    )
+    );
   }
 }
 
@@ -115,12 +123,17 @@ SignupForm.propTypes = {
   signupUser: PropTypes.func.isRequired,
   clearAllMessages: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
-  errors: PropTypes.object
+  errors: PropTypes.object,
+  switchTabs: PropTypes.func,
+  isOpen: PropTypes.bool,
 };
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   auth: state.auth,
-  errors: state.errors
+  errors: state.errors,
 });
 
-export default connect(mapStateToProps, { signupUser, clearAllMessages })(SignupForm);
+export default connect(
+  mapStateToProps,
+  { signupUser, clearAllMessages },
+)(SignupForm);

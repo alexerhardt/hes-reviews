@@ -1,10 +1,8 @@
 import React from 'react';
 import Select from 'react-select';
 
-class ReviewFilters extends React.Component
-{
-  render()
-  {
+class ReviewFilters extends React.Component {
+  render() {
     const filterOpts = this.props.filterOptions;
 
     return (
@@ -14,7 +12,7 @@ class ReviewFilters extends React.Component
             <h3>Filters</h3>
           </div>
           <div className="filter-wrap col-12 col-md-6 mb-2 text-capitalize">
-            <Select 
+            <Select
               placeholder="Semester"
               isMulti
               name="semesters"
@@ -25,7 +23,7 @@ class ReviewFilters extends React.Component
             />
           </div>
           <div className="filter-wrap col-12 col-md-6 mb-2">
-            <Select 
+            <Select
               placeholder="Year"
               isMulti
               name="year"
@@ -36,7 +34,7 @@ class ReviewFilters extends React.Component
             />
           </div>
           <div className="filter-wrap col-12 col-md-6 mb-2">
-            <Select 
+            <Select
               placeholder="Rating"
               isMulti
               name="rating"
@@ -46,8 +44,8 @@ class ReviewFilters extends React.Component
               classNamePrefix="react-select"
             />
           </div>
-          <div className="filter-wrap col-12 col-md-6 mb-2"> 
-            <Select 
+          <div className="filter-wrap col-12 col-md-6 mb-2">
+            <Select
               placeholder="Difficulty"
               isMulti
               name="difficulty"
@@ -59,9 +57,8 @@ class ReviewFilters extends React.Component
           </div>
         </div>
       </div>
-    )
+    );
   }
-
 }
 
 export default ReviewFilters;

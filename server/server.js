@@ -31,10 +31,10 @@ app.use(express.static(publicPath));
 mongoose.set('useFindAndModify', false);
 mongoose
   .connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
   })
   .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => console.log(err))
+  .catch(err => console.log(err));
 
 // // Use Passport middleware and configure it
 app.use(passport.initialize());
@@ -49,7 +49,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
-
 if (process.env.NODE_ENV !== 'production') {
   app.use((err, req, res, next) => {
     console.log(err.stack);
@@ -61,10 +60,12 @@ if (process.env.NODE_ENV !== 'production') {
 app.use((err, req, res, next) => {
   res.status(err.status || 500);
   const validationErrors = err.validationErrors || undefined;
-  res.json({'errors': {
-    message: err.message,
-    validationErrors
-  }});
+  res.json({
+    errors: {
+      message: err.message,
+      validationErrors,
+    },
+  });
 });
 
 const port = process.env.PORT || 3000;

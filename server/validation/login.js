@@ -4,7 +4,7 @@
  */
 const Validator = require('validator');
 
-module.exports = (data) => {
+module.exports = data => {
   let errors = {};
 
   if (!Validator.isEmail(data.email)) {
@@ -21,6 +21,6 @@ module.exports = (data) => {
 
   return {
     errors,
-    isValid: Object.keys(errors).length === 0 && errors.constructor === Object
-  }
-}
+    isValid: Object.keys(errors).length === 0 && errors.constructor === Object,
+  };
+};

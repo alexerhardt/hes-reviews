@@ -7,7 +7,7 @@ export default function(state = initialState, action) {
     case GET_ERRORS:
       console.log('err reducer, payload: ', action.payload);
       return action.payload;
-    
+
     default:
       return state;
   }

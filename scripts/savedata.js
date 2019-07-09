@@ -8,17 +8,16 @@ const Course = require('../server/models/Course');
 mongoose
   .connect(uri, { useNewUrlParser: true })
   .then(() => {
-
     console.log('connection established');
 
     data.map((course, i) => {
-      const newCourse = new Course ({
+      const newCourse = new Course({
         code: course.code,
         name: course.name,
-        reviewCount: 0, 
+        reviewCount: 0,
         aggRating: 0,
         aggDifficulty: 0,
-        aggWorkload: 0 
+        aggWorkload: 0,
       });
 
       newCourse
@@ -29,7 +28,7 @@ mongoose
             mongoose.disconnect();
           }
         })
-        .catch((err) => console.log(err));
+        .catch(err => console.log(err));
     });
   })
-  .catch((err) => console.log(err));
+  .catch(err => console.log(err));

@@ -36,7 +36,6 @@ describe('GET /api/users/current', function() {
   });
 });
 
-
 describe('POST /api/reviews/post', function() {
   before(hooks.populateUsers);
   before(hooks.populateCourses);
@@ -54,13 +53,14 @@ describe('POST /api/reviews/post', function() {
         }
 
         const id = res.body.review.id;
-        Review
-          .findById(id)
-          .then(function (review) {
+        Review.findById(id)
+          .then(function(review) {
             expect(review).toMatchObject(mocks.reviews.good[0]);
             done();
           })
-          .catch(function (e) { done(e) });
+          .catch(function(e) {
+            done(e);
+          });
       });
   });
 });

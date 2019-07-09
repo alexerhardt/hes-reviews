@@ -3,19 +3,19 @@ import { isEmpty } from '../utils/utils-client';
 
 const initialState = {
   isAuthenticated: !isEmpty(localStorage.jwtToken),
-  user: {}
+  user: {},
 };
 
 export default function(state = initialState, action) {
-  switch(action.type) {
+  switch (action.type) {
     case SET_CURRENT_USER:
       return {
         ...state,
         isAuthenticated: !isEmpty(localStorage.jwtToken),
-        user: action.payload
-      }
-      
+        user: action.payload,
+      };
+
     default:
       return state;
   }
-};
+}

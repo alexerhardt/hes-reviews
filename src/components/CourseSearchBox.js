@@ -18,39 +18,39 @@ import { stripCourseCode } from '../../utils/utils-global';
  * (think how Google search suggestions work)
  * Component styling must be handled by the parent through JSS or other method
  */
-class CourseSearchBox extends React.Component
-{
+class CourseSearchBox extends React.Component {
   state = {
-    searchValue: '',   // the input box value
+    searchValue: '', // the input box value
     matchedCourses: [], // suggestions returned from user input
     selectedCourseName: '',
-    selectedCourseId: ''
-  }
+    selectedCourseId: '',
+  };
 
   componentDidMount = () => {
     if (this.props.courses.length === 0) {
       this.props.getCourses(this.props.history);
     }
-  }
+  };
 
   /**
    * Executes the search when user types query
    */
-  onSuggestionsFetchRequested = ({ value }) => 
-  {
-    const keys = {keys: ['code', 'name']};
-    const matchedCourses = matchSorter(this.props.courses, value, keys).slice(0, 5);
+  onSuggestionsFetchRequested = ({ value }) => {
+    const keys = { keys: ['code', 'name'] };
+    const matchedCourses = matchSorter(this.props.courses, value, keys).slice(
+      0,
+      5,
+    );
     this.setState(() => ({ matchedCourses }));
   };
 
   /**
    * Handles cleared input
    */
-  onSuggestionsClearRequested = () => 
-  {
-      this.setState({
-          suggestions: []
-      });
+  onSuggestionsClearRequested = () => {
+    this.setState({
+      suggestions: [],
+    });
   };
 
   /**
@@ -58,14 +58,15 @@ class CourseSearchBox extends React.Component
    * We create a React-DOM Link which directs to the relevant course page
    * when clicked
    */
-  renderSuggestion = (suggestion) => 
-  {
+  renderSuggestion = suggestion => {
     console.log('renderSuggestion suggestion:', suggestion);
     return (
-      <Link to={{
-        pathname: '/reviews/' + stripCourseCode(suggestion.code),
-        state: { courseId: suggestion.id }
-      }}>
+      <Link
+        to={{
+          pathname: '/reviews/' + stripCourseCode(suggestion.code),
+          state: { courseId: suggestion.id },
+        }}
+      >
         {suggestion.name}
       </Link>
     );
@@ -74,27 +75,24 @@ class CourseSearchBox extends React.Component
   /**
    * The input change handler
    */
-  onChange = (event, { newValue }) =>
-  {
+  onChange = (event, { newValue }) => {
     console.log('onChange called, newValue: ', newValue);
     this.setState({
-      searchValue: newValue
+      searchValue: newValue,
     });
   };
-
 
   /**
    * This is the value for the HTML input, but in our case it's useless;
    * we don't use the input value and redirect automatically on click
    */
-  getSuggestionValue = (suggestion) => {
-    suggestion.code 
+  getSuggestionValue = suggestion => {
+    suggestion.code;
   };
 
-  render()
-  {
+  render() {
     const { matchedCourses } = this.state;
-    const searchValue  = this.props.searchValue || this.state.searchValue;
+    const searchValue = this.props.searchValue || this.state.searchValue;
     const { selectedCourseName } = this.props;
     console.log('course searchbox render state: ', this.state);
     console.log('selectedCourseName: ', selectedCourseName);
@@ -103,11 +101,11 @@ class CourseSearchBox extends React.Component
     const inputProps = {
       placeholder: 'Search for a course...',
       value: selectedCourseName || searchValue,
-      onChange: this.props.onChange || this.onChange
-    }
+      onChange: this.props.onChange || this.onChange,
+    };
 
     return (
-      <Autosuggest 
+      <Autosuggest
         suggestions={matchedCourses}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
@@ -117,19 +115,21 @@ class CourseSearchBox extends React.Component
         inputProps={inputProps}
         theme={this.props.theme}
       />
-    )
+    );
   }
 }
 
 CourseSearchBox.propTypes = {
-  getCourses: PropTypes.func.isRequired
-}
+  getCourses: PropTypes.func.isRequired,
+};
 
-const mapStateToProps = (state) => ({
-  courses: state.courses
+const mapStateToProps = state => ({
+  courses: state.courses,
 });
 
 // https://reacttraining.com/react-router/core/api/withRouter
 // There's a note on shouldComponentUpdate which I don't understand... investigate
-export default connect(mapStateToProps, { getCourses })(withRouter(CourseSearchBox));
-
+export default connect(
+  mapStateToProps,
+  { getCourses },
+)(withRouter(CourseSearchBox));

@@ -2,22 +2,24 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema({
-  _id: {
-    type: mongoose.Schema.Types.ObjectId,
-    required: true,
-    auto: true 
+const UserSchema = new Schema(
+  {
+    _id: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      auto: true,
+    },
+    email: {
+      type: String,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
   },
-  email: {
-    type: String,
-    required: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
-}, { timestamps: true });
-
+  { timestamps: true },
+);
 
 UserSchema.pre('save', function(next) {
   const user = this;
@@ -29,8 +31,7 @@ UserSchema.pre('save', function(next) {
         next();
       });
     });
-  } 
-  else {
+  } else {
     next();
   }
 });

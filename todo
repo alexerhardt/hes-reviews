@@ -7,6 +7,7 @@ NEXT / IMMEDIATE
 - Check if jwtToken localStorage will cause namespacing conflicts
 - Fix User View page
 - Add route login protection for unauthenticated routes
+- Move data into database - currently it's reading from memory
 
 
 BUGS
@@ -35,7 +36,7 @@ ERROR HANDLING
 - Add reactive modals instead of redirects as errors
 - Wire server and client errors better
 
-REVIEW PAGE 
+REVIEW PAGE
 - Add Write Review page that populates the review field directly
 - Stats are populated but there is a delay which screws everything up - fix
 
@@ -43,6 +44,9 @@ WRITE-REVIEW
 - Validation and data sending is very messy, clean up
 
 Did:
+
+28/02/2019
+- Add waiting states to LoginForm + SignupForm
 
 27/02/2019
 - Restyle Login and add login redirect
@@ -67,7 +71,7 @@ Fix problem with reviews page year/semester filters
 Restyled the write-review page (particularly course box)
 Added onChange handlers for all form elements
 Started wiring front-end validation
- 
+
 25/01/2019
 Wire Review id request
 Fix issues with filters

@@ -4,20 +4,19 @@ import { isEmpty } from '../utils/utils-client';
 const initialState = {
   activeMessage: false,
   text: '',
-  class: ''
-}
+  class: '',
+};
 
 export default function(state = initialState, action) {
-
-  switch(action.type) {
+  switch (action.type) {
     case SET_MESSAGE:
       return {
         activeMessage: !isEmpty(action.payload),
         text: action.payload.text,
-        class: action.payload.class
+        class: action.payload.class,
       };
-    
+
     default:
       return state;
   }
-};
+}

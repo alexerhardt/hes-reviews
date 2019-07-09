@@ -9,7 +9,7 @@ const initialState = {};
 
 // Token expiration middleware
 // https://stackoverflow.com/a/44986487/6854595
-const checkTokenExpiration = (store) => (next) => (action) => {
+const checkTokenExpiration = store => next => action => {
   const token = localStorage.jwtToken;
   console.log('checking token expiration for token: ', token);
   if (token && jwt_decode(token).exp < Date.now() / 1000) {
@@ -20,7 +20,7 @@ const checkTokenExpiration = (store) => (next) => (action) => {
     store.dispatch(logoutUser());
   }
   next(action);
-}
+};
 
 const middleware = [thunk, checkTokenExpiration];
 // const middleware = [thunk];
@@ -30,8 +30,9 @@ const store = createStore(
   initialState,
   compose(
     applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  )
+    window.__REDUX_DEVTOOLS_EXTENSION__ &&
+      window.__REDUX_DEVTOOLS_EXTENSION__(),
+  ),
 );
 
 export default store;

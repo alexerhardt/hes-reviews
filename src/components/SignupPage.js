@@ -7,9 +7,7 @@ const SignupPage = () => (
     <Header />
     <div className="container-inner__authpage">
       <div className="auth-page-form p-5">
-        <SignupForm
-          isOpen
-        />
+        <SignupForm isOpen />
       </div>
     </div>
   </div>

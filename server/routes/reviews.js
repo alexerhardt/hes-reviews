@@ -15,41 +15,37 @@ router.post('/post', authenticate, (req, res, next) => {
   // https://stackoverflow.com/q/54167636/6854595
   console.log('req.user: ', req.user);
   const author = req.user._id;
-  const review = new Review({...req.body, author});
+  const review = new Review({ ...req.body, author });
   review.semester = review.semester.toLowerCase();
 
   review
     .save()
-    .then((review) => review.updateCourseAggregates()) 
+    .then(review => review.updateCourseAggregates())
     .then(([course, review] = result) => {
-      return res.json({course, review});
+      return res.json({ course, review });
     })
     .catch(next);
 });
 
-
 /**
- * @route   GET /api/reviews/by-course-id 
+ * @route   GET /api/reviews/by-course-id
  * @desc    Gets all the reviews for a course
- * @access  Public 
+ * @access  Public
  */
 router.get('/:courseId', (req, res, next) => {
   const courseId = req.params.courseId;
   if (!courseId) {
-    return res.status(400).json({validationErrors: 'Missing course id'});
+    return res.status(400).json({ validationErrors: 'Missing course id' });
   }
 
-  Review
-    .find({course: courseId})
-    .then((reviews) => {
-      if (reviews.length === 0) {
-        return res.status(404).json({message: courseId + ': course not found'});
-      }
+  Review.find({ course: courseId }).then(reviews => {
+    if (reviews.length === 0) {
+      return res.status(404).json({ message: courseId + ': course not found' });
+    }
 
-      return res.json(reviews.map(review => review.toJSON()));
-    });
+    return res.json(reviews.map(review => review.toJSON()));
+  });
 });
-
 
 /**
  * TODO:
@@ -57,8 +53,6 @@ router.get('/:courseId', (req, res, next) => {
  * @desc    Gets a single review by id
  * @access  Public
  */
-
-
 
 /**
  * @route   PUT /api/reviews/update
@@ -69,33 +63,33 @@ router.put('/update', authenticate, (req, res, next) => {
   const reviewId = req.body.reviewId;
 
   if (!reviewId) {
-    return res.status(400).json({validationErrors: 'Missing course id'});
+    return res.status(400).json({ validationErrors: 'Missing course id' });
   }
 
   const { semester, year, rating, difficulty, workload, body } = req.body;
   const update = { semester, year, rating, difficulty, workload, body };
 
-  Review
-    .findByIdAndUpdate(reviewId, update, { runValidators: true })
-    .then((review) => {
+  Review.findByIdAndUpdate(reviewId, update, { runValidators: true })
+    .then(review => {
       if (!review) {
-        return res.status(404).json({message: reviewId + ': review not found'});
+        return res
+          .status(404)
+          .json({ message: reviewId + ': review not found' });
       }
 
       const changes = {
         aggRating: update.rating - review.rating,
         aggDifficulty: update.difficulty - review.difficulty,
-        aggWorkload: update.workload - review.workload
-      }
+        aggWorkload: update.workload - review.workload,
+      };
 
       review.updateCourseAggregates(changes);
     })
     .then(([course, review] = result) => {
-      return res.json({course, review});
+      return res.json({ course, review });
     })
     .catch(next);
 });
-
 
 /**
  * @route   DELETE /api/reviews/delete
@@ -106,14 +100,15 @@ router.delete('/delete', authenticate, (req, res, next) => {
   const reviewId = req.body.reviewId;
 
   if (!reviewId) {
-    return res.status(400).json({validationErrors: 'Missing course id'});
+    return res.status(400).json({ validationErrors: 'Missing course id' });
   }
 
-  Review 
-    .findByIdAndDelete(reviewId)
-    .then((review) => {
+  Review.findByIdAndDelete(reviewId)
+    .then(review => {
       if (!review) {
-        return res.status(404).json({message: reviewId + ': review not found'});
+        return res
+          .status(404)
+          .json({ message: reviewId + ': review not found' });
       }
 
       return res.json(review.toJSON());
@@ -121,4 +116,4 @@ router.delete('/delete', authenticate, (req, res, next) => {
     .catch(next);
 });
 
- module.exports = router;
+module.exports = router;

@@ -27,7 +27,7 @@ router.post('/signup', (req, res, next) => {
 
   // Check if email already exists
   // Return error if valid, else create new user
-  User.findOne({ email: req.body.email} ).then((user) => {
+  User.findOne({ email: req.body.email }).then(user => {
     if (user) {
       errors.email = 'Email already exists';
       return res.status(400).json(errors);
@@ -35,16 +35,15 @@ router.post('/signup', (req, res, next) => {
 
     const newUser = new User({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
     });
 
     newUser
       .save()
-      .then((user) => res.json(user))
+      .then(user => res.json(user))
       .catch(next);
   });
 });
-
 
 /**
  * @route  POST /users/login
@@ -60,13 +59,13 @@ router.post('/login', (req, res, next) => {
 
   const { email, password } = req.body;
 
-  User.findOne({ email }).then((user) => {
+  User.findOne({ email }).then(user => {
     if (!user) {
       errors.email = 'User / Password not recognized';
       return res.status(400).json(errors);
     }
 
-    bcrypt.compare(password, user.password).then((isMatch) => {
+    bcrypt.compare(password, user.password).then(isMatch => {
       if (isMatch) {
         const payload = { id: user.id };
 
@@ -77,19 +76,17 @@ router.post('/login', (req, res, next) => {
           (err, token) => {
             res.json({
               success: true,
-              token: 'Bearer ' + token 
+              token: 'Bearer ' + token,
             });
-          }
-        )
-      }
-      else {
+          },
+        );
+      } else {
         errors.email = 'User / Password not recognized';
         return res.status(400).json(errors);
       }
     });
   });
 });
-
 
 /**
  * @route  GET /users/current
@@ -98,17 +95,17 @@ router.post('/login', (req, res, next) => {
  * TODO: Check if we can abridge the middleware
  */
 // const authenticate = passport.authenticate('jwt', { session: false });
-router.get('/current',
+router.get(
+  '/current',
   // passport.authenticate('jwt', { session: false }),
   authenticate,
   (req, res) => {
     res.json({
       id: req.user.id,
-      email: req.user.email
+      email: req.user.email,
     });
-  }
+  },
 );
-
 
 /**
  * TODO:
@@ -117,7 +114,6 @@ router.get('/current',
  * @access  Private
  */
 
-
 /**
  * TODO:
  * @route   PUT /users/update-email
@@ -125,14 +121,12 @@ router.get('/current',
  * @access  Private
  */
 
- 
 /**
-  * TODO:
-  * @route   PUT /users/update-password
-  * @desc    Updates the user password
-  * @access  Private
-  */
-
+ * TODO:
+ * @route   PUT /users/update-password
+ * @desc    Updates the user password
+ * @access  Private
+ */
 
 /**
  * TODO:
@@ -140,6 +134,5 @@ router.get('/current',
  * @desc    Deletes a user and all of their data
  * @access  Private
  */
-
 
 module.exports = router;
