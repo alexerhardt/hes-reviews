@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const faker = require('faker');
 
-const uri = 'mongodb://localhost:27017/hes-dev';
+// const uri = 'mongodb://localhost:27017/hes-dev';
+const uri = 'mongodb://heroku_2dt7jnm3:7m254grtgq0e76reesatdu3evv@ds153304.mlab.com:53304/heroku_2dt7jnm3';
 
 const Review = require('../server/models/Review');
 const Course = require('../server/models/Course');

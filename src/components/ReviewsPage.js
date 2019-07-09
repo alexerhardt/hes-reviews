@@ -123,15 +123,39 @@ class ReviewsPage extends React.Component {
     } else {
       axios
         .get('/api/reviews/' + courseId)
-        // TODO: Check if this has broken anything
         .then(res => this.setState({ reviewData: res.data }))
-        .catch(err => redirectToErrorPage(err, this.props.history));
+        .catch(err => {
+          // Nothing to display
+          if (err.response && err.response.status === 404) {
+            return;
+          }
+          redirectToErrorPage(err, this.props.history);
+        });
     }
   };
 
   render() {
     console.log('ReviewsPage render() history', this.props.location.state);
     const filteredReviews = this.getFilteredReviews();
+
+    let reviews;
+    if (filteredReviews.length > 0) {
+      reviews = (
+        <TransitionGroup exit={false}>
+          {filteredReviews.map(review => (
+            <CSSTransition
+              key={review.reviewDate}
+              timeout={300}
+              classNames="fade"
+            >
+              <ReviewBox review={review} />
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
+      );
+    } else {
+      reviews = <div>Nothing to see here. Write a review to get started!</div>;
+    }
 
     return (
       <div id="container-reviewspage" className="container-outer">
@@ -151,17 +175,7 @@ class ReviewsPage extends React.Component {
             </div>
 
             <div className="column col-9 col-md-12 col-reviews bg-gray">
-              <TransitionGroup exit={false}>
-                {filteredReviews.map(review => (
-                  <CSSTransition
-                    key={review.reviewDate}
-                    timeout={300}
-                    classNames="fade"
-                  >
-                    <ReviewBox review={review} />
-                  </CSSTransition>
-                ))}
-              </TransitionGroup>
+              {reviews}
             </div>
           </div>
         </div>

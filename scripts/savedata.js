@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const data = require('./random-data.json');
 
-const uri = 'mongodb://localhost:27017/hes-dev';
+// const uri = 'mongodb://localhost:27017/hes-dev';
+const uri = 'mongodb://heroku_2dt7jnm3:7m254grtgq0e76reesatdu3evv@ds153304.mlab.com:53304/heroku_2dt7jnm3';
 
 const Course = require('../server/models/Course');
 
