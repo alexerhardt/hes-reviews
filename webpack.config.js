@@ -23,11 +23,11 @@ module.exports = (env) => {
           loader: 'babel-loader',
           exclude: /node_modules/,
         },
-        {
-          test: /\.js$/,
-          use: ['eslint-loader'],
-          exclude: /node_modules/,
-        },
+        // {
+        //   test: /\.js$/,
+        //   use: ['eslint-loader'],
+        //   exclude: /node_modules/,
+        // },
         {
           test: /\.s?css$/,
           use: [
