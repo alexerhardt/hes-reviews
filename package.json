@@ -30,7 +30,7 @@
     "jsonwebtoken": "^8.4.0",
     "jss": "^9.8.7",
     "jwt-decode": "^2.2.0",
-    "marked": "^0.5.2",
+    "marked": "^4.0.10",
     "match-sorter": "^2.3.0",
     "mongoose": "^5.4.3",
     "passport": "^0.4.0",
