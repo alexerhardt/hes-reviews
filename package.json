@@ -25,7 +25,7 @@
     "classnames": "^2.2.6",
     "compression": "^1.7.3",
     "dotenv": "^6.2.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "jsonwebtoken": "^8.4.0",
     "jss": "^9.8.7",
